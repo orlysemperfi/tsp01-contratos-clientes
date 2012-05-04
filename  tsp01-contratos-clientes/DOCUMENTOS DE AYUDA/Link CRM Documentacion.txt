@@ -1,5 +1,10 @@
 http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=crm1
 
+--GESTION POSIBLES CLIENTES
 http://www.proclientia.com/Blog/fases-del-proceso-de-gestion-de-posibles-clientes-en-zoho-crm
 
 http://www.monografias.com/trabajos29/gestion-relacion-cliente/gestion-relacion-cliente.shtml
+
+--IMPLANTACION CRM FASES
+
+http://www.rivassanti.net/curso-ventas/implantacion-crm.php
