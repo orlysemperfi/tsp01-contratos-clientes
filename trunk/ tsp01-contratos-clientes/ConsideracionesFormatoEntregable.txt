@@ -1,0 +1,13 @@
+Consideraciones
+ 
+Emplear el paquete office 2007
+Tipo de letra arial
+Espaciado simpre
+Tamaño de letra, Titulo 16, SubTitulo 14, Texto 12
+Rational Rose 2003
+ 
+Nomenclarutas
+ 
+CUN001-<Nombre> Caso de Uso de Negocio
+AN001-<Nombre> Actor de Negocio
+RN001-<Nombre> Regla de Negocio
