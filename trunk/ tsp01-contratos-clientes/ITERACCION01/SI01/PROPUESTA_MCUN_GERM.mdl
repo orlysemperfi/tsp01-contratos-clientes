@@ -87,85 +87,85 @@
 			roles      	(list role_list
 			    (object Role "$UNNAMED$1"
 				quid       	"4FA2958003B8"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-GestionarCarteraClientes"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN002-GestionarCarteraClientes"
 				quidu      	"4FA2933701A7")
 			    (object Role "$UNNAMED$2"
 				quid       	"4FA2958003BA"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-Cliente"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN002-Cliente"
 				quidu      	"4FA293640389")))
 		    (object Association "$UNNAMED$3"
 			quid       	"4FA2BFD2027E"
 			roles      	(list role_list
 			    (object Role "$UNNAMED$4"
 				quid       	"4FA2BFD302BC"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-GestionarCarteraClientes"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN002-GestionarCarteraClientes"
 				quidu      	"4FA2933701A7")
 			    (object Role "$UNNAMED$5"
 				quid       	"4FA2BFD302CC"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-GerenteGeneral"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN003-GerenteGeneral"
 				quidu      	"4FA2BFB60399")))
 		    (object Association "$UNNAMED$6"
 			quid       	"4FA5A45401DA"
 			roles      	(list role_list
 			    (object Role "$UNNAMED$7"
 				quid       	"4FA5A4560200"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-RealizarAnalisisMercado"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001-RealizarAnalisisMercado"
 				quidu      	"4FA2930E036F")
 			    (object Role "$UNNAMED$8"
 				quid       	"4FA5A4560205"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-PosibleCliente"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001-PosibleCliente"
 				quidu      	"4FA5A3C9036B")))
 		    (object Association "$UNNAMED$9"
 			quid       	"4FA5A47800C1"
 			roles      	(list role_list
 			    (object Role "$UNNAMED$10"
 				quid       	"4FA5A4790219"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-RealizarAnalisisMercado"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001-RealizarAnalisisMercado"
 				quidu      	"4FA2930E036F")
 			    (object Role "$UNNAMED$11"
 				quid       	"4FA5A479021E"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-GerenteGeneral"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN003-GerenteGeneral"
 				quidu      	"4FA2BFB60399")))
 		    (object Association "$UNNAMED$12"
 			quid       	"4FA5A47E02E2"
 			roles      	(list role_list
 			    (object Role "$UNNAMED$13"
 				quid       	"4FA5A48000EF"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-GestionarContratos"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN003-GestionarContratos"
 				quidu      	"4FA2932A0169")
 			    (object Role "$UNNAMED$14"
 				quid       	"4FA5A48000F1"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-GerenteGeneral"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN003-GerenteGeneral"
 				quidu      	"4FA2BFB60399")))
 		    (object Association "$UNNAMED$15"
 			quid       	"4FA5A49A037A"
 			roles      	(list role_list
 			    (object Role "$UNNAMED$16"
 				quid       	"4FA5A49C02CC"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-GestionarContratos"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN003-GestionarContratos"
 				quidu      	"4FA2932A0169")
 			    (object Role "$UNNAMED$17"
 				quid       	"4FA5A49C02CF"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-Cliente"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN002-Cliente"
 				quidu      	"4FA293640389")))
 		    (object Class_Category "Casos de Uso del Negocio"
 			quid       	"4FA29259028F"
 			stereotype 	"Business Use Case Model"
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object UseCase "CUN-RealizarAnalisisMercado"
+			    (object UseCase "CUN001-RealizarAnalisisMercado"
 				quid       	"4FA2930E036F"
 				stereotype 	"Business Use Case")
-			    (object UseCase "CUN-GestionarContratos"
+			    (object UseCase "CUN003-GestionarContratos"
 				quid       	"4FA2932A0169"
 				stereotype 	"Business Use Case"
 				visible_modules 	(list dependency_list
 				    (object Dependency_Relationship
 					quid       	"4FA2958600D9"
 					stereotype 	"extend"
-					supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-RealizarAnalisisMercado"
+					supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001-RealizarAnalisisMercado"
 					quidu      	"4FA2930E036F")))
-			    (object UseCase "CUN-GestionarCarteraClientes"
+			    (object UseCase "CUN002-GestionarCarteraClientes"
 				quid       	"4FA2933701A7"
 				stereotype 	"Business Use Case"))
 			logical_presentations 	(list unit_reference_list))
@@ -174,13 +174,13 @@
 			stereotype 	"Business Use Case Model"
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object Class "AN-Cliente"
+			    (object Class "AN002-Cliente"
 				quid       	"4FA293640389"
 				stereotype 	"Business Actor")
-			    (object Class "AN-GerenteGeneral"
+			    (object Class "AN003-GerenteGeneral"
 				quid       	"4FA2BFB60399"
 				stereotype 	"Business Actor")
-			    (object Class "AN-PosibleCliente"
+			    (object Class "AN001-PosibleCliente"
 				quid       	"4FA5A3C9036B"
 				stereotype 	"Business Actor"))
 			logical_presentations 	(list unit_reference_list))
@@ -189,31 +189,73 @@
 			stereotype 	"Business Use Case Model"
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object Class "RN-Establecer Tipo Prioridad Atencion Servicio"
+			    (object Class "RN002-Lineas de Servicio"
 				quid       	"4FA294B20134"
 				documentation 	"Existen 3 tipos de prioridades definidas: Alta, Media y Baja"
 				stereotype 	"Business Goal")
-			    (object Class "RN-Establecer Tipo Cliente"
+			    (object Class "RN001-Tipos de Cliente"
 				quid       	"4FA294FA0304"
 				documentation 	"Existen diferentes tipos de clientes de acuerdo al giro de su negocio"
+				stereotype 	"Business Goal")
+			    (object Class "RN003-Categorias de Tipos de Cliente"
+				quid       	"4FA6CF8D0208"
+				stereotype 	"Business Goal")
+			    (object Class "RN004-Tipos de Servicio"
+				quid       	"4FA6CFB70165"
+				stereotype 	"Business Goal")
+			    (object Class "RN005-Formato de Contrato"
+				quid       	"4FA6CFCB011B"
+				stereotype 	"Business Goal")
+			    (object Class "RN006-Formato de Adenda"
+				quid       	"4FA6D01A037F"
+				stereotype 	"Business Goal")
+			    (object Class "RN007-Frecuencia de Seguimiento de Clientes"
+				quid       	"4FA6D0390097"
+				stereotype 	"Business Goal")
+			    (object Class "RN008-Generacion de Contrato"
+				quid       	"4FA6D05D00DD"
+				stereotype 	"Business Goal")
+			    (object Class "RN009-Generacion de Adenda"
+				quid       	"4FA6D0730291"
+				stereotype 	"Business Goal")
+			    (object Class "RN10-Calculo de monto de Contrato"
+				quid       	"4FA6D10003CE"
+				stereotype 	"Business Goal")
+			    (object Class "RN011-Prospecto de Cliente"
+				quid       	"4FA6D15101C6"
+				stereotype 	"Business Goal")
+			    (object Class "RN012-Descuento en precios de Servicio"
+				quid       	"4FA6D20302AE"
+				stereotype 	"Business Goal")
+			    (object Class "RN013-Polemica de Contrato"
+				quid       	"4FA6D2220268"
+				stereotype 	"Business Goal")
+			    (object Class "RN014-Comision Evaluadora"
+				quid       	"4FA6D24E034D"
+				stereotype 	"Business Goal")
+			    (object Class "RN015-Tipos de Contrato"
+				quid       	"4FA6D2610271"
+				stereotype 	"Business Goal")
+			    (object Class "RN016-Tipos de Penalidad"
+				quid       	"4FA6D27D0223"
 				stereotype 	"Business Goal"))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "Diagrama de Reglas del Negocio"
 				quid       	"4FA2988301F5"
 				title      	"Diagrama de Reglas del Negocio"
-				zoom       	100
+				zoom       	80
 				max_height 	28350
 				max_width  	21600
-				origin_x   	0
+				origin_x   	817
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN-Establecer Tipo Cliente" @1
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN001-Tipos de Cliente" @1
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(675, 378)
+					location   	(1166, 459)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -225,12 +267,12 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@1
-					    location   	(675, 582)
+					    location   	(1166, 663)
 					    anchor_loc 	1
 					    nlines     	2
 					    max_width  	829
 					    justify    	0
-					    label      	"RN-Establecer Tipo Cliente")
+					    label      	"RN001-Tipos de Cliente")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
@@ -238,13 +280,13 @@
 					quidu      	"4FA294FA0304"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN-Establecer Tipo Prioridad Atencion Servicio" @2
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN002-Lineas de Servicio" @2
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(716, 950)
+					location   	(1172, 915)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -256,19 +298,467 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@2
-					    location   	(716, 1154)
+					    location   	(1172, 1119)
 					    anchor_loc 	1
 					    nlines     	2
 					    max_width  	832
 					    justify    	0
-					    label      	"RN-Establecer Tipo Prioridad Atencion Servicio")
+					    label      	"RN002-Lineas de Servicio")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"4FA294B20134"
 					annotation 	8
-					autoResize 	TRUE))))))
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN003-Categorias de Tipos de Cliente" @3
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1147, 1387)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@3
+					    location   	(1147, 1591)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	834
+					    justify    	0
+					    label      	"RN003-Categorias de Tipos de Cliente")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6CF8D0208"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN004-Tipos de Servicio" @4
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1153, 1884)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@4
+					    location   	(1153, 2088)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	837
+					    justify    	0
+					    label      	"RN004-Tipos de Servicio")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6CFB70165"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN005-Formato de Contrato" @5
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1140, 2366)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@5
+					    location   	(1140, 2570)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	840
+					    justify    	0
+					    label      	"RN005-Formato de Contrato")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6CFCB011B"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN006-Formato de Adenda" @6
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1134, 2847)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@6
+					    location   	(1134, 3051)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	842
+					    justify    	0
+					    label      	"RN006-Formato de Adenda")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D01A037F"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN007-Frecuencia de Seguimiento de Clientes" @7
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1147, 3316)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@7
+					    location   	(1147, 3520)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	845
+					    justify    	0
+					    label      	"RN007-Frecuencia de Seguimiento de Clientes")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D0390097"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN008-Generacion de Contrato" @8
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1153, 3760)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@8
+					    location   	(1153, 3964)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	848
+					    justify    	0
+					    label      	"RN008-Generacion de Contrato")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D05D00DD"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN009-Generacion de Adenda" @9
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2439, 424)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@9
+					    location   	(2439, 628)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	850
+					    justify    	0
+					    label      	"RN009-Generacion de Adenda")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D0730291"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN10-Calculo de monto de Contrato" @10
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2431, 950)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@10
+					    location   	(2431, 1154)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	853
+					    justify    	0
+					    label      	"RN10-Calculo de monto de Contrato")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D10003CE"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN011-Prospecto de Cliente" @11
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2423, 1411)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@11
+					    location   	(2423, 1615)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	856
+					    justify    	0
+					    label      	"RN011-Prospecto de Cliente")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D15101C6"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN012-Descuento en precios de Servicio" @12
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2433, 1911)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@12
+					    location   	(2433, 2115)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	858
+					    justify    	0
+					    label      	"RN012-Descuento en precios de Servicio")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D20302AE"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN013-Polemica de Contrato" @13
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2430, 2390)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@13
+					    location   	(2430, 2594)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	861
+					    justify    	0
+					    label      	"RN013-Polemica de Contrato")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D2220268"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN014-Comision Evaluadora" @14
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2402, 2822)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@14
+					    location   	(2402, 3026)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	864
+					    justify    	0
+					    label      	"RN014-Comision Evaluadora")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D24E034D"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN015-Tipos de Contrato" @15
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2427, 3360)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@15
+					    location   	(2427, 3564)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	866
+					    justify    	0
+					    label      	"RN015-Tipos de Contrato")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D2610271"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN016-Tipos de Penalidad" @16
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2407, 3791)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@16
+					    location   	(2407, 3995)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	868
+					    justify    	0
+					    label      	"RN016-Tipos de Penalidad")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FA6D27D0223"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object Label @17
+					location   	(262, 102)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					nlines     	2
+					max_width  	1328
+					label      	"Reglas del Negocio - Gestión de Contratos de Cliente SLA"))))))
 		logical_presentations 	(list unit_reference_list
 		    (object UseCaseDiagram "Diagrama de Casos de Uso del Negocio"
 			quid       	"4FA2955A030E"
@@ -277,33 +767,9 @@
 			max_height 	28350
 			max_width  	21600
 			origin_x   	0
-			origin_y   	668
+			origin_y   	669
 			items      	(list diagram_item_list
-			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-GestionarCarteraClientes" @3
-				location   	(1037, 1053)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@3
-				    location   	(1036, 1228)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	879
-				    justify    	0
-				    label      	"CUN-GestionarCarteraClientes")
-				icon       	"Business Use Case"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FA2933701A7")
-			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-PosibleCliente" @4
+			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001-PosibleCliente" @18
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -320,13 +786,13 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@4
+				    Parent_View 	@18
 				    location   	(291, 810)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	570
 				    justify    	0
-				    label      	"AN-PosibleCliente")
+				    label      	"AN001-PosibleCliente")
 				icon       	"Business Actor"
 				icon_style 	"Icon"
 				line_color 	3342489
@@ -335,7 +801,7 @@
 				width      	202
 				annotation 	8
 				autoResize 	TRUE)
-			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-RealizarAnalisisMercado" @5
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001-RealizarAnalisisMercado" @19
 				location   	(1009, 575)
 				font       	(object Font
 				    size       	10
@@ -347,19 +813,19 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@5
+				    Parent_View 	@19
 				    location   	(1008, 750)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	879
 				    justify    	0
-				    label      	"CUN-RealizarAnalisisMercado")
+				    label      	"CUN001-RealizarAnalisisMercado")
 				icon       	"Business Use Case"
 				icon_style 	"Icon"
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"4FA2930E036F")
-			    (object AssociationViewNew "$UNNAMED$6" @6
+			    (object AssociationViewNew "$UNNAMED$6" @20
 				location   	(622, 586)
 				font       	(object Font
 				    size       	10
@@ -374,17 +840,17 @@
 				line_color 	3342489
 				quidu      	"4FA5A45401DA"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$7" @7
-					Parent_View 	@6
+				    (object RoleView "$UNNAMED$7" @21
+					Parent_View 	@20
 					location   	(284, -99)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA5A4560200"
-					client     	@6
-					supplier   	@5
+					client     	@20
+					supplier   	@19
 					line_style 	0)
-				    (object RoleView "$UNNAMED$8" @8
-					Parent_View 	@6
+				    (object RoleView "$UNNAMED$8" @22
+					Parent_View 	@20
 					location   	(284, -99)
 					font       	(object Font
 					    size       	10
@@ -398,10 +864,34 @@
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA5A4560205"
-					client     	@6
-					supplier   	@4
+					client     	@20
+					supplier   	@18
 					line_style 	0)))
-			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-GerenteGeneral" @9
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN002-GestionarCarteraClientes" @23
+				location   	(1037, 1053)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@23
+				    location   	(1036, 1228)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	879
+				    justify    	0
+				    label      	"CUN002-GestionarCarteraClientes")
+				icon       	"Business Use Case"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FA2933701A7")
+			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN003-GerenteGeneral" @24
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -418,13 +908,13 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@9
+				    Parent_View 	@24
 				    location   	(1935, 1194)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	568
 				    justify    	0
-				    label      	"AN-GerenteGeneral")
+				    label      	"AN003-GerenteGeneral")
 				icon       	"Business Actor"
 				icon_style 	"Icon"
 				line_color 	3342489
@@ -433,7 +923,7 @@
 				width      	202
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$3" @10
+			    (object AssociationViewNew "$UNNAMED$3" @25
 				location   	(1511, 1016)
 				font       	(object Font
 				    size       	10
@@ -448,25 +938,25 @@
 				line_color 	3342489
 				quidu      	"4FA2BFD2027E"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$4" @11
-					Parent_View 	@10
+				    (object RoleView "$UNNAMED$4" @26
+					Parent_View 	@25
 					location   	(-484, -489)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA2BFD302BC"
-					client     	@10
-					supplier   	@3
+					client     	@25
+					supplier   	@23
 					line_style 	0)
-				    (object RoleView "$UNNAMED$5" @12
-					Parent_View 	@10
+				    (object RoleView "$UNNAMED$5" @27
+					Parent_View 	@25
 					location   	(-484, -489)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA2BFD302CC"
-					client     	@10
-					supplier   	@9
+					client     	@25
+					supplier   	@24
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$9" @13
+			    (object AssociationViewNew "$UNNAMED$9" @28
 				location   	(1560, 817)
 				font       	(object Font
 				    size       	10
@@ -481,25 +971,82 @@
 				line_color 	3342489
 				quidu      	"4FA5A47800C1"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$10" @14
-					Parent_View 	@13
+				    (object RoleView "$UNNAMED$10" @29
+					Parent_View 	@28
 					location   	(-454, -653)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA5A4790219"
-					client     	@13
-					supplier   	@5
+					client     	@28
+					supplier   	@19
 					line_style 	0)
-				    (object RoleView "$UNNAMED$11" @15
-					Parent_View 	@13
+				    (object RoleView "$UNNAMED$11" @30
+					Parent_View 	@28
 					location   	(-454, -653)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA5A479021E"
-					client     	@13
-					supplier   	@9
+					client     	@28
+					supplier   	@24
 					line_style 	0)))
-			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-Cliente" @16
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN003-GestionarContratos" @31
+				location   	(1089, 1510)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@31
+				    location   	(1088, 1685)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	879
+				    justify    	0
+				    label      	"CUN003-GestionarContratos")
+				icon       	"Business Use Case"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FA2932A0169")
+			    (object AssociationViewNew "$UNNAMED$12" @32
+				location   	(1536, 1228)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FA5A47E02E2"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$13" @33
+					Parent_View 	@32
+					location   	(-478, -242)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FA5A48000EF"
+					client     	@32
+					supplier   	@31
+					line_style 	0)
+				    (object RoleView "$UNNAMED$14" @34
+					Parent_View 	@32
+					location   	(-478, -242)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FA5A48000F1"
+					client     	@32
+					supplier   	@24
+					line_style 	0)))
+			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN002-Cliente" @35
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -516,13 +1063,13 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@16
+				    Parent_View 	@35
 				    location   	(244, 1622)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	570
 				    justify    	0
-				    label      	"AN-Cliente")
+				    label      	"AN002-Cliente")
 				icon       	"Business Actor"
 				icon_style 	"Icon"
 				line_color 	3342489
@@ -531,7 +1078,7 @@
 				width      	202
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$0" @17
+			    (object AssociationViewNew "$UNNAMED$0" @36
 				location   	(548, 1272)
 				font       	(object Font
 				    size       	10
@@ -546,82 +1093,25 @@
 				line_color 	3342489
 				quidu      	"4FA2958000F9"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$1" @18
-					Parent_View 	@17
+				    (object RoleView "$UNNAMED$1" @37
+					Parent_View 	@36
 					location   	(220, 205)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA2958003B8"
-					client     	@17
-					supplier   	@3
+					client     	@36
+					supplier   	@23
 					line_style 	0)
-				    (object RoleView "$UNNAMED$2" @19
-					Parent_View 	@17
+				    (object RoleView "$UNNAMED$2" @38
+					Parent_View 	@36
 					location   	(220, 205)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA2958003BA"
-					client     	@17
-					supplier   	@16
+					client     	@36
+					supplier   	@35
 					line_style 	0)))
-			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN-GestionarContratos" @20
-				location   	(1089, 1510)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@20
-				    location   	(1088, 1685)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	879
-				    justify    	0
-				    label      	"CUN-GestionarContratos")
-				icon       	"Business Use Case"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FA2932A0169")
-			    (object AssociationViewNew "$UNNAMED$12" @21
-				location   	(1536, 1228)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FA5A47E02E2"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$13" @22
-					Parent_View 	@21
-					location   	(-478, -242)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FA5A48000EF"
-					client     	@21
-					supplier   	@20
-					line_style 	0)
-				    (object RoleView "$UNNAMED$14" @23
-					Parent_View 	@21
-					location   	(-478, -242)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FA5A48000F1"
-					client     	@21
-					supplier   	@9
-					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$15" @24
+			    (object AssociationViewNew "$UNNAMED$15" @39
 				location   	(639, 1455)
 				font       	(object Font
 				    size       	10
@@ -636,24 +1126,38 @@
 				line_color 	3342489
 				quidu      	"4FA5A49A037A"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$16" @25
-					Parent_View 	@24
+				    (object RoleView "$UNNAMED$16" @40
+					Parent_View 	@39
 					location   	(394, 41)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA5A49C02CC"
-					client     	@24
-					supplier   	@20
+					client     	@39
+					supplier   	@31
 					line_style 	0)
-				    (object RoleView "$UNNAMED$17" @26
-					Parent_View 	@24
+				    (object RoleView "$UNNAMED$17" @41
+					Parent_View 	@39
 					location   	(394, 41)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FA5A49C02CF"
-					client     	@24
-					supplier   	@16
-					line_style 	0))))))))
+					client     	@39
+					supplier   	@35
+					line_style 	0)))
+			    (object Label @42
+				location   	(178, 294)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				nlines     	1
+				max_width  	1425
+				label      	"Diagrama de Casos de uso del Negocio - Gestión de Contratos de Cliente SLA"))))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Modelo de Casos de uso del Negocio"
 		quid       	"4FA291F30005"
@@ -664,7 +1168,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio" @27
+		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio" @43
 			location   	(828, 422)
 			font       	(object Font
 			    size       	10
@@ -676,11 +1180,11 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@27
+			    Parent_View 	@43
 			    location   	(827, 641)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1155
+			    max_width  	1159
 			    justify    	0
 			    label      	"Actores del Negocio")
 			icon       	"Business Use Case Model"
@@ -690,7 +1194,7 @@
 			quidu      	"4FA2926502BD"
 			width      	388
 			height     	288)
-		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio" @28
+		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio" @44
 			location   	(809, 1102)
 			font       	(object Font
 			    size       	10
@@ -702,11 +1206,11 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@28
+			    Parent_View 	@44
 			    location   	(808, 1321)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1151
+			    max_width  	1155
 			    justify    	0
 			    label      	"Casos de Uso del Negocio")
 			icon       	"Business Use Case Model"
@@ -716,7 +1220,7 @@
 			quidu      	"4FA29259028F"
 			width      	388
 			height     	288)
-		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio" @29
+		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio" @45
 			location   	(869, 1859)
 			font       	(object Font
 			    size       	10
@@ -728,11 +1232,11 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@29
+			    Parent_View 	@45
 			    location   	(868, 2078)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1166
+			    max_width  	1168
 			    justify    	0
 			    label      	"Reglas del Negocio")
 			icon       	"Business Use Case Model"
@@ -741,7 +1245,21 @@
 			fill_color 	13434879
 			quidu      	"4FA29270004B"
 			width      	388
-			height     	288)))))
+			height     	288)
+		    (object Label @46
+			location   	(113, 75)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			nlines     	1
+			max_width  	1581
+			label      	"Modelo de Casos de uso del Negocio - Gestión de Contratos de Cliente SLA")))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"4FA291F20276"
 	exportControl 	"Public"
@@ -759,7 +1277,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN-Cliente" @30
+		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN002-Cliente" @47
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
@@ -776,13 +1294,13 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@30
+			    Parent_View 	@47
 			    location   	(399, 1030)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	568
 			    justify    	0
-			    label      	"AN-Cliente")
+			    label      	"AN002-Cliente")
 			icon       	"Business Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -2389,9 +2907,9 @@
 		    (object Attribute
 			tool       	"Ada95"
 			name       	"TypeEqualityName"
-			value      	
+			value      	(value Text 
 |"="
-			)
+			))
 		    (object Attribute
 			tool       	"Ada95"
 			name       	"InlineEquality"
@@ -6489,6 +7007,10 @@
 			value      	"")))
 	    (object Attribute
 		tool       	"XML_DTD"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"RequisitePro"
 		name       	"HiddenTool"
 		value      	FALSE))
 	quid       	"4FA5A35B0026"))
