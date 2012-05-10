@@ -80,30 +80,43 @@
 	logical_models 	(list unit_reference_list
 	    (object Class_Category "Modelo de Casos de Uso del Negocio"
 		quid       	"4FA292430213"
-		stereotype 	"Business Analysis Model"
+		stereotype 	"Business Use Case Model"
 		exportControl 	"Public"
 		logical_models 	(list unit_reference_list
 		    (object Association "$UNNAMED$0"
-			quid       	"4FA5A47E02E2"
-			roles      	(list role_list
-			    (object Role "$UNNAMED$1"
-				quid       	"4FA5A48000EF"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratosPublicos"
-				quidu      	"4FA2932A0169")
-			    (object Role "$UNNAMED$2"
-				quid       	"4FA5A48000F1"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN002 GerenteGeneral"
-				quidu      	"4FA2BFB60399")))
-		    (object Association "$UNNAMED$3"
 			quid       	"4FA5A49A037A"
 			roles      	(list role_list
-			    (object Role "$UNNAMED$4"
+			    (object Role "$UNNAMED$1"
 				quid       	"4FA5A49C02CC"
 				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratosPublicos"
 				quidu      	"4FA2932A0169")
-			    (object Role "$UNNAMED$5"
+			    (object Role "$UNNAMED$2"
 				quid       	"4FA5A49C02CF"
-				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Cliente"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Comercial"
+				quidu      	"4FA293640389")))
+		    (object Association "$UNNAMED$3"
+			quid       	"4FABE3F200F1"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$4"
+				quid       	"4FABE3F203A1"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN002 GestionarContratosPrivados"
+				quidu      	"4FA94D6B029A"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$5"
+				quid       	"4FABE3F203A3"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Comercial"
+				quidu      	"4FA293640389")))
+		    (object Association "$UNNAMED$6"
+			quid       	"4FABE3F80083"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$7"
+				quid       	"4FABE3F80361"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratosPublicos"
+				quidu      	"4FA2932A0169"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$8"
+				quid       	"4FABE3F80363"
+				supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Comercial"
 				quidu      	"4FA293640389")))
 		    (object Class_Category "Casos de Uso del Negocio"
 			quid       	"4FA29259028F"
@@ -144,18 +157,29 @@
 				stereotype 	"Business Use Case")
 			    (object UseCase "CUN002 GestionarContratosPrivados"
 				quid       	"4FA94D6B029A"
-				stereotype 	"Business Use Case"))
+				stereotype 	"Business Use Case")
+			    (object UseCase "CUN003 Gestionar Adendas"
+				quid       	"4FABE354013F"
+				stereotype 	"Business Use Case"
+				visible_modules 	(list dependency_list
+				    (object Dependency_Relationship
+					quid       	"4FABE4090208"
+					stereotype 	"extend"
+					supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratosPublicos"
+					quidu      	"4FA2932A0169")
+				    (object Dependency_Relationship
+					quid       	"4FABE40C0072"
+					stereotype 	"extend"
+					supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN002 GestionarContratosPrivados"
+					quidu      	"4FA94D6B029A"))))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Actores del Negocio"
 			quid       	"4FA2926502BD"
 			stereotype 	"Business Use Case Model"
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object Class "AN001 Cliente"
+			    (object Class "AN001 Comercial"
 				quid       	"4FA293640389"
-				stereotype 	"Business Actor")
-			    (object Class "AN002 GerenteGeneral"
-				quid       	"4FA2BFB60399"
 				stereotype 	"Business Actor"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Reglas del Negocio"
@@ -166,10 +190,6 @@
 			    (object Class "RN002 Lineas de Servicio"
 				quid       	"4FA294B20134"
 				documentation 	"Existen 3 tipos de prioridades definidas: Alta, Media y Baja"
-				stereotype 	"Business Goal")
-			    (object Class "RN001Tipos de Cliente"
-				quid       	"4FA294FA0304"
-				documentation 	"Existen diferentes tipos de clientes de acuerdo al giro de su negocio"
 				stereotype 	"Business Goal")
 			    (object Class "RN003 Categorias de Tipos de Cliente"
 				quid       	"4FA6CF8D0208"
@@ -212,6 +232,9 @@
 				stereotype 	"Business Goal")
 			    (object Class "RN016 Tipos de Penalidad"
 				quid       	"4FA6D27D0223"
+				stereotype 	"Business Goal")
+			    (object Class "RN001 Tipos de Cliente"
+				quid       	"4FABE6760140"
 				stereotype 	"Business Goal"))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "Diagrama de Reglas del Negocio"
@@ -223,38 +246,7 @@
 				origin_x   	0
 				origin_y   	1221
 				items      	(list diagram_item_list
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN001Tipos de Cliente" @1
-					ShowCompartmentStereotypes 	TRUE
-					SuppressAttribute 	TRUE
-					SuppressOperation 	TRUE
-					IncludeAttribute 	TRUE
-					IncludeOperation 	TRUE
-					location   	(1166, 459)
-					font       	(object Font
-					    size       	10
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@1
-					    location   	(1166, 663)
-					    anchor_loc 	1
-					    nlines     	2
-					    max_width  	829
-					    justify    	0
-					    label      	"RN001Tipos de Cliente")
-					icon       	"Business Goal"
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"4FA294FA0304"
-					annotation 	8
-					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN002 Lineas de Servicio" @2
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN002 Lineas de Servicio" @1
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -271,7 +263,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@2
+					    Parent_View 	@1
 					    location   	(1172, 1119)
 					    anchor_loc 	1
 					    nlines     	2
@@ -285,7 +277,7 @@
 					quidu      	"4FA294B20134"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN003 Categorias de Tipos de Cliente" @3
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN003 Categorias de Tipos de Cliente" @2
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -302,7 +294,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@3
+					    Parent_View 	@2
 					    location   	(1147, 1591)
 					    anchor_loc 	1
 					    nlines     	2
@@ -316,7 +308,7 @@
 					quidu      	"4FA6CF8D0208"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN004 Tipos de Servicio" @4
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN004 Tipos de Servicio" @3
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -333,7 +325,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@4
+					    Parent_View 	@3
 					    location   	(1153, 2088)
 					    anchor_loc 	1
 					    nlines     	2
@@ -347,7 +339,7 @@
 					quidu      	"4FA6CFB70165"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN005 Formato de Contrato" @5
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN005 Formato de Contrato" @4
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -364,7 +356,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@5
+					    Parent_View 	@4
 					    location   	(1140, 2570)
 					    anchor_loc 	1
 					    nlines     	2
@@ -378,7 +370,7 @@
 					quidu      	"4FA6CFCB011B"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN006 Formato de Adenda" @6
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN006 Formato de Adenda" @5
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -395,7 +387,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@6
+					    Parent_View 	@5
 					    location   	(1134, 3051)
 					    anchor_loc 	1
 					    nlines     	2
@@ -409,7 +401,7 @@
 					quidu      	"4FA6D01A037F"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN007 Frecuencia de Seguimiento de Clientes" @7
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN007 Frecuencia de Seguimiento de Clientes" @6
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -426,7 +418,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@7
+					    Parent_View 	@6
 					    location   	(1147, 3520)
 					    anchor_loc 	1
 					    nlines     	2
@@ -440,7 +432,7 @@
 					quidu      	"4FA6D0390097"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN008 Generacion de Contrato" @8
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN008 Generacion de Contrato" @7
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -457,7 +449,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@8
+					    Parent_View 	@7
 					    location   	(1153, 3964)
 					    anchor_loc 	1
 					    nlines     	2
@@ -471,7 +463,7 @@
 					quidu      	"4FA6D05D00DD"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN009 Generacion de Adenda" @9
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN009 Generacion de Adenda" @8
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -488,7 +480,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@9
+					    Parent_View 	@8
 					    location   	(2439, 628)
 					    anchor_loc 	1
 					    nlines     	2
@@ -502,7 +494,7 @@
 					quidu      	"4FA6D0730291"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN010 Calculo de monto Contrato" @10
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN010 Calculo de monto Contrato" @9
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -519,7 +511,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@10
+					    Parent_View 	@9
 					    location   	(2431, 1154)
 					    anchor_loc 	1
 					    nlines     	2
@@ -533,7 +525,7 @@
 					quidu      	"4FA6D10003CE"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN011 Prospecto de Cliente" @11
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN011 Prospecto de Cliente" @10
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -550,7 +542,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@11
+					    Parent_View 	@10
 					    location   	(2423, 1615)
 					    anchor_loc 	1
 					    nlines     	2
@@ -564,7 +556,7 @@
 					quidu      	"4FA6D15101C6"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN012 Descuento en precios de Servicio" @12
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN012 Descuento en precios de Servicio" @11
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -581,7 +573,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@12
+					    Parent_View 	@11
 					    location   	(2433, 2115)
 					    anchor_loc 	1
 					    nlines     	2
@@ -595,7 +587,7 @@
 					quidu      	"4FA6D20302AE"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN013 Polemica de Contrato" @13
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN013 Polemica de Contrato" @12
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -612,7 +604,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@13
+					    Parent_View 	@12
 					    location   	(2430, 2594)
 					    anchor_loc 	1
 					    nlines     	2
@@ -626,7 +618,7 @@
 					quidu      	"4FA6D2220268"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN014 Comision Evaluadora" @14
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN014 Comision Evaluadora" @13
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -643,7 +635,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@14
+					    Parent_View 	@13
 					    location   	(2402, 3026)
 					    anchor_loc 	1
 					    nlines     	2
@@ -657,7 +649,7 @@
 					quidu      	"4FA6D24E034D"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN015 Tipos de Contrato" @15
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN015 Tipos de Contrato" @14
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -674,7 +666,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@15
+					    Parent_View 	@14
 					    location   	(2427, 3564)
 					    anchor_loc 	1
 					    nlines     	2
@@ -688,7 +680,7 @@
 					quidu      	"4FA6D2610271"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN016 Tipos de Penalidad" @16
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN016 Tipos de Penalidad" @15
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -705,7 +697,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@16
+					    Parent_View 	@15
 					    location   	(2407, 3995)
 					    anchor_loc 	1
 					    nlines     	2
@@ -719,7 +711,7 @@
 					quidu      	"4FA6D27D0223"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object Label @17
+				    (object Label @16
 					location   	(262, 102)
 					font       	(object Font
 					    size       	10
@@ -732,7 +724,38 @@
 					    default_color 	TRUE)
 					nlines     	2
 					max_width  	1328
-					label      	"Reglas del Negocio - Gestión de Contratos de Cliente SLA"))))))
+					label      	"Reglas del Negocio - Gestión de Contratos de Cliente SLA")
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN001 Tipos de Cliente" @17
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1155, 349)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@17
+					    location   	(1155, 553)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	823
+					    justify    	0
+					    label      	"RN001 Tipos de Cliente")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FABE6760140"
+					annotation 	8
+					autoResize 	TRUE))))))
 		logical_presentations 	(list unit_reference_list
 		    (object UseCaseDiagram "Diagrama de Casos de Uso del Negocio"
 			quid       	"4FA2955A030E"
@@ -743,13 +766,8 @@
 			origin_x   	0
 			origin_y   	669
 			items      	(list diagram_item_list
-			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN002 GerenteGeneral" @18
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1936, 986)
+			    (object Label @18
+				location   	(178, 294)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -759,24 +777,11 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@18
-				    location   	(1935, 1194)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	568
-				    justify    	0
-				    label      	"AN002 GerenteGeneral")
-				icon       	"Business Actor"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FA2BFB60399"
-				width      	202
-				annotation 	8
-				autoResize 	TRUE)
-			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratosPublicos" @19
-				location   	(1089, 1510)
+				nlines     	1
+				max_width  	1425
+				label      	"Diagrama de Casos de uso del Negocio - Contratos de Clientes")
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN003 Gestionar Adendas" @19
+				location   	(2122, 1475)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -788,7 +793,55 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@19
-				    location   	(1088, 1685)
+				    location   	(2121, 1650)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	879
+				    justify    	0
+				    label      	"CUN003 Gestionar Adendas")
+				icon       	"Business Use Case"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABE354013F")
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN002 GestionarContratosPrivados" @20
+				location   	(1149, 1747)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@20
+				    location   	(1148, 1922)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	879
+				    justify    	0
+				    label      	"CUN002 GestionarContratosPrivados")
+				icon       	"Business Use Case"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FA94D6B029A")
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratosPublicos" @21
+				location   	(1129, 1022)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@21
+				    location   	(1128, 1197)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	879
@@ -799,40 +852,7 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"4FA2932A0169")
-			    (object AssociationViewNew "$UNNAMED$0" @20
-				location   	(1536, 1228)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FA5A47E02E2"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$1" @21
-					Parent_View 	@20
-					location   	(-478, -242)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FA5A48000EF"
-					client     	@20
-					supplier   	@19
-					line_style 	0)
-				    (object RoleView "$UNNAMED$2" @22
-					Parent_View 	@20
-					location   	(-478, -242)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FA5A48000F1"
-					client     	@20
-					supplier   	@18
-					line_style 	0)))
-			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Cliente" @23
+			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Comercial" @22
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -849,13 +869,13 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@23
+				    Parent_View 	@22
 				    location   	(244, 1622)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	570
 				    justify    	0
-				    label      	"AN001 Cliente")
+				    label      	"AN001 Comercial")
 				icon       	"Business Actor"
 				icon_style 	"Icon"
 				line_color 	3342489
@@ -864,8 +884,8 @@
 				width      	202
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$3" @24
-				location   	(639, 1455)
+			    (object AssociationViewNew "$UNNAMED$3" @23
+				location   	(669, 1568)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -877,28 +897,28 @@
 				    default_color 	TRUE)
 				stereotype 	TRUE
 				line_color 	3342489
-				quidu      	"4FA5A49A037A"
+				quidu      	"4FABE3F200F1"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$4" @25
-					Parent_View 	@24
-					location   	(394, 41)
+				    (object RoleView "$UNNAMED$4" @24
+					Parent_View 	@23
+					location   	(424, 154)
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"4FA5A49C02CC"
-					client     	@24
-					supplier   	@19
+					quidu      	"4FABE3F203A1"
+					client     	@23
+					supplier   	@20
 					line_style 	0)
-				    (object RoleView "$UNNAMED$5" @26
-					Parent_View 	@24
-					location   	(394, 41)
+				    (object RoleView "$UNNAMED$5" @25
+					Parent_View 	@23
+					location   	(424, 154)
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"4FA5A49C02CF"
-					client     	@24
-					supplier   	@23
+					quidu      	"4FABE3F203A3"
+					client     	@23
+					supplier   	@22
 					line_style 	0)))
-			    (object Label @27
-				location   	(178, 294)
+			    (object AssociationViewNew "$UNNAMED$6" @26
+				location   	(565, 1269)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -908,9 +928,100 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				nlines     	1
-				max_width  	1425
-				label      	"Diagrama de Casos de uso del Negocio - Contratos de Clientes"))))))
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FABE3F80083"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$7" @27
+					Parent_View 	@26
+					location   	(320, -145)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FABE3F80361"
+					client     	@26
+					supplier   	@21
+					line_style 	0)
+				    (object RoleView "$UNNAMED$8" @28
+					Parent_View 	@26
+					location   	(320, -145)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FABE3F80363"
+					client     	@26
+					supplier   	@22
+					line_style 	0)))
+			    (object DependencyView "" @29
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	(object SegLabel @30
+				    Parent_View 	@29
+				    location   	(1669, 1398)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	10
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	"<<extend>>"
+				    pctDist    	0.500000
+				    height     	120
+				    orientation 	0)
+				line_color 	3342489
+				quidu      	"4FABE4090208"
+				client     	@19
+				supplier   	@21
+				line_style 	0)
+			    (object DependencyView "" @31
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	(object SegLabel @32
+				    Parent_View 	@31
+				    location   	(1668, 1723)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	10
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	450
+				    justify    	0
+				    label      	"<<extend>>"
+				    pctDist    	0.500000
+				    height     	120
+				    orientation 	0)
+				line_color 	3342489
+				quidu      	"4FABE40C0072"
+				client     	@19
+				supplier   	@20
+				line_style 	0))))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Modelo de Casos de uso del Negocio"
 		quid       	"4FA291F30005"
@@ -921,7 +1032,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio" @28
+		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio" @33
 			location   	(828, 422)
 			font       	(object Font
 			    size       	10
@@ -933,7 +1044,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@28
+			    Parent_View 	@33
 			    location   	(827, 641)
 			    anchor_loc 	1
 			    nlines     	2
@@ -947,7 +1058,7 @@
 			quidu      	"4FA2926502BD"
 			width      	388
 			height     	288)
-		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio" @29
+		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio" @34
 			location   	(809, 1102)
 			font       	(object Font
 			    size       	10
@@ -959,7 +1070,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@29
+			    Parent_View 	@34
 			    location   	(808, 1321)
 			    anchor_loc 	1
 			    nlines     	2
@@ -973,7 +1084,7 @@
 			quidu      	"4FA29259028F"
 			width      	388
 			height     	288)
-		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio" @30
+		    (object CategoryView "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio" @35
 			location   	(869, 1859)
 			font       	(object Font
 			    size       	10
@@ -985,7 +1096,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@30
+			    Parent_View 	@35
 			    location   	(868, 2078)
 			    anchor_loc 	1
 			    nlines     	2
@@ -999,7 +1110,7 @@
 			quidu      	"4FA29270004B"
 			width      	388
 			height     	288)
-		    (object Label @31
+		    (object Label @36
 			location   	(113, 75)
 			font       	(object Font
 			    size       	10
@@ -1019,7 +1130,70 @@
 	global     	TRUE
 	subsystem  	"Component View"
 	quidu      	"4FA291F20278"
-	logical_models 	(list unit_reference_list)
+	logical_models 	(list unit_reference_list
+	    (object Class_Category "Modelo de Analisis del Negocio"
+		quid       	"4FABEF120025"
+		stereotype 	"Business Analysis Model"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "Trabajadores del Negocio"
+			quid       	"4FABEF3A0248"
+			stereotype 	"Business Analysis Model"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "AN001 Jefe Comercial"
+				quid       	"4FABFED603D6"
+				stereotype 	"Business Worker")
+			    (object Class "AN002 OSCE"
+				quid       	"4FABFFD80160"
+				stereotype 	"Business Worker")
+			    (object Class "AN003 SEACE"
+				quid       	"4FABFFE3020B"
+				stereotype 	"Business Worker")
+			    (object Class "Jefe OCI"
+				quid       	"4FAC16B60092"
+				stereotype 	"Business Worker"))
+			logical_presentations 	(list unit_reference_list))
+		    (object Class_Category "Entidades del Negocio"
+			quid       	"4FABEF4402F8"
+			stereotype 	"Business Analysis Model"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "EN001 Contrato"
+				quid       	"4FABFD8503E3"
+				stereotype 	"Business Entity")
+			    (object Class "EN002  Adenda"
+				quid       	"4FABFD9303A3"
+				stereotype 	"Business Entity")
+			    (object Class "EN003 Cliente"
+				quid       	"4FABFD9E01BE"
+				stereotype 	"Business Entity")
+			    (object Class "EN004 Servicio"
+				quid       	"4FABFDAF019D"
+				stereotype 	"Business Entity")
+			    (object Class "EN005 TipoCliente"
+				quid       	"4FABFDB90313"
+				stereotype 	"Business Entity")
+			    (object Class "EN006 LineaServicio"
+				quid       	"4FABFDC40370"
+				stereotype 	"Business Entity")
+			    (object Class "EN007 CartaFianza"
+				quid       	"4FABFE04008D"
+				stereotype 	"Business Entity")
+			    (object Class "EN008 Presupuesto"
+				quid       	"4FABFE57024B"
+				stereotype 	"Business Entity")
+			    (object Class "EN009 Programacion"
+				quid       	"4FAC00AE018C"
+				stereotype 	"Business Entity"))
+			logical_presentations 	(list unit_reference_list))
+		    (object Class_Category "Realizacion de Casos de Uso del Negocio"
+			quid       	"4FABEF4F034A"
+			stereotype 	"Business Analysis Model"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list)
+			logical_presentations 	(list unit_reference_list)))
+		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"4FA291F30006"
@@ -1030,13 +1204,13 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Cliente" @32
+		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 Comercial" @37
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(400, 822)
+			location   	(450, 778)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1047,13 +1221,13 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@32
-			    location   	(399, 1030)
+			    Parent_View 	@37
+			    location   	(449, 986)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	568
 			    justify    	0
-			    label      	"AN001 Cliente")
+			    label      	"AN001 Comercial")
 			icon       	"Business Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
