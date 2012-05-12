@@ -739,7 +739,31 @@
 				nlines     	1
 				max_width  	1425
 				label      	"Diagrama de Casos de uso del Negocio - Contratos de Clientes")
-			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @19
+			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @19
+				location   	(1270, 1353)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@19
+				    location   	(1269, 1528)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	879
+				    justify    	0
+				    label      	"CUN001 GestionarContratos")
+				icon       	"Business Use Case"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FA2932A0169")
+			    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @20
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -756,7 +780,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@19
+				    Parent_View 	@20
 				    location   	(322, 1541)
 				    anchor_loc 	1
 				    nlines     	2
@@ -771,30 +795,6 @@
 				width      	202
 				annotation 	8
 				autoResize 	TRUE)
-			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @20
-				location   	(1270, 1353)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@20
-				    location   	(1269, 1528)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	879
-				    justify    	0
-				    label      	"CUN001 GestionarContratos")
-				icon       	"Business Use Case"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FA2932A0169")
 			    (object AssociationViewNew "$UNNAMED$0" @21
 				location   	(769, 1340)
 				font       	(object Font
@@ -817,7 +817,7 @@
 					line_color 	3342489
 					quidu      	"4FAC9D8C03BD"
 					client     	@21
-					supplier   	@20
+					supplier   	@19
 					line_style 	0)
 				    (object RoleView "$UNNAMED$2" @23
 					Parent_View 	@21
@@ -826,7 +826,7 @@
 					line_color 	3342489
 					quidu      	"4FAC9D8C03C0"
 					client     	@21
-					supplier   	@19
+					supplier   	@20
 					line_style 	0))))))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Modelo de Casos de uso del Negocio"
@@ -854,7 +854,7 @@
 			    location   	(827, 641)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1170
+			    max_width  	1172
 			    justify    	0
 			    label      	"Actores del Negocio")
 			icon       	"Business Use Case Model"
@@ -880,7 +880,7 @@
 			    location   	(808, 1321)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1164
+			    max_width  	1166
 			    justify    	0
 			    label      	"Casos de Uso del Negocio")
 			icon       	"Business Use Case Model"
@@ -906,7 +906,7 @@
 			    location   	(868, 2078)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1174
+			    max_width  	1176
 			    justify    	0
 			    label      	"Reglas del Negocio")
 			icon       	"Business Use Case Model"
@@ -929,7 +929,7 @@
 			    default_color 	TRUE)
 			nlines     	1
 			max_width  	1875
-			label      	"Modelo de Casos de uso del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-01")))))
+			label      	"Modelo de Casos de uso del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-02")))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"4FA291F20276"
 	exportControl 	"Public"
@@ -945,6 +945,9 @@
 		    (object Class_Category "Trabajadores del Negocio"
 			quid       	"4FABEF3A0248"
 			stereotype 	"Business Analysis Model"
+			external_docs 	(list external_doc_list
+			    (object external_doc
+				external_doc_path 	"D:\\UPC\\2012-01\\TP1\\Trabajo\\3._Trabajadores_del_Negocio_v_1.0_-_Contratos_de_Clientes[1].doc"))
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
 			    (object Class "TN002 OSCE"
@@ -973,6 +976,12 @@
 				stereotype 	"Business Worker")
 			    (object Class "TN001 JefeComercial"
 				quid       	"4FABFED603D6"
+				stereotype 	"Business Worker")
+			    (object Class "TN010 GerenteTI"
+				quid       	"4FAED8B102EE"
+				stereotype 	"Business Worker")
+			    (object Class "TN011 JefeLegal"
+				quid       	"4FAED91F0362"
 				stereotype 	"Business Worker"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Entidades del Negocio"
@@ -1038,7 +1047,244 @@
 				    (object Dependency_Relationship
 					quid       	"4FACA44003DB"
 					supplier   	"Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos"
-					quidu      	"4FA2932A0169"))))
+					quidu      	"4FA2932A0169"))
+				statemachine 	(object State_Machine "Gestionar Contratol"
+				    quid       	"4FAEBD45010D"
+				    states     	(list States
+					(object State "$UNNAMED$3"
+					    quid       	"4FAECFB30306"
+					    transitions 	(list transition_list
+						(object State_Transition
+						    quid       	"4FAECFE403D2"
+						    supplier   	"Recepcionar Orden Evaluacion"
+						    quidu      	"4FAECFCA019D"
+						    sendEvent  	(object sendEvent
+							quid       	"4FAECFE403D5")))
+					    type       	"StartState")
+					(object ActivityState "Recepcionar Orden Evaluacion"
+					    quid       	"4FAECFCA019D"
+					    transitions 	(list transition_list
+						(object State_Transition
+						    quid       	"4FAED0600037"
+						    supplier   	"Clasificar tipo de Cliente"
+						    quidu      	"4FAECFEE028E"
+						    sendEvent  	(object sendEvent
+							quid       	"4FAED060003A"))))
+					(object ActivityState "Clasificar tipo de Cliente"
+					    quid       	"4FAECFEE028E"
+					    transitions 	(list transition_list
+						(object State_Transition
+						    quid       	"4FAED06401A6"
+						    supplier   	"Tipo"
+						    quidu      	"4FAED00C00F1"
+						    sendEvent  	(object sendEvent
+							quid       	"4FAED06401A9"))))
+					(object Decision "Tipo"
+					    quid       	"4FAED00C00F1")
+					(object ActivityState "NewActivity"
+					    quid       	"4FAED041025A")
+					(object ActivityState "NewActivity2"
+					    quid       	"4FAED05801F4"))
+				    partitions 	(list Partitions)
+				    objects    	(list Objects)
+				    statediagrams 	(list StateDiagrams
+					(object ActivityDiagram "Diagrama Gestionar Contrato"
+					    quid       	"4FAEBD450115"
+					    title      	"Diagrama Gestionar Contrato"
+					    zoom       	100
+					    max_height 	28350
+					    max_width  	21600
+					    origin_x   	0
+					    origin_y   	0
+					    items      	(list diagram_item_list
+						(object Swimlane "" @28
+						    line_color 	3342489
+						    width      	450)
+						(object StateView "StartState" "$UNNAMED$3" @29
+						    Parent_View 	@28
+						    location   	(556, 73)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@29
+							location   	(598, 43)
+							nlines     	2
+							max_width  	600
+							label      	"")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    quidu      	"4FAECFB30306"
+						    autoResize 	TRUE)
+						(object ActivityStateView "Recepcionar Orden Evaluacion" @30
+						    Parent_View 	@28
+						    location   	(998, 86)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@30
+							location   	(998, 71)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	398
+							justify    	0
+							label      	"Recepcionar Orden Evaluacion")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FAECFCA019D"
+						    width      	528
+						    height     	142
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @31
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FAECFE403D2"
+						    client     	@29
+						    supplier   	@30
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ActivityStateView "Clasificar tipo de Cliente" @32
+						    Parent_View 	@28
+						    location   	(991, 276)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@32
+							location   	(991, 270)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	293
+							justify    	0
+							label      	"Clasificar tipo de Cliente")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FAECFEE028E"
+						    width      	411
+						    height     	124
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object DecisionView "Tipo" @33
+						    Parent_View 	@28
+						    location   	(988, 462)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@33
+							location   	(1044, 413)
+							nlines     	2
+							max_width  	300
+							label      	"Tipo")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FAED00C00F1"
+						    autoResize 	TRUE)
+						(object ActivityStateView "NewActivity" @34
+						    Parent_View 	@28
+						    location   	(1494, 439)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@34
+							location   	(1494, 433)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	293
+							justify    	0
+							label      	"NewActivity")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FAED041025A"
+						    width      	411
+						    height     	124
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object ActivityStateView "NewActivity2" @35
+						    Parent_View 	@28
+						    location   	(347, 460)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@35
+							location   	(347, 454)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	293
+							justify    	0
+							label      	"NewActivity2")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FAED05801F4"
+						    width      	411
+						    height     	124
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @36
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FAED0600037"
+						    client     	@30
+						    supplier   	@32
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @37
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FAED06401A6"
+						    client     	@32
+						    supplier   	@33
+						    line_style 	0
+						    x_offset   	FALSE)))))))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "Diagrama de Realizacion de Casos de uso del Negocio"
 				quid       	"4FAC24760096"
@@ -1049,7 +1295,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @28
+				    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @38
 					location   	(1644, 731)
 					font       	(object Font
 					    size       	10
@@ -1061,7 +1307,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@28
+					    Parent_View 	@38
 					    location   	(1643, 906)
 					    anchor_loc 	1
 					    nlines     	2
@@ -1073,7 +1319,7 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"4FA2932A0169")
-				    (object UseCaseView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos" @29
+				    (object UseCaseView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos" @39
 					location   	(444, 741)
 					font       	(object Font
 					    size       	10
@@ -1085,7 +1331,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@29
+					    Parent_View 	@39
 					    location   	(443, 917)
 					    anchor_loc 	1
 					    nlines     	2
@@ -1099,14 +1345,396 @@
 					quidu      	"4FACA40600FC"
 					width      	306
 					height     	194)
-				    (object DependencyView "" @30
+				    (object DependencyView "" @40
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FACA44003DB"
-					client     	@29
-					supplier   	@28
+					client     	@39
+					supplier   	@38
 					line_style 	0))))))
-		logical_presentations 	(list unit_reference_list)))
+		logical_presentations 	(list unit_reference_list
+		    (object UseCaseDiagram "Diagrama Clases de Negocio"
+			quid       	"4FAED1DC002C"
+			title      	"Diagrama Clases de Negocio"
+			zoom       	70
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	404
+			items      	(list diagram_item_list
+			    (object Label @41
+				location   	(343, 12)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				nlines     	1
+				max_width  	1062
+				label      	"Diagrama de Análisis del Negocio - Contratos de Clientes")
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial" @42
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(241, 269)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@42
+				    location   	(240, 493)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	838
+				    justify    	0
+				    label      	"TN001 JefeComercial")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFED603D6"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN002 OSCE" @43
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(269, 769)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@43
+				    location   	(268, 993)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	841
+				    justify    	0
+				    label      	"TN002 OSCE")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFFD80160"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 GerenteLegal" @44
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(259, 1272)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@44
+				    location   	(258, 1496)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	845
+				    justify    	0
+				    label      	"TN003 GerenteLegal")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFFE3020B"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 JefeOCI" @45
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(259, 1747)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@45
+				    location   	(258, 1971)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	849
+				    justify    	0
+				    label      	"TN004 JefeOCI")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC16B60092"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @46
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1404, 281)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@46
+				    location   	(1403, 505)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	852
+				    justify    	0
+				    label      	"TN005 Cliente")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC234B01D7"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN006 RepresentanteLegal" @47
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1378, 809)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@47
+				    location   	(1377, 1033)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	855
+				    justify    	0
+				    label      	"TN006 RepresentanteLegal")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC235E004F"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN007 GerenteProyecto" @48
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1396, 1281)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@48
+				    location   	(1395, 1505)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	859
+				    justify    	0
+				    label      	"TN007 GerenteProyecto")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC239E0098"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN008 JefeProyecto" @49
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1331, 1741)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@49
+				    location   	(1330, 1965)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	863
+				    justify    	0
+				    label      	"TN008 JefeProyecto")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC23A9024D"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN009 RepresentanteComercial" @50
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(849, 1932)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@50
+				    location   	(848, 2156)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	867
+				    justify    	0
+				    label      	"TN009 RepresentanteComercial")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FACA0DD00A2"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @51
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(785, 250)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@51
+				    location   	(785, 424)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	751
+				    justify    	0
+				    label      	"EN001 Contrato")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFD8503E3"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @52
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(771, 746)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@52
+				    location   	(771, 920)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	754
+				    justify    	0
+				    label      	"EN002  Adenda")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFD9303A3"
+				annotation 	8
+				autoResize 	TRUE))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"4FA291F30006"
@@ -1117,7 +1745,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @31
+		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @53
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
@@ -1134,7 +1762,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@31
+			    Parent_View 	@53
 			    location   	(449, 986)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1148,7 +1776,108 @@
 			quidu      	"4FA293640389"
 			width      	202
 			annotation 	8
-			autoResize 	TRUE)))))
+			autoResize 	TRUE)))
+	    (object UseCaseDiagram "Modelo de Analisis del Negocio"
+		quid       	"4FAECBB1002A"
+		title      	"Modelo de Analisis del Negocio"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object Label @54
+			location   	(191, 84)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			nlines     	1
+			max_width  	1875
+			label      	"Modelo de Analisis del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-02")
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @55
+			location   	(1028, 278)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@55
+			    location   	(1028, 510)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	945
+			    justify    	0
+			    label      	"Entidades del Negocio")
+			icon       	"Business Analysis Model"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4FABEF4402F8"
+			width      	324
+			height     	314)
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @56
+			location   	(1044, 863)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@56
+			    location   	(1044, 1095)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	951
+			    justify    	0
+			    label      	"Realizacion de Casos de Uso del Negocio")
+			icon       	"Business Analysis Model"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4FABEF4F034A"
+			width      	324
+			height     	314)
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @57
+			location   	(1013, 1513)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@57
+			    location   	(1013, 1745)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	970
+			    justify    	0
+			    label      	"Trabajadores del Negocio")
+			icon       	"Business Analysis Model"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4FABEF3A0248"
+			width      	324
+			height     	314)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"4FA291F20278"
 	physical_models 	(list unit_reference_list)
@@ -2747,9 +3476,9 @@
 		    (object Attribute
 			tool       	"Ada95"
 			name       	"TypeEqualityName"
-			value      	
+			value      	(value Text 
 |"="
-			)
+			))
 		    (object Attribute
 			tool       	"Ada95"
 			name       	"InlineEquality"
