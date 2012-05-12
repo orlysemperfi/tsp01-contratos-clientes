@@ -953,35 +953,17 @@
 			    (object Class "TN002 OSCE"
 				quid       	"4FABFFD80160"
 				stereotype 	"Business Worker")
-			    (object Class "TN003 GerenteLegal"
+			    (object Class "TN003 JefeLegal"
 				quid       	"4FABFFE3020B"
-				stereotype 	"Business Worker")
-			    (object Class "TN004 JefeOCI"
-				quid       	"4FAC16B60092"
 				stereotype 	"Business Worker")
 			    (object Class "TN005 Cliente"
 				quid       	"4FAC234B01D7"
 				stereotype 	"Business Worker")
-			    (object Class "TN006 RepresentanteLegal"
-				quid       	"4FAC235E004F"
-				stereotype 	"Business Worker")
-			    (object Class "TN007 GerenteProyecto"
-				quid       	"4FAC239E0098"
-				stereotype 	"Business Worker")
-			    (object Class "TN008 JefeProyecto"
-				quid       	"4FAC23A9024D"
-				stereotype 	"Business Worker")
-			    (object Class "TN009 RepresentanteComercial"
-				quid       	"4FACA0DD00A2"
-				stereotype 	"Business Worker")
 			    (object Class "TN001 JefeComercial"
 				quid       	"4FABFED603D6"
 				stereotype 	"Business Worker")
-			    (object Class "TN010 GerenteTI"
+			    (object Class "TN004 GerenteTI"
 				quid       	"4FAED8B102EE"
-				stereotype 	"Business Worker")
-			    (object Class "TN011 JefeLegal"
-				quid       	"4FAED91F0362"
 				stereotype 	"Business Worker"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Entidades del Negocio"
@@ -1442,7 +1424,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 GerenteLegal" @44
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal" @44
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1465,7 +1447,7 @@
 				    nlines     	2
 				    max_width  	845
 				    justify    	0
-				    label      	"TN003 GerenteLegal")
+				    label      	"TN003 JefeLegal")
 				icon       	"Business Worker"
 				icon_style 	"Icon"
 				line_color 	3342489
@@ -1475,40 +1457,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 JefeOCI" @45
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(259, 1747)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@45
-				    location   	(258, 1971)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	849
-				    justify    	0
-				    label      	"TN004 JefeOCI")
-				icon       	"Business Worker"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FAC16B60092"
-				width      	292
-				height     	290
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @46
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @45
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1525,7 +1474,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@46
+				    Parent_View 	@45
 				    location   	(1403, 505)
 				    anchor_loc 	1
 				    nlines     	2
@@ -1541,139 +1490,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN006 RepresentanteLegal" @47
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1378, 809)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@47
-				    location   	(1377, 1033)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	855
-				    justify    	0
-				    label      	"TN006 RepresentanteLegal")
-				icon       	"Business Worker"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FAC235E004F"
-				width      	292
-				height     	290
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN007 GerenteProyecto" @48
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1396, 1281)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@48
-				    location   	(1395, 1505)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	859
-				    justify    	0
-				    label      	"TN007 GerenteProyecto")
-				icon       	"Business Worker"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FAC239E0098"
-				width      	292
-				height     	290
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN008 JefeProyecto" @49
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1331, 1741)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@49
-				    location   	(1330, 1965)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	863
-				    justify    	0
-				    label      	"TN008 JefeProyecto")
-				icon       	"Business Worker"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FAC23A9024D"
-				width      	292
-				height     	290
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN009 RepresentanteComercial" @50
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(849, 1932)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@50
-				    location   	(848, 2156)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	867
-				    justify    	0
-				    label      	"TN009 RepresentanteComercial")
-				icon       	"Business Worker"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FACA0DD00A2"
-				width      	292
-				height     	290
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @51
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @46
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1690,7 +1507,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@51
+				    Parent_View 	@46
 				    location   	(785, 424)
 				    anchor_loc 	1
 				    nlines     	2
@@ -1704,7 +1521,7 @@
 				quidu      	"4FABFD8503E3"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @52
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @47
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1721,7 +1538,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@52
+				    Parent_View 	@47
 				    location   	(771, 920)
 				    anchor_loc 	1
 				    nlines     	2
@@ -1745,7 +1562,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @53
+		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @48
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
@@ -1762,7 +1579,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@53
+			    Parent_View 	@48
 			    location   	(449, 986)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1786,7 +1603,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object Label @54
+		    (object Label @49
 			location   	(191, 84)
 			font       	(object Font
 			    size       	10
@@ -1800,7 +1617,7 @@
 			nlines     	1
 			max_width  	1875
 			label      	"Modelo de Analisis del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-02")
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @55
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @50
 			location   	(1028, 278)
 			font       	(object Font
 			    size       	10
@@ -1812,7 +1629,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@55
+			    Parent_View 	@50
 			    location   	(1028, 510)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1826,7 +1643,7 @@
 			quidu      	"4FABEF4402F8"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @56
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @51
 			location   	(1044, 863)
 			font       	(object Font
 			    size       	10
@@ -1838,7 +1655,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@56
+			    Parent_View 	@51
 			    location   	(1044, 1095)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1852,7 +1669,7 @@
 			quidu      	"4FABEF4F034A"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @57
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @52
 			location   	(1013, 1513)
 			font       	(object Font
 			    size       	10
@@ -1864,7 +1681,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@57
+			    Parent_View 	@52
 			    location   	(1013, 1745)
 			    anchor_loc 	1
 			    nlines     	2
