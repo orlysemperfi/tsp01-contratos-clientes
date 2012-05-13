@@ -1014,6 +1014,186 @@
 				quid       	"4FAEFB5C0161"
 				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
 				quidu      	"4FABFED603D6")))
+		    (object Association "$UNNAMED$21"
+			quid       	"4FAEFBF60349"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$22"
+				quid       	"4FAEFBF8010A"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN008 Cotizacion"
+				quidu      	"4FABFE57024B"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$23"
+				quid       	"4FAEFBF80113"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI"
+				quidu      	"4FAED8B102EE")))
+		    (object Association "$UNNAMED$24"
+			quid       	"4FAEFC170012"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$25"
+				quid       	"4FAEFC18020C"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN008 Cotizacion"
+				quidu      	"4FABFE57024B"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$26"
+				quid       	"4FAEFC180215"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
+				quidu      	"4FABFED603D6")))
+		    (object Association "$UNNAMED$27"
+			quid       	"4FAEFC3802F9"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$28"
+				quid       	"4FAEFC3B002B"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
+				quidu      	"4FABFED603D6"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$29"
+				quid       	"4FAEFC3B0036"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN009 BasePublicacion"
+				quidu      	"4FAC9F5C0308")))
+		    (object Association "$UNNAMED$30"
+			quid       	"4FAEFC4803D7"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$31"
+				quid       	"4FAEFC4B0092"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN010 InformeProyecto"
+				quidu      	"4FAC230200A5"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$32"
+				quid       	"4FAEFC4B009B"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI"
+				quidu      	"4FAED8B102EE")))
+		    (object Association "$UNNAMED$33"
+			quid       	"4FAEFC9E00B7"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$34"
+				quid       	"4FAEFC9F0393"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN011 ActaConformidad"
+				quidu      	"4FAC23100373"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$35"
+				quid       	"4FAEFC9F039C"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente"
+				quidu      	"4FAC234B01D7")))
+		    (object Association "$UNNAMED$36"
+			quid       	"4FAEFCA50046"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$37"
+				quid       	"4FAEFCA60316"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN011 ActaConformidad"
+				quidu      	"4FAC23100373"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$38"
+				quid       	"4FAEFCA60320"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI"
+				quidu      	"4FAED8B102EE")))
+		    (object Association "$UNNAMED$39"
+			quid       	"4FAEFD2801A0"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$40"
+				quid       	"4FAEFD2A011B"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN007 CartaFianza"
+				quidu      	"4FABFE04008D"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$41"
+				quid       	"4FAEFD2A0124"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
+				quidu      	"4FABFED603D6")))
+		    (object Association "$UNNAMED$42"
+			quid       	"4FAEFD5A01BD"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$43"
+				quid       	"4FAEFD5C0115"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato"
+				quidu      	"4FABFD8503E3"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$44"
+				quid       	"4FAEFD5C0121"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN006 LineaServicio"
+				quidu      	"4FABFDC40370")))
+		    (object Association "$UNNAMED$45"
+			quid       	"4FAEFD620247"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$46"
+				quid       	"4FAEFD6400EF"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda"
+				quidu      	"4FABFD9303A3"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$47"
+				quid       	"4FAEFD6400FA"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato"
+				quidu      	"4FABFD8503E3")))
+		    (object Association "$UNNAMED$48"
+			quid       	"4FAEFDB5020C"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$49"
+				quid       	"4FAEFDB603C6"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN009 BasePublicacion"
+				quidu      	"4FAC9F5C0308"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$50"
+				quid       	"4FAEFDB603D1"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN002 OSCE"
+				quidu      	"4FABFFD80160")))
+		    (object Association "$UNNAMED$51"
+			quid       	"4FAEFE0A025B"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$52"
+				quid       	"4FAEFE0B03AB"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN012 PropuestaTecnica"
+				quidu      	"4FAC9F030223"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$53"
+				quid       	"4FAEFE0B03B5"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI"
+				quidu      	"4FAED8B102EE")))
+		    (object Association "$UNNAMED$54"
+			quid       	"4FAEFE4A02F3"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$55"
+				quid       	"4FAEFE4B03AD"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN013 PropuestaEconomica"
+				quidu      	"4FAC9F6F0084"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$56"
+				quid       	"4FAEFE4B03B7"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
+				quidu      	"4FABFED603D6")))
+		    (object Association "$UNNAMED$57"
+			quid       	"4FAEFE6E000C"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$58"
+				quid       	"4FAEFE6F01F8"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato"
+				quidu      	"4FABFD8503E3"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$59"
+				quid       	"4FAEFE6F0206"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN013 PropuestaEconomica"
+				quidu      	"4FAC9F6F0084")))
+		    (object Association "$UNNAMED$60"
+			quid       	"4FAEFE89037C"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$61"
+				quid       	"4FAEFE8B025A"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato"
+				quidu      	"4FABFD8503E3"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$62"
+				quid       	"4FAEFE8B026B"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN012 PropuestaTecnica"
+				quidu      	"4FAC9F030223")))
+		    (object Association "$UNNAMED$63"
+			quid       	"4FAEFEC4001E"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$64"
+				quid       	"4FAEFEC501D9"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato"
+				quidu      	"4FABFD8503E3"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$65"
+				quid       	"4FAEFEC501EA"
+				supplier   	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN008 Cotizacion"
+				quidu      	"4FABFE57024B")))
 		    (object Class_Category "Trabajadores del Negocio"
 			quid       	"4FABEF3A0248"
 			stereotype 	"Business Analysis Model"
@@ -1104,7 +1284,7 @@
 				statemachine 	(object State_Machine "Gestionar Contratol"
 				    quid       	"4FAEBD45010D"
 				    states     	(list States
-					(object State "$UNNAMED$21"
+					(object State "$UNNAMED$66"
 					    quid       	"4FAECFB30306"
 					    transitions 	(list transition_list
 						(object State_Transition
@@ -1153,7 +1333,7 @@
 						(object Swimlane "" @28
 						    line_color 	3342489
 						    width      	450)
-						(object StateView "StartState" "$UNNAMED$21" @29
+						(object StateView "StartState" "$UNNAMED$66" @29
 						    Parent_View 	@28
 						    location   	(556, 73)
 						    font       	(object Font
@@ -1429,13 +1609,13 @@
 				nlines     	1
 				max_width  	1062
 				label      	"Diagrama de Análisis del Negocio - Contratos de Clientes")
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN002 OSCE" @42
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal" @42
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(200, 274)
+				location   	(283, 746)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1447,40 +1627,7 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@42
-				    location   	(199, 498)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	841
-				    justify    	0
-				    label      	"TN002 OSCE")
-				icon       	"Business Worker"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FABFFD80160"
-				width      	292
-				height     	290
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal" @43
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(190, 777)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@43
-				    location   	(189, 1001)
+				    location   	(282, 970)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	845
@@ -1495,13 +1642,13 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @44
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN003 Cliente" @43
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(1280, 929)
+				location   	(2384, 1961)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1512,110 +1659,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@44
-				    location   	(1280, 1103)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	751
-				    justify    	0
-				    label      	"EN001 Contrato")
-				icon       	"Business Entity"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FABFD8503E3"
-				annotation 	8
-				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$6" @45
-				location   	(740, 851)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FAEFA9B03A8"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$7" @46
-					Parent_View 	@45
-					location   	(481, -421)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAEFA9D0347"
-					client     	@45
-					supplier   	@44
-					line_style 	0)
-				    (object RoleView "$UNNAMED$8" @47
-					Parent_View 	@45
-					location   	(481, -421)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAEFA9D034F"
-					client     	@45
-					supplier   	@43
-					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @48
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(2040, 928)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@48
-				    location   	(2040, 1102)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	754
-				    justify    	0
-				    label      	"EN002  Adenda")
-				icon       	"Business Entity"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FABFD9303A3"
-				annotation 	8
-				autoResize 	TRUE)
-			    (object UsesView "" @49
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FAEFABB0222"
-				client     	@44
-				supplier   	@48
-				line_style 	0)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN003 Cliente" @50
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1206, 2385)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@50
-				    location   	(1206, 2559)
+				    Parent_View 	@43
+				    location   	(2384, 2135)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	757
@@ -1628,13 +1673,13 @@
 				quidu      	"4FABFD9E01BE"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @51
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN005 HojaRequerimiento" @44
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(192, 1295)
+				location   	(1453, 2040)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1645,8 +1690,70 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@51
-				    location   	(191, 1519)
+				    Parent_View 	@44
+				    location   	(1453, 2214)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	760
+				    justify    	0
+				    label      	"EN005 HojaRequerimiento")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFDB90313"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN010 InformeProyecto" @45
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(384, 2354)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@45
+				    location   	(384, 2528)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	776
+				    justify    	0
+				    label      	"EN010 InformeProyecto")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC230200A5"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @46
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(295, 1257)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@46
+				    location   	(294, 1481)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	852
@@ -1661,8 +1768,8 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$3" @52
-				location   	(741, 1105)
+			    (object AssociationViewNew "$UNNAMED$12" @47
+				location   	(880, 1651)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1674,33 +1781,128 @@
 				    default_color 	TRUE)
 				stereotype 	TRUE
 				line_color 	3342489
-				quidu      	"4FAEFA9500A8"
+				quidu      	"4FAEFB1201C6"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$4" @53
-					Parent_View 	@52
-					location   	(480, -685)
+				    (object RoleView "$UNNAMED$13" @48
+					Parent_View 	@47
+					location   	(619, -139)
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"4FAEFA97004A"
-					client     	@52
+					quidu      	"4FAEFB140182"
+					client     	@47
 					supplier   	@44
 					line_style 	0)
-				    (object RoleView "$UNNAMED$5" @54
-					Parent_View 	@52
-					location   	(480, -685)
+				    (object RoleView "$UNNAMED$14" @49
+					Parent_View 	@47
+					location   	(619, -139)
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"4FAEFA970051"
-					client     	@52
-					supplier   	@51
+					quidu      	"4FAEFB14018A"
+					client     	@47
+					supplier   	@46
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI" @55
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN011 ActaConformidad" @50
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(226, 1835)
+				location   	(951, 2281)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@50
+				    location   	(951, 2455)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	779
+				    justify    	0
+				    label      	"EN011 ActaConformidad")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC23100373"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$33" @51
+				location   	(658, 1826)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFC9E00B7"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$34" @52
+					Parent_View 	@51
+					location   	(466, 531)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC9F0393"
+					client     	@51
+					supplier   	@50
+					line_style 	0)
+				    (object RoleView "$UNNAMED$35" @53
+					Parent_View 	@51
+					location   	(466, 531)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC9F039C"
+					client     	@51
+					supplier   	@46
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN007 CartaFianza" @54
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2831, 1452)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@54
+				    location   	(2831, 1626)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	767
+				    justify    	0
+				    label      	"EN007 CartaFianza")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFE04008D"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN006 LineaServicio" @55
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(815, 437)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1712,7 +1914,166 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@55
-				    location   	(225, 2059)
+				    location   	(815, 611)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	763
+				    justify    	0
+				    label      	"EN006 LineaServicio")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFDC40370"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @56
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1603, 803)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@56
+				    location   	(1603, 977)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	754
+				    justify    	0
+				    label      	"EN002  Adenda")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFD9303A3"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN002 OSCE" @57
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(283, 252)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@57
+				    location   	(282, 476)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	841
+				    justify    	0
+				    label      	"TN002 OSCE")
+				icon       	"Business Worker"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFFD80160"
+				width      	292
+				height     	290
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN009 BasePublicacion" @58
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2355, 183)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@58
+				    location   	(2355, 357)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	773
+				    justify    	0
+				    label      	"EN009 BasePublicacion")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC9F5C0308"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$48" @59
+				location   	(1324, 215)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFDB5020C"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$49" @60
+					Parent_View 	@59
+					location   	(1124, -59)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFDB603C6"
+					client     	@59
+					supplier   	@58
+					line_style 	0)
+				    (object RoleView "$UNNAMED$50" @61
+					Parent_View 	@59
+					location   	(1124, -59)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFDB603D1"
+					client     	@59
+					supplier   	@57
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI" @62
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(292, 1809)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@62
+				    location   	(291, 2033)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	849
@@ -1727,13 +2088,112 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial" @56
+			    (object AssociationViewNew "$UNNAMED$15" @63
+				location   	(878, 1923)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFB180119"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$16" @64
+					Parent_View 	@63
+					location   	(583, -407)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFB19032A"
+					client     	@63
+					supplier   	@44
+					line_style 	0)
+				    (object RoleView "$UNNAMED$17" @65
+					Parent_View 	@63
+					location   	(583, -407)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFB190333"
+					client     	@63
+					supplier   	@62
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$30" @66
+				location   	(352, 2183)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFC4803D7"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$31" @67
+					Parent_View 	@66
+					location   	(126, 348)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC4B0092"
+					client     	@66
+					supplier   	@45
+					line_style 	0)
+				    (object RoleView "$UNNAMED$32" @68
+					Parent_View 	@66
+					location   	(126, 348)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC4B009B"
+					client     	@66
+					supplier   	@62
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$36" @69
+				location   	(627, 2048)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFCA50046"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$37" @70
+					Parent_View 	@69
+					location   	(401, 213)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFCA60316"
+					client     	@69
+					supplier   	@50
+					line_style 	0)
+				    (object RoleView "$UNNAMED$38" @71
+					Parent_View 	@69
+					location   	(401, 213)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFCA60320"
+					client     	@69
+					supplier   	@62
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial" @72
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(239, 2336)
+				location   	(2663, 875)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1744,8 +2204,8 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@56
-				    location   	(238, 2560)
+				    Parent_View 	@72
+				    location   	(2662, 1099)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	838
@@ -1760,8 +2220,8 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$9" @57
-				location   	(728, 2358)
+			    (object AssociationViewNew "$UNNAMED$9" @73
+				location   	(2494, 1519)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1775,123 +2235,26 @@
 				line_color 	3342489
 				quidu      	"4FAEFAE001E8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$10" @58
-					Parent_View 	@57
-					location   	(-746, 1974)
+				    (object RoleView "$UNNAMED$10" @74
+					Parent_View 	@73
+					location   	(1020, 1135)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFAE200E4"
-					client     	@57
-					supplier   	@56
+					client     	@73
+					supplier   	@72
 					line_style 	0)
-				    (object RoleView "$UNNAMED$11" @59
-					Parent_View 	@57
-					location   	(-746, 1974)
+				    (object RoleView "$UNNAMED$11" @75
+					Parent_View 	@73
+					location   	(1020, 1135)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFAE200EB"
-					client     	@57
-					supplier   	@50
+					client     	@73
+					supplier   	@43
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN005 HojaRequerimiento" @60
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1271, 1502)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@60
-				    location   	(1271, 1676)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	760
-				    justify    	0
-				    label      	"EN005 HojaRequerimiento")
-				icon       	"Business Entity"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FABFDB90313"
-				annotation 	8
-				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$12" @61
-				location   	(737, 1397)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FAEFB1201C6"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$13" @62
-					Parent_View 	@61
-					location   	(476, -393)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAEFB140182"
-					client     	@61
-					supplier   	@60
-					line_style 	0)
-				    (object RoleView "$UNNAMED$14" @63
-					Parent_View 	@61
-					location   	(476, -393)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAEFB14018A"
-					client     	@61
-					supplier   	@51
-					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$15" @64
-				location   	(755, 1662)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FAEFB180119"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$16" @65
-					Parent_View 	@64
-					location   	(460, -668)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAEFB19032A"
-					client     	@64
-					supplier   	@60
-					line_style 	0)
-				    (object RoleView "$UNNAMED$17" @66
-					Parent_View 	@64
-					location   	(460, -668)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAEFB190333"
-					client     	@64
-					supplier   	@55
-					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$18" @67
-				location   	(702, 1958)
+			    (object AssociationViewNew "$UNNAMED$18" @76
+				location   	(2000, 1510)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1905,31 +2268,97 @@
 				line_color 	3342489
 				quidu      	"4FAEFB5A0212"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$19" @68
-					Parent_View 	@67
-					location   	(463, -378)
+				    (object RoleView "$UNNAMED$19" @77
+					Parent_View 	@76
+					location   	(1761, -826)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB5C0157"
-					client     	@67
-					supplier   	@60
+					client     	@76
+					supplier   	@44
 					line_style 	0)
-				    (object RoleView "$UNNAMED$20" @69
-					Parent_View 	@67
-					location   	(463, -378)
+				    (object RoleView "$UNNAMED$20" @78
+					Parent_View 	@76
+					location   	(1761, -826)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB5C0161"
-					client     	@67
-					supplier   	@56
+					client     	@76
+					supplier   	@72
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN006 LineaServicio" @70
+			    (object AssociationViewNew "$UNNAMED$27" @79
+				location   	(2529, 581)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFC3802F9"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$28" @80
+					Parent_View 	@79
+					location   	(680, -1696)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC3B002B"
+					client     	@79
+					supplier   	@72
+					line_style 	0)
+				    (object RoleView "$UNNAMED$29" @81
+					Parent_View 	@79
+					location   	(680, -1696)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC3B0036"
+					client     	@79
+					supplier   	@58
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$39" @82
+				location   	(2774, 1266)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFD2801A0"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$40" @83
+					Parent_View 	@82
+					location   	(2535, -1070)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFD2A011B"
+					client     	@82
+					supplier   	@54
+					line_style 	0)
+				    (object RoleView "$UNNAMED$41" @84
+					Parent_View 	@82
+					location   	(2535, -1070)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFD2A0124"
+					client     	@82
+					supplier   	@72
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN013 PropuestaEconomica" @85
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(2684, 286)
+				location   	(1585, 357)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1940,20 +2369,476 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@70
-				    location   	(2684, 460)
+				    Parent_View 	@85
+				    location   	(1585, 531)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	763
+				    max_width  	786
 				    justify    	0
-				    label      	"EN006 LineaServicio")
+				    label      	"EN013 PropuestaEconomica")
 				icon       	"Business Entity"
 				icon_style 	"Icon"
 				line_color 	3342489
 				fill_color 	13434879
-				quidu      	"4FABFDC40370"
+				quidu      	"4FAC9F6F0084"
 				annotation 	8
-				autoResize 	TRUE))))))
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$54" @86
+				location   	(2184, 643)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFE4A02F3"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$55" @87
+					Parent_View 	@86
+					location   	(-479, -232)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE4B03AD"
+					client     	@86
+					supplier   	@85
+					line_style 	0)
+				    (object RoleView "$UNNAMED$56" @88
+					Parent_View 	@86
+					location   	(-479, -232)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE4B03B7"
+					client     	@86
+					supplier   	@72
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN012 PropuestaTecnica" @89
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(933, 1357)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@89
+				    location   	(933, 1531)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	783
+				    justify    	0
+				    label      	"EN012 PropuestaTecnica")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAC9F030223"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$51" @90
+				location   	(565, 1613)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFE0A025B"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$52" @91
+					Parent_View 	@90
+					location   	(339, -222)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE0B03AB"
+					client     	@90
+					supplier   	@89
+					line_style 	0)
+				    (object RoleView "$UNNAMED$53" @92
+					Parent_View 	@90
+					location   	(339, -222)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE0B03B5"
+					client     	@90
+					supplier   	@62
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN008 Cotizacion" @93
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1683, 1379)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@93
+				    location   	(1683, 1553)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	770
+				    justify    	0
+				    label      	"EN008 Cotizacion")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFE57024B"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$21" @94
+				location   	(994, 1588)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFBF60349"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$22" @95
+					Parent_View 	@94
+					location   	(768, -247)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFBF8010A"
+					client     	@94
+					supplier   	@93
+					line_style 	0)
+				    (object RoleView "$UNNAMED$23" @96
+					Parent_View 	@94
+					location   	(768, -247)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFBF80113"
+					client     	@94
+					supplier   	@62
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$24" @97
+				location   	(2164, 1127)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFC170012"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$25" @98
+					Parent_View 	@97
+					location   	(1925, -1209)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC18020C"
+					client     	@97
+					supplier   	@93
+					line_style 	0)
+				    (object RoleView "$UNNAMED$26" @99
+					Parent_View 	@97
+					location   	(1925, -1209)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFC180215"
+					client     	@97
+					supplier   	@72
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @100
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(846, 897)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@100
+				    location   	(846, 1071)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	751
+				    justify    	0
+				    label      	"EN001 Contrato")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFD8503E3"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$3" @101
+				location   	(577, 1069)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFA9500A8"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$4" @102
+					Parent_View 	@101
+					location   	(316, -721)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFA97004A"
+					client     	@101
+					supplier   	@100
+					line_style 	0)
+				    (object RoleView "$UNNAMED$5" @103
+					Parent_View 	@101
+					location   	(316, -721)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFA970051"
+					client     	@101
+					supplier   	@46
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$6" @104
+				location   	(571, 820)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFA9B03A8"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$7" @105
+					Parent_View 	@104
+					location   	(312, -452)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFA9D0347"
+					client     	@104
+					supplier   	@100
+					line_style 	0)
+				    (object RoleView "$UNNAMED$8" @106
+					Parent_View 	@104
+					location   	(312, -452)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFA9D034F"
+					client     	@104
+					supplier   	@42
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$42" @107
+				location   	(833, 743)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFD5A01BD"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$43" @108
+					Parent_View 	@107
+					location   	(-1851, 457)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFD5C0115"
+					client     	@107
+					supplier   	@100
+					line_style 	0)
+				    (object RoleView "$UNNAMED$44" @109
+					Parent_View 	@107
+					location   	(-1851, 457)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFD5C0121"
+					client     	@107
+					supplier   	@55
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$45" @110
+				location   	(1223, 847)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFD620247"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$46" @111
+					Parent_View 	@110
+					location   	(15, 146)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFD6400EF"
+					client     	@110
+					supplier   	@56
+					line_style 	0)
+				    (object RoleView "$UNNAMED$47" @112
+					Parent_View 	@110
+					location   	(15, 146)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFD6400FA"
+					client     	@110
+					supplier   	@100
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$57" @113
+				location   	(1141, 678)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFE6E000C"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$58" @114
+					Parent_View 	@113
+					location   	(-828, 138)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE6F01F8"
+					client     	@113
+					supplier   	@100
+					line_style 	0)
+				    (object RoleView "$UNNAMED$59" @115
+					Parent_View 	@113
+					location   	(-828, 138)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE6F0206"
+					client     	@113
+					supplier   	@85
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$60" @116
+				location   	(902, 1203)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFE89037C"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$61" @117
+					Parent_View 	@116
+					location   	(94, -445)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE8B025A"
+					client     	@116
+					supplier   	@100
+					line_style 	0)
+				    (object RoleView "$UNNAMED$62" @118
+					Parent_View 	@116
+					location   	(94, -445)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFE8B026B"
+					client     	@116
+					supplier   	@89
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$63" @119
+				location   	(1263, 1135)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAEFEC4001E"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$64" @120
+					Parent_View 	@119
+					location   	(-215, -302)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFEC501D9"
+					client     	@119
+					supplier   	@100
+					line_style 	0)
+				    (object RoleView "$UNNAMED$65" @121
+					Parent_View 	@119
+					location   	(-215, -302)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAEFEC501EA"
+					client     	@119
+					supplier   	@93
+					line_style 	0))))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"4FA291F30006"
@@ -1964,7 +2849,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @71
+		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @122
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
@@ -1981,7 +2866,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@71
+			    Parent_View 	@122
 			    location   	(449, 986)
 			    anchor_loc 	1
 			    nlines     	2
@@ -2005,7 +2890,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object Label @72
+		    (object Label @123
 			location   	(191, 84)
 			font       	(object Font
 			    size       	10
@@ -2019,7 +2904,7 @@
 			nlines     	1
 			max_width  	1875
 			label      	"Modelo de Analisis del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-02")
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @73
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @124
 			location   	(1028, 278)
 			font       	(object Font
 			    size       	10
@@ -2031,7 +2916,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@73
+			    Parent_View 	@124
 			    location   	(1028, 510)
 			    anchor_loc 	1
 			    nlines     	2
@@ -2045,7 +2930,7 @@
 			quidu      	"4FABEF4402F8"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @74
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @125
 			location   	(1044, 863)
 			font       	(object Font
 			    size       	10
@@ -2057,7 +2942,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@74
+			    Parent_View 	@125
 			    location   	(1044, 1095)
 			    anchor_loc 	1
 			    nlines     	2
@@ -2071,7 +2956,7 @@
 			quidu      	"4FABEF4F034A"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @75
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @126
 			location   	(1013, 1513)
 			font       	(object Font
 			    size       	10
@@ -2083,7 +2968,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@75
+			    Parent_View 	@126
 			    location   	(1013, 1745)
 			    anchor_loc 	1
 			    nlines     	2
