@@ -889,7 +889,7 @@
 			    location   	(827, 641)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1172
+			    max_width  	1174
 			    justify    	0
 			    label      	"Actores del Negocio")
 			icon       	"Business Use Case Model"
@@ -915,7 +915,7 @@
 			    location   	(808, 1321)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1166
+			    max_width  	1168
 			    justify    	0
 			    label      	"Casos de Uso del Negocio")
 			icon       	"Business Use Case Model"
@@ -941,7 +941,7 @@
 			    location   	(868, 2078)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1176
+			    max_width  	1178
 			    justify    	0
 			    label      	"Reglas del Negocio")
 			icon       	"Business Use Case Model"
@@ -3454,7 +3454,82 @@
 			fill_color 	13434879
 			quidu      	"4FABEF3A0248"
 			width      	324
-			height     	314)))))
+			height     	314)))
+	    (object ClassDiagram "Modelo de Clases del Analisis"
+		quid       	"4FB12B330041"
+		title      	"Modelo de Clases del Analisis"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @152
+			location   	(1605, 1184)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@152
+			    location   	(1605, 1416)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	945
+			    justify    	0
+			    label      	"Entidades del Negocio")
+			icon       	"Business Analysis Model"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4FABEF4402F8"
+			width      	324
+			height     	314)
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @153
+			location   	(662, 1159)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@153
+			    location   	(662, 1391)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	951
+			    justify    	0
+			    label      	"Trabajadores del Negocio")
+			icon       	"Business Analysis Model"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4FABEF3A0248"
+			width      	324
+			height     	314)
+		    (object Label @154
+			location   	(284, 528)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			nlines     	3
+			max_width  	1694
+			label      	"Modelo de Clases del Análisis")))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"4FA291F20278"
 	physical_models 	(list unit_reference_list)
