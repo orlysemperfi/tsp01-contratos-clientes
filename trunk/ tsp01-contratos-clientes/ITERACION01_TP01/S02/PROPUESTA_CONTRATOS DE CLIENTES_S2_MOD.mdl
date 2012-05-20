@@ -1,7 +1,7 @@
 
 (object Petal
     version    	50
-    _written   	"Rose 8.2.0311.2600"
+    _written   	"Rose 2006.0.0.060314"
     charSet    	0)
 
 (object Design "Logical View"
@@ -132,7 +132,16 @@
 					value      	""))
 				quid       	"4FA2932A0169"
 				stereotype 	"Business Use Case"))
-			logical_presentations 	(list unit_reference_list))
+			logical_presentations 	(list unit_reference_list
+			    (object UseCaseDiagram "Main"
+				quid       	"4FB83FFA0125"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list))))
 		    (object Class_Category "Actores del Negocio"
 			quid       	"4FA2926502BD"
 			stereotype 	"Business Use Case Model"
@@ -656,6 +665,7 @@
 					    default_color 	TRUE)
 					nlines     	2
 					max_width  	1328
+					justify    	1
 					label      	"Reglas del Negocio - Gestión de Contratos de Cliente SLA")
 				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::RN001 Tipos de Cliente" @16
 					ShowCompartmentStereotypes 	TRUE
@@ -773,6 +783,7 @@
 				    default_color 	TRUE)
 				nlines     	1
 				max_width  	1425
+				justify    	1
 				label      	"Diagrama de Casos de uso del Negocio - Contratos de Clientes")
 			    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @20
 				location   	(1292, 1331)
@@ -853,6 +864,9 @@
 					quidu      	"4FAC9D8C03BD"
 					client     	@22
 					supplier   	@20
+					vertices   	(list Points
+					    (780, 1330)
+					    (1140, 1329))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$2" @24
 					Parent_View 	@22
@@ -862,6 +876,9 @@
 					quidu      	"4FAC9D8C03C0"
 					client     	@22
 					supplier   	@21
+					vertices   	(list Points
+					    (780, 1330)
+					    (421, 1329))
 					line_style 	0))))))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Modelo de Casos de uso del Negocio"
@@ -889,7 +906,7 @@
 			    location   	(827, 641)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1174
+			    max_width  	1176
 			    justify    	0
 			    label      	"Actores del Negocio")
 			icon       	"Business Use Case Model"
@@ -915,7 +932,7 @@
 			    location   	(808, 1321)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1168
+			    max_width  	1170
 			    justify    	0
 			    label      	"Casos de Uso del Negocio")
 			icon       	"Business Use Case Model"
@@ -941,7 +958,7 @@
 			    location   	(868, 2078)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	1178
+			    max_width  	1180
 			    justify    	0
 			    label      	"Reglas del Negocio")
 			icon       	"Business Use Case Model"
@@ -964,6 +981,7 @@
 			    default_color 	TRUE)
 			nlines     	1
 			max_width  	1875
+			justify    	1
 			label      	"Modelo de Casos de uso del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-02")))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"4FA291F20276"
@@ -1376,6 +1394,9 @@
 				stereotype 	"Business Entity")
 			    (object Class "EN014 BuenaPro"
 				quid       	"4FAF03BB00C0"
+				stereotype 	"Business Entity")
+			    (object Class "EN015 Solicitud Cambio"
+				quid       	"4FB84D7201FC"
 				stereotype 	"Business Entity"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Realizacion de Casos de Uso del Negocio"
@@ -1403,12 +1424,73 @@
 					    quid       	"4FAECFEE028E")
 					(object Decision "Clente Público?"
 					    quid       	"4FAED00C00F1")
-					(object ActivityState "NewActivity"
-					    quid       	"4FAED041025A")
-					(object ActivityState "NewActivity2"
-					    quid       	"4FAED05801F4"))
-				    partitions 	(list Partitions)
-				    objects    	(list Objects)
+					(object ActivityState "Revisar Requerimiento"
+					    quid       	"4FB8404800B8")
+					(object ActivityState "Generar Cláusulas"
+					    quid       	"4FB84062030E")
+					(object ActivityState "Revisar Cláusulas"
+					    quid       	"4FB8407702FC")
+					(object Decision "De acuerdo?"
+					    quid       	"4FB840A102C9")
+					(object ActivityState "Generar contrato"
+					    quid       	"4FB8410E03B0")
+					(object ActivityState "Firmar Contrato"
+					    quid       	"4FB8411D008C")
+					(object ActivityState "Revisar cumplimientos de acuerdos"
+					    quid       	"4FB8413001A6")
+					(object Decision "Cumple?"
+					    quid       	"4FB8414D02DE")
+					(object Decision "Terminó contrato?"
+					    quid       	"4FB8416F0269")
+					(object ActivityState "Cerrar Contrato"
+					    quid       	"4FB841A00307")
+					(object ActivityState "Informar Caso"
+					    quid       	"4FB841BA0148")
+					(object State "$UNNAMED$85"
+					    quid       	"4FB8422E0021"
+					    type       	"EndState")
+					(object State "$UNNAMED$86"
+					    quid       	"4FB842310395"
+					    type       	"EndState")
+					(object Decision "Requiere seguir negociando cláusulas?"
+					    quid       	"4FB840B400D6"))
+				    partitions 	(list Partitions
+					(object Partition "$UNNAMED$87"
+					    quid       	"4FB84419004B"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
+					    quidu      	"4FABFED603D6"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Partition "$UNNAMED$88"
+					    quid       	"4FB84451012A"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal"
+					    quidu      	"4FABFFE3020B"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Partition "$UNNAMED$89"
+					    quid       	"4FB8448201D5"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente"
+					    quidu      	"4FAC234B01D7"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE))
+				    objects    	(list Objects
+					(object Object "$UNNAMED$90"
+					    quid       	"4FB843850176"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato"
+					    quidu      	"4FABFD8503E3"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$91"
+					    quid       	"4FB843C801D6"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN005 HojaRequerimiento"
+					    quidu      	"4FABFDB90313"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE))
 				    transitions 	(list transition_list
 					(object State_Transition
 					    quid       	"4FAECFE403D2"
@@ -1435,28 +1517,170 @@
 					    sendEvent  	(object sendEvent
 						quid       	"4FAED06401A9"))
 					(object State_Transition
-					    quid       	"4FAFF4AF022E"
-					    label      	""
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::NewActivity"
-					    supplier_quidu 	"4FAED041025A"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Clente Público?"
-					    client_quidu 	"4FAED00C00F1"
-					    Event      	(object Event "SI"
-						quid       	"4FAFF4AF022F")
+					    quid       	"4FB841D7033B"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar Requerimiento"
+					    supplier_quidu 	"4FB8404800B8"
+					    client     	"$UNNAMED$84"
+					    client_quidu 	"4FAECFB30306"
 					    sendEvent  	(object sendEvent
-						quid       	"4FAFF4AF0231"))
+						quid       	"4FB841D7033E"))
 					(object State_Transition
-					    quid       	"4FAFF4BD03DA"
-					    label      	""
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::NewActivity2"
-					    supplier_quidu 	"4FAED05801F4"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Clente Público?"
-					    client_quidu 	"4FAED00C00F1"
-					    Event      	(object Event "NO"
-						quid       	"4FAFF4BD03DB")
+					    quid       	"4FB841E00262"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Generar Cláusulas"
+					    supplier_quidu 	"4FB84062030E"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar Requerimiento"
+					    client_quidu 	"4FB8404800B8"
 					    sendEvent  	(object sendEvent
-						quid       	"4FAFF4BD03DD")))
-				    objectflows 	(list objectflow_list)
+						quid       	"4FB841E00265"))
+					(object State_Transition
+					    quid       	"4FB841E40162"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar Cláusulas"
+					    supplier_quidu 	"4FB8407702FC"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Generar Cláusulas"
+					    client_quidu 	"4FB84062030E"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB841E40165"))
+					(object State_Transition
+					    quid       	"4FB841E900ED"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::De acuerdo?"
+					    supplier_quidu 	"4FB840A102C9"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar Cláusulas"
+					    client_quidu 	"4FB8407702FC"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB841E900F0"))
+					(object State_Transition
+					    quid       	"4FB841EE029A"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Requiere seguir negociando cláusulas?"
+					    supplier_quidu 	"4FB840B400D6"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::De acuerdo?"
+					    client_quidu 	"4FB840A102C9"
+					    Event      	(object Event "NO"
+						quid       	"4FB841EE029B")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB841EE029D"))
+					(object State_Transition
+					    quid       	"4FB841F30234"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Generar Cláusulas"
+					    supplier_quidu 	"4FB84062030E"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Requiere seguir negociando cláusulas?"
+					    client_quidu 	"4FB840B400D6"
+					    Event      	(object Event "SI"
+						quid       	"4FB841F30235")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB841F30237"))
+					(object State_Transition
+					    quid       	"4FB841F802F7"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Generar contrato"
+					    supplier_quidu 	"4FB8410E03B0"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::De acuerdo?"
+					    client_quidu 	"4FB840A102C9"
+					    Event      	(object Event "SI"
+						quid       	"4FB841F802F8")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB841F802FA"))
+					(object State_Transition
+					    quid       	"4FB841FD01E6"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Firmar Contrato"
+					    supplier_quidu 	"4FB8411D008C"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Generar contrato"
+					    client_quidu 	"4FB8410E03B0"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB841FD01E9"))
+					(object State_Transition
+					    quid       	"4FB8420301FB"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar cumplimientos de acuerdos"
+					    supplier_quidu 	"4FB8413001A6"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Firmar Contrato"
+					    client_quidu 	"4FB8411D008C"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB8420301FE"))
+					(object State_Transition
+					    quid       	"4FB842080128"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Cumple?"
+					    supplier_quidu 	"4FB8414D02DE"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar cumplimientos de acuerdos"
+					    client_quidu 	"4FB8413001A6"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84208012B"))
+					(object State_Transition
+					    quid       	"4FB8420C01DD"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Informar Caso"
+					    supplier_quidu 	"4FB841BA0148"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Cumple?"
+					    client_quidu 	"4FB8414D02DE"
+					    Event      	(object Event "NO"
+						quid       	"4FB8420C01DE")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB8420C01E0"))
+					(object State_Transition
+					    quid       	"4FB8421200F9"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Terminó contrato?"
+					    supplier_quidu 	"4FB8416F0269"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Cumple?"
+					    client_quidu 	"4FB8414D02DE"
+					    Event      	(object Event "SI"
+						quid       	"4FB8421200FA")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB8421200FC"))
+					(object State_Transition
+					    quid       	"4FB8421602B7"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Cerrar Contrato"
+					    supplier_quidu 	"4FB841A00307"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Terminó contrato?"
+					    client_quidu 	"4FB8416F0269"
+					    Event      	(object Event "SI"
+						quid       	"4FB8421602B8")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB8421602BA"))
+					(object State_Transition
+					    quid       	"4FB842240021"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar cumplimientos de acuerdos"
+					    supplier_quidu 	"4FB8413001A6"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Terminó contrato?"
+					    client_quidu 	"4FB8416F0269"
+					    Event      	(object Event "NO"
+						quid       	"4FB842240022")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB842240024"))
+					(object State_Transition
+					    quid       	"4FB8423902ED"
+					    label      	""
+					    supplier   	"$UNNAMED$85"
+					    supplier_quidu 	"4FB8422E0021"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Requiere seguir negociando cláusulas?"
+					    client_quidu 	"4FB840B400D6"
+					    Event      	(object Event "NO"
+						quid       	"4FB8423902EE")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB8423902F0"))
+					(object State_Transition
+					    quid       	"4FB8423E0297"
+					    supplier   	"$UNNAMED$86"
+					    supplier_quidu 	"4FB842310395"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Cerrar Contrato"
+					    client_quidu 	"4FB841A00307"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB8423E029A")))
+				    objectflows 	(list objectflow_list
+					(object Object_Flow
+					    quid       	"4FB84E2A0365"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Revisar Requerimiento"
+					    supplier_quidu 	"4FB8404800B8"
+					    client     	"$UNNAMED$91"
+					    client_quidu 	"4FB843C801D6")
+					(object Object_Flow
+					    quid       	"4FB84E2E016C"
+					    supplier   	"$UNNAMED$90"
+					    supplier_quidu 	"4FB843850176"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos::Gestionar Contratol::Generar contrato"
+					    client_quidu 	"4FB8410E03B0"))
 				    statediagrams 	(list StateDiagrams
 					(object ActivityDiagram "Diagrama Gestionar Contrato"
 					    quid       	"4FAEBD450115"
@@ -1467,12 +1691,13 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object Swimlane "" @29
+						(object Swimlane "$UNNAMED$87" @29
 						    line_color 	3342489
-						    width      	450)
+						    quidu      	"4FB84419004B"
+						    width      	802)
 						(object StateView "StartState" "$UNNAMED$84" @30
 						    Parent_View 	@29
-						    location   	(550, 89)
+						    location   	(90, 219)
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -1482,19 +1707,33 @@
 							strike     	FALSE
 							color      	0
 							default_color 	TRUE)
-						    label      	(object ItemLabel
+						    label      	(object SegLabel @31
 							Parent_View 	@30
-							location   	(592, 59)
-							nlines     	2
-							max_width  	600
-							label      	"")
+							location   	(132, 189)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							hidden     	TRUE
+							nlines     	1
+							max_width  	60
+							justify    	1
+							label      	""
+							pctDist    	1.000000
+							height     	0
+							orientation 	0)
 						    icon_style 	"Icon"
 						    line_color 	3342489
 						    quidu      	"4FAECFB30306"
 						    autoResize 	TRUE)
-						(object ActivityStateView "Recepcionar Orden Evaluacion" @31
+						(object ActivityStateView "Revisar Requerimiento" @32
 						    Parent_View 	@29
-						    location   	(998, 86)
+						    location   	(425, 219)
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -1505,62 +1744,35 @@
 							color      	0
 							default_color 	TRUE)
 						    label      	(object ItemLabel
-							Parent_View 	@31
-							location   	(998, 71)
+							Parent_View 	@32
+							location   	(425, 222)
 							fill_color 	13434879
 							anchor_loc 	1
 							nlines     	2
-							max_width  	398
+							max_width  	269
 							justify    	0
-							label      	"Recepcionar Orden Evaluacion")
+							label      	"Revisar Requerimiento")
 						    icon_style 	"Icon"
 						    line_color 	3342489
 						    fill_color 	13434879
-						    quidu      	"4FAECFCA019D"
-						    width      	528
-						    height     	142
+						    quidu      	"4FB8404800B8"
+						    height     	106
 						    annotation 	1
 						    autoResize 	TRUE)
-						(object TransView "" @32
+						(object TransView "" @33
 						    stereotype 	TRUE
 						    line_color 	3342489
-						    quidu      	"4FAECFE403D2"
+						    quidu      	"4FB841D7033B"
 						    client     	@30
-						    supplier   	@31
+						    supplier   	@32
+						    vertices   	(list Points
+							(120, 219)
+							(254, 219))
 						    line_style 	0
 						    x_offset   	FALSE)
-						(object ActivityStateView "Clasificar tipo de Cliente" @33
+						(object ActivityStateView "Cerrar Contrato" @34
 						    Parent_View 	@29
-						    location   	(991, 276)
-						    font       	(object Font
-							size       	10
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    label      	(object ItemLabel
-							Parent_View 	@33
-							location   	(991, 270)
-							fill_color 	13434879
-							anchor_loc 	1
-							nlines     	2
-							max_width  	293
-							justify    	0
-							label      	"Clasificar tipo de Cliente")
-						    icon_style 	"Icon"
-						    line_color 	3342489
-						    fill_color 	13434879
-						    quidu      	"4FAECFEE028E"
-						    width      	411
-						    height     	124
-						    annotation 	1
-						    autoResize 	TRUE)
-						(object DecisionView "Clente Público?" @34
-						    Parent_View 	@29
-						    location   	(988, 462)
+						    location   	(403, 2229)
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -1572,18 +1784,46 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@34
-							location   	(1044, 413)
+							location   	(403, 2232)
+							fill_color 	13434879
+							anchor_loc 	1
 							nlines     	2
-							max_width  	300
-							label      	"Clente Público?")
+							max_width  	269
+							justify    	0
+							label      	"Cerrar Contrato")
 						    icon_style 	"Icon"
 						    line_color 	3342489
 						    fill_color 	13434879
-						    quidu      	"4FAED00C00F1"
+						    quidu      	"4FB841A00307"
+						    height     	106
+						    annotation 	1
 						    autoResize 	TRUE)
-						(object ActivityStateView "NewActivity" @35
+						(object StateView "EndState" "$UNNAMED$86" @35
 						    Parent_View 	@29
-						    location   	(997, 711)
+						    location   	(405, 2465)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    quidu      	"4FB842310395"
+						    autoResize 	TRUE)
+						(object TransView "" @36
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB8423E0297"
+						    client     	@34
+						    supplier   	@35
+						    vertices   	(list Points
+							(403, 2282)
+							(404, 2423))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Swimlane "$UNNAMED$88" @37
+						    location   	(802, 0)
+						    line_color 	3342489
+						    quidu      	"4FB84451012A"
+						    width      	1242)
+						(object ActivityStateView "Generar Cláusulas" @38
+						    Parent_View 	@37
+						    location   	(1168, 222)
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -1594,68 +1834,35 @@
 							color      	0
 							default_color 	TRUE)
 						    label      	(object ItemLabel
-							Parent_View 	@35
-							location   	(997, 705)
+							Parent_View 	@38
+							location   	(1168, 225)
 							fill_color 	13434879
 							anchor_loc 	1
 							nlines     	2
-							max_width  	293
+							max_width  	269
 							justify    	0
-							label      	"NewActivity")
+							label      	"Generar Cláusulas")
 						    icon_style 	"Icon"
 						    line_color 	3342489
 						    fill_color 	13434879
-						    quidu      	"4FAED041025A"
-						    width      	411
-						    height     	124
+						    quidu      	"4FB84062030E"
+						    height     	106
 						    annotation 	1
 						    autoResize 	TRUE)
-						(object ActivityStateView "NewActivity2" @36
-						    Parent_View 	@29
-						    location   	(1850, 462)
-						    font       	(object Font
-							size       	10
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    label      	(object ItemLabel
-							Parent_View 	@36
-							location   	(1850, 456)
-							fill_color 	13434879
-							anchor_loc 	1
-							nlines     	2
-							max_width  	293
-							justify    	0
-							label      	"NewActivity2")
-						    icon_style 	"Icon"
-						    line_color 	3342489
-						    fill_color 	13434879
-						    quidu      	"4FAED05801F4"
-						    width      	411
-						    height     	124
-						    annotation 	1
-						    autoResize 	TRUE)
-						(object TransView "" @37
-						    stereotype 	TRUE
-						    line_color 	3342489
-						    quidu      	"4FAED0600037"
-						    client     	@31
-						    supplier   	@33
-						    line_style 	0
-						    x_offset   	FALSE)
-						(object TransView "" @38
-						    stereotype 	TRUE
-						    line_color 	3342489
-						    quidu      	"4FAED06401A6"
-						    client     	@33
-						    supplier   	@34
-						    line_style 	0
-						    x_offset   	FALSE)
 						(object TransView "" @39
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB841E00262"
+						    client     	@32
+						    supplier   	@38
+						    vertices   	(list Points
+							(596, 219)
+							(996, 221))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object DecisionView "Requiere seguir negociando cláusulas?" @40
+						    Parent_View 	@37
+						    location   	(1169, 528)
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -1665,9 +1872,44 @@
 							strike     	FALSE
 							color      	0
 							default_color 	TRUE)
-						    label      	(object SegLabel @40
-							Parent_View 	@39
-							location   	(1021, 529)
+						    label      	(object SegLabel @41
+							Parent_View 	@40
+							location   	(1008, 566)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							nlines     	2
+							max_width  	425
+							justify    	1
+							label      	"Requiere seguir negociando cláusulas?"
+							pctDist    	-0.888190
+							height     	175
+							orientation 	1)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB840B400D6"
+						    autoResize 	TRUE)
+						(object TransView "" @42
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @43
+							Parent_View 	@42
+							location   	(1125, 383)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -1687,12 +1929,22 @@
 							orientation 	0)
 						    stereotype 	TRUE
 						    line_color 	3342489
-						    quidu      	"4FAFF4AF022E"
-						    client     	@34
-						    supplier   	@35
+						    quidu      	"4FB841F30234"
+						    client     	@40
+						    supplier   	@38
+						    vertices   	(list Points
+							(1169, 491)
+							(1168, 274))
 						    line_style 	0
 						    x_offset   	FALSE)
-						(object TransView "" @41
+						(object StateView "EndState" "$UNNAMED$85" @44
+						    Parent_View 	@37
+						    location   	(908, 523)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    quidu      	"4FB8422E0021"
+						    autoResize 	TRUE)
+						(object TransView "" @45
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -1702,9 +1954,547 @@
 							strike     	FALSE
 							color      	0
 							default_color 	TRUE)
-						    label      	(object SegLabel @42
-							Parent_View 	@41
-							location   	(1391, 418)
+						    label      	(object SegLabel @46
+							Parent_View 	@45
+							location   	(1035, 500)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"NO"
+							pctDist    	0.423846
+							height     	27
+							orientation 	1)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB8423902ED"
+						    client     	@40
+						    supplier   	@44
+						    vertices   	(list Points
+							(1094, 528)
+							(950, 524))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ActivityStateView "Generar contrato" @47
+						    Parent_View 	@37
+						    location   	(1212, 947)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@47
+							location   	(1212, 950)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Generar contrato")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8410E03B0"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object DecisionView "Terminó contrato?" @48
+						    Parent_View 	@37
+						    location   	(941, 2230)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @49
+							Parent_View 	@48
+							location   	(997, 2181)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							nlines     	1
+							max_width  	356
+							justify    	1
+							label      	"Terminó contrato?"
+							pctDist    	1.000000
+							height     	0
+							orientation 	0)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8416F0269"
+						    autoResize 	TRUE)
+						(object ActivityStateView "Revisar cumplimientos de acuerdos" @50
+						    Parent_View 	@37
+						    location   	(1590, 1958)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@50
+							location   	(1590, 1961)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	430
+							justify    	0
+							label      	"Revisar cumplimientos de acuerdos")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8413001A6"
+						    width      	536
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object DecisionView "Cumple?" @51
+						    Parent_View 	@37
+						    location   	(1590, 2230)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @52
+							Parent_View 	@51
+							location   	(1646, 2181)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							nlines     	1
+							max_width  	160
+							justify    	1
+							label      	"Cumple?"
+							pctDist    	1.000000
+							height     	0
+							orientation 	0)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8414D02DE"
+						    autoResize 	TRUE)
+						(object TransView "" @53
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB842080128"
+						    client     	@50
+						    supplier   	@51
+						    vertices   	(list Points
+							(1590, 2011)
+							(1590, 2193))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @54
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @55
+							Parent_View 	@54
+							location   	(1265, 2275)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"SI"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB8421200F9"
+						    client     	@51
+						    supplier   	@48
+						    vertices   	(list Points
+							(1515, 2230)
+							(1016, 2230))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ActivityStateView "Informar Caso" @56
+						    Parent_View 	@37
+						    location   	(1592, 2468)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@56
+							location   	(1592, 2471)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Informar Caso")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB841BA0148"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @57
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @58
+							Parent_View 	@57
+							location   	(1635, 2341)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"NO"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB8420C01DD"
+						    client     	@51
+						    supplier   	@56
+						    vertices   	(list Points
+							(1590, 2267)
+							(1591, 2415))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ActivityStateView "Firmar Contrato" @59
+						    Parent_View 	@37
+						    location   	(1212, 1539)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@59
+							location   	(1212, 1542)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Firmar Contrato")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8411D008C"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @60
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB841FD01E6"
+						    client     	@47
+						    supplier   	@59
+						    vertices   	(list Points
+							(1212, 1000)
+							(1212, 1486))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @61
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB8420301FB"
+						    client     	@59
+						    supplier   	@50
+						    vertices   	(list Points
+							(1383, 1539)
+							(1587, 1540)
+							(1589, 1904))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Swimlane "$UNNAMED$89" @62
+						    location   	(2044, 0)
+						    line_color 	3342489
+						    quidu      	"4FB8448201D5"
+						    width      	694)
+						(object ActivityStateView "Revisar Cláusulas" @63
+						    Parent_View 	@62
+						    location   	(2395, 222)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@63
+							location   	(2395, 225)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	300
+							justify    	0
+							label      	"Revisar Cláusulas")
+						    icon_style 	"Label"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8407702FC"
+						    width      	406
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @64
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB841E40162"
+						    client     	@38
+						    supplier   	@63
+						    vertices   	(list Points
+							(1339, 222)
+							(2212, 222))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ObjectView "$UNNAMED$91" @65
+						    Parent_View 	@29
+						    location   	(397, 588)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@65
+							location   	(397, 762)
+							anchor_loc 	1
+							nlines     	2
+							max_width  	786
+							justify    	0
+							label      	"")
+						    icon       	"Business Entity"
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	33023
+						    quidu      	"4FB843C801D6"
+						    annotation 	4
+						    autoResize 	TRUE
+						    subobjects 	0
+						    x_offset   	0.000000
+						    y_offset   	0.000000)
+						(object ObjectView "$UNNAMED$90" @66
+						    Parent_View 	@37
+						    location   	(1594, 1155)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@66
+							location   	(1594, 1329)
+							anchor_loc 	1
+							nlines     	2
+							max_width  	767
+							justify    	0
+							label      	"")
+						    icon       	"Business Entity"
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB843850176"
+						    annotation 	4
+						    autoResize 	TRUE
+						    subobjects 	0
+						    x_offset   	0.000000
+						    y_offset   	0.000000)
+						(object DecisionView "De acuerdo?" @67
+						    Parent_View 	@62
+						    location   	(2393, 525)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @68
+							Parent_View 	@67
+							location   	(2309, 573)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							nlines     	1
+							max_width  	258
+							justify    	1
+							label      	"De acuerdo?"
+							pctDist    	0.011867
+							height     	149
+							orientation 	1)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB840A102C9"
+						    autoResize 	TRUE)
+						(object TransView "" @69
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB841E900ED"
+						    client     	@63
+						    supplier   	@67
+						    vertices   	(list Points
+							(2394, 274)
+							(2393, 488))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Swimlane "" @70
+						    location   	(2738, 0)
+						    line_color 	3342489
+						    width      	450)
+						(object TransView "" @71
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @72
+							Parent_View 	@71
+							location   	(1781, 571)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"NO"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB841EE029A"
+						    client     	@67
+						    supplier   	@40
+						    vertices   	(list Points
+							(2318, 525)
+							(1244, 528))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @73
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @74
+							Parent_View 	@73
+							location   	(2083, 994)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -1718,17 +2508,916 @@
 							nlines     	1
 							max_width  	450
 							justify    	0
+							label      	"SI"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB841F802F7"
+						    client     	@67
+						    supplier   	@47
+						    vertices   	(list Points
+							(2393, 562)
+							(2395, 950)
+							(1383, 947))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Object_Flow_View "" @75
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84E2A0365"
+						    client     	@65
+						    supplier   	@32
+						    vertices   	(list Points
+							(403, 494)
+							(420, 271))
+						    line_style 	0)
+						(object Object_Flow_View "" @76
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84E2E016C"
+						    client     	@47
+						    supplier   	@66
+						    vertices   	(list Points
+							(1309, 1000)
+							(1464, 1083))
+						    line_style 	0)
+						(object TransView "" @77
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @78
+							Parent_View 	@77
+							location   	(720, 2275)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"SI"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB8421602B7"
+						    client     	@48
+						    supplier   	@34
+						    vertices   	(list Points
+							(866, 2230)
+							(574, 2229))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @79
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @80
+							Parent_View 	@79
+							location   	(1032, 1916)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
 							label      	"NO"
 							pctDist    	0.500000
 							height     	45
 							orientation 	0)
 						    stereotype 	TRUE
 						    line_color 	3342489
-						    quidu      	"4FAFF4BD03DA"
-						    client     	@34
-						    supplier   	@36
+						    quidu      	"4FB842240021"
+						    client     	@48
+						    supplier   	@50
+						    vertices   	(list Points
+							(941, 2193)
+							(941, 1960)
+							(1357, 1958))
 						    line_style 	0
-						    x_offset   	FALSE)))))))
+						    x_offset   	FALSE))))))
+			    (object UseCase "RCUN002 GestionarAdenda"
+				quid       	"4FB847C700A5"
+				stereotype 	"Business Use Case Realization"
+				statemachine 	(object State_Machine "State/Activity Model"
+				    quid       	"4FB84811021C"
+				    states     	(list States
+					(object State "$UNNAMED$92"
+					    quid       	"4FB8483A00A3"
+					    type       	"StartState")
+					(object ActivityState "Revisar solicitud cambio"
+					    quid       	"4FB8483C031F")
+					(object ActivityState "Establecer Cláusulas"
+					    quid       	"4FB8485E00A8")
+					(object ActivityState "Revisar Cláusulas"
+					    quid       	"4FB848710309")
+					(object Decision "Procede  Cláusula?"
+					    quid       	"4FB849B1034B")
+					(object ActivityState "Generar Adenda"
+					    quid       	"4FB849EA033E")
+					(object ActivityState "Firmar Adenda"
+					    quid       	"4FB849F4013A")
+					(object ActivityState "Informar a Control de Cambios"
+					    quid       	"4FB84A16029A")
+					(object State "$UNNAMED$93"
+					    quid       	"4FB84A2B0150"
+					    type       	"EndState")
+					(object State "$UNNAMED$94"
+					    quid       	"4FB84A2E01B8"
+					    type       	"EndState")
+					(object Decision "Desea replantear cláusulas?"
+					    quid       	"4FB84BC401BE"))
+				    partitions 	(list Partitions
+					(object Partition "$UNNAMED$95"
+					    quid       	"4FB84A3C023E"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial"
+					    quidu      	"4FABFED603D6"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Partition "$UNNAMED$96"
+					    quid       	"4FB84B2E028F"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal"
+					    quidu      	"4FABFFE3020B"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Partition "$UNNAMED$97"
+					    quid       	"4FB84B480246"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente"
+					    quidu      	"4FAC234B01D7"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE))
+				    objects    	(list Objects
+					(object Object "$UNNAMED$98"
+					    quid       	"4FB84D1302C3"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda"
+					    quidu      	"4FABFD9303A3"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$99"
+					    quid       	"4FB84DC2013E"
+					    class      	"Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN015 Solicitud Cambio"
+					    quidu      	"4FB84D7201FC"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE))
+				    transitions 	(list transition_list
+					(object State_Transition
+					    quid       	"4FB84BDD01F4"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Revisar solicitud cambio"
+					    supplier_quidu 	"4FB8483C031F"
+					    client     	"$UNNAMED$92"
+					    client_quidu 	"4FB8483A00A3"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BDD01F7"))
+					(object State_Transition
+					    quid       	"4FB84BE1021D"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Establecer Cláusulas"
+					    supplier_quidu 	"4FB8485E00A8"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Revisar solicitud cambio"
+					    client_quidu 	"4FB8483C031F"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BE10220"))
+					(object State_Transition
+					    quid       	"4FB84BE50090"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Revisar Cláusulas"
+					    supplier_quidu 	"4FB848710309"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Establecer Cláusulas"
+					    client_quidu 	"4FB8485E00A8"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BE50093"))
+					(object State_Transition
+					    quid       	"4FB84BE902CB"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Procede  Cláusula?"
+					    supplier_quidu 	"4FB849B1034B"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Revisar Cláusulas"
+					    client_quidu 	"4FB848710309"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BE902CE"))
+					(object State_Transition
+					    quid       	"4FB84BF003D9"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Desea replantear cláusulas?"
+					    supplier_quidu 	"4FB84BC401BE"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Procede  Cláusula?"
+					    client_quidu 	"4FB849B1034B"
+					    Event      	(object Event "NO"
+						quid       	"4FB84BF003DA")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BF003DC"))
+					(object State_Transition
+					    quid       	"4FB84BF50113"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Establecer Cláusulas"
+					    supplier_quidu 	"4FB8485E00A8"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Desea replantear cláusulas?"
+					    client_quidu 	"4FB84BC401BE"
+					    Event      	(object Event "SI"
+						quid       	"4FB84BF50114")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BF50116"))
+					(object State_Transition
+					    quid       	"4FB84BF90061"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Generar Adenda"
+					    supplier_quidu 	"4FB849EA033E"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Procede  Cláusula?"
+					    client_quidu 	"4FB849B1034B"
+					    Event      	(object Event "SI"
+						quid       	"4FB84BF90062")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84BF90064"))
+					(object State_Transition
+					    quid       	"4FB84C010360"
+					    label      	""
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Informar a Control de Cambios"
+					    supplier_quidu 	"4FB84A16029A"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Desea replantear cláusulas?"
+					    client_quidu 	"4FB84BC401BE"
+					    Event      	(object Event "NO"
+						quid       	"4FB84C010361")
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84C010363"))
+					(object State_Transition
+					    quid       	"4FB84C05029E"
+					    supplier   	"$UNNAMED$94"
+					    supplier_quidu 	"4FB84A2E01B8"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Informar a Control de Cambios"
+					    client_quidu 	"4FB84A16029A"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84C0502A1"))
+					(object State_Transition
+					    quid       	"4FB84C0902E6"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Firmar Adenda"
+					    supplier_quidu 	"4FB849F4013A"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Generar Adenda"
+					    client_quidu 	"4FB849EA033E"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84C0902E9"))
+					(object State_Transition
+					    quid       	"4FB84C100329"
+					    supplier   	"$UNNAMED$93"
+					    supplier_quidu 	"4FB84A2B0150"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Firmar Adenda"
+					    client_quidu 	"4FB849F4013A"
+					    sendEvent  	(object sendEvent
+						quid       	"4FB84C10032C")))
+				    objectflows 	(list objectflow_list
+					(object Object_Flow
+					    quid       	"4FB84DF50021"
+					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Revisar solicitud cambio"
+					    supplier_quidu 	"4FB8483C031F"
+					    client     	"$UNNAMED$99"
+					    client_quidu 	"4FB84DC2013E")
+					(object Object_Flow
+					    quid       	"4FB84E0B0127"
+					    supplier   	"$UNNAMED$98"
+					    supplier_quidu 	"4FB84D1302C3"
+					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda::State/Activity Model::Generar Adenda"
+					    client_quidu 	"4FB849EA033E"))
+				    statediagrams 	(list StateDiagrams
+					(object ActivityDiagram "Diagrama Gestionar Adenda"
+					    quid       	"4FB84811022C"
+					    title      	"Diagrama Gestionar Adenda"
+					    zoom       	100
+					    max_height 	28350
+					    max_width  	21600
+					    origin_x   	2325
+					    origin_y   	0
+					    items      	(list diagram_item_list
+						(object Swimlane "$UNNAMED$95" @81
+						    line_color 	3342489
+						    quidu      	"4FB84A3C023E"
+						    width      	592)
+						(object StateView "StartState" "$UNNAMED$92" @82
+						    Parent_View 	@81
+						    location   	(276, 106)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    quidu      	"4FB8483A00A3"
+						    autoResize 	TRUE)
+						(object ActivityStateView "Revisar solicitud cambio" @83
+						    Parent_View 	@81
+						    location   	(275, 297)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@83
+							location   	(275, 300)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	324
+							justify    	0
+							label      	"Revisar solicitud cambio")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8483C031F"
+						    width      	430
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @84
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BDD01F4"
+						    client     	@82
+						    supplier   	@83
+						    vertices   	(list Points
+							(275, 136)
+							(275, 243))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Swimlane "$UNNAMED$96" @85
+						    location   	(592, 0)
+						    line_color 	3342489
+						    quidu      	"4FB84B2E028F"
+						    width      	1238)
+						(object ActivityStateView "Establecer Cláusulas" @86
+						    Parent_View 	@85
+						    location   	(1219, 298)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@86
+							location   	(1219, 301)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Establecer Cláusulas")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB8485E00A8"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @87
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BE1021D"
+						    client     	@83
+						    supplier   	@86
+						    vertices   	(list Points
+							(467, 297)
+							(1047, 297))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ActivityStateView "Informar a Control de Cambios" @88
+						    Parent_View 	@85
+						    location   	(877, 862)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@88
+							location   	(877, 865)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	334
+							justify    	0
+							label      	"Informar a Control de Cambios")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB84A16029A"
+						    width      	440
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object StateView "EndState" "$UNNAMED$94" @89
+						    Parent_View 	@85
+						    location   	(877, 1076)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    quidu      	"4FB84A2E01B8"
+						    autoResize 	TRUE)
+						(object TransView "" @90
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84C05029E"
+						    client     	@88
+						    supplier   	@89
+						    vertices   	(list Points
+							(877, 915)
+							(877, 1034))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ActivityStateView "Generar Adenda" @91
+						    Parent_View 	@85
+						    location   	(1433, 953)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@91
+							location   	(1433, 956)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Generar Adenda")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB849EA033E"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object ActivityStateView "Firmar Adenda" @92
+						    Parent_View 	@85
+						    location   	(1432, 1350)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@92
+							location   	(1432, 1353)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Firmar Adenda")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB849F4013A"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @93
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84C0902E6"
+						    client     	@91
+						    supplier   	@92
+						    vertices   	(list Points
+							(1432, 1006)
+							(1432, 1296))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object StateView "EndState" "$UNNAMED$93" @94
+						    Parent_View 	@85
+						    location   	(1433, 1567)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    quidu      	"4FB84A2B0150"
+						    autoResize 	TRUE)
+						(object TransView "" @95
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84C100329"
+						    client     	@92
+						    supplier   	@94
+						    vertices   	(list Points
+							(1432, 1403)
+							(1432, 1524))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object DecisionView "Desea replantear cláusulas?" @96
+						    Parent_View 	@85
+						    location   	(1220, 607)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @97
+							Parent_View 	@96
+							location   	(983, 660)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							nlines     	1
+							max_width  	590
+							justify    	1
+							label      	"Desea replantear cláusulas?"
+							pctDist    	-1.613097
+							height     	222
+							orientation 	1)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB84BC401BE"
+						    autoResize 	TRUE)
+						(object TransView "" @98
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @99
+							Parent_View 	@98
+							location   	(1176, 460)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"SI"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BF50113"
+						    client     	@96
+						    supplier   	@86
+						    vertices   	(list Points
+							(1220, 570)
+							(1219, 350))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @100
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @101
+							Parent_View 	@100
+							location   	(950, 578)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"NO"
+							pctDist    	0.414674
+							height     	29
+							orientation 	1)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84C010360"
+						    client     	@96
+						    supplier   	@88
+						    vertices   	(list Points
+							(1145, 607)
+							(878, 606)
+							(877, 809))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Swimlane "$UNNAMED$97" @102
+						    location   	(1830, 0)
+						    line_color 	3342489
+						    quidu      	"4FB84B480246"
+						    width      	742)
+						(object ActivityStateView "Revisar Cláusulas" @103
+						    Parent_View 	@102
+						    location   	(2121, 297)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@103
+							location   	(2121, 300)
+							fill_color 	13434879
+							anchor_loc 	1
+							nlines     	2
+							max_width  	269
+							justify    	0
+							label      	"Revisar Cláusulas")
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB848710309"
+						    height     	106
+						    annotation 	1
+						    autoResize 	TRUE)
+						(object TransView "" @104
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BE50090"
+						    client     	@86
+						    supplier   	@103
+						    vertices   	(list Points
+							(1390, 297)
+							(1949, 297))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object ObjectView "$UNNAMED$99" @105
+						    Parent_View 	@81
+						    location   	(303, 648)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@105
+							location   	(303, 822)
+							anchor_loc 	1
+							nlines     	2
+							max_width  	802
+							justify    	0
+							label      	"")
+						    icon       	"Business Entity"
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	4227327
+						    quidu      	"4FB84DC2013E"
+						    annotation 	4
+						    autoResize 	TRUE
+						    subobjects 	0
+						    x_offset   	0.000000
+						    y_offset   	0.000000)
+						(object ObjectView "$UNNAMED$98" @106
+						    Parent_View 	@85
+						    location   	(972, 1291)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object ItemLabel
+							Parent_View 	@106
+							location   	(972, 1465)
+							anchor_loc 	1
+							nlines     	2
+							max_width  	802
+							justify    	0
+							label      	"")
+						    icon       	"Business Entity"
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB84D1302C3"
+						    annotation 	4
+						    autoResize 	TRUE
+						    subobjects 	0
+						    x_offset   	0.000000
+						    y_offset   	0.000000)
+						(object DecisionView "Procede  Cláusula?" @107
+						    Parent_View 	@102
+						    location   	(2119, 609)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @108
+							Parent_View 	@107
+							location   	(2175, 560)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	TRUE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							nlines     	1
+							max_width  	406
+							justify    	1
+							label      	"Procede  Cláusula?"
+							pctDist    	1.000000
+							height     	0
+							orientation 	0)
+						    icon_style 	"Icon"
+						    line_color 	3342489
+						    fill_color 	13434879
+						    quidu      	"4FB849B1034B"
+						    autoResize 	TRUE)
+						(object TransView "" @109
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BE902CB"
+						    client     	@103
+						    supplier   	@107
+						    vertices   	(list Points
+							(2120, 350)
+							(2119, 572))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @110
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @111
+							Parent_View 	@110
+							location   	(1669, 653)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"NO"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BF003D9"
+						    client     	@107
+						    supplier   	@96
+						    vertices   	(list Points
+							(2044, 609)
+							(1295, 607))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object TransView "" @112
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @113
+							Parent_View 	@112
+							location   	(2016, 998)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor_loc 	1
+							nlines     	1
+							max_width  	60
+							justify    	0
+							label      	"SI"
+							pctDist    	0.500000
+							height     	45
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84BF90061"
+						    client     	@107
+						    supplier   	@91
+						    vertices   	(list Points
+							(2119, 646)
+							(2119, 953)
+							(1604, 953))
+						    line_style 	0
+						    x_offset   	FALSE)
+						(object Swimlane "" @114
+						    location   	(2572, 0)
+						    line_color 	3342489
+						    width      	450)
+						(object Object_Flow_View "" @115
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84DF50021"
+						    client     	@105
+						    supplier   	@83
+						    vertices   	(list Points
+							(293, 553)
+							(279, 349))
+						    line_style 	0)
+						(object Object_Flow_View "" @116
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4FB84E0B0127"
+						    client     	@91
+						    supplier   	@106
+						    vertices   	(list Points
+							(1360, 1006)
+							(1095, 1196))
+						    line_style 	0)))))))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "Diagrama de Realizacion de Casos de uso del Negocio"
 				quid       	"4FAC24760096"
@@ -1739,7 +3428,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @43
+				    (object UseCaseView "Use Case View::Modelo de Casos de Uso del Negocio::Casos de Uso del Negocio::CUN001 GestionarContratos" @117
 					location   	(1644, 731)
 					font       	(object Font
 					    size       	10
@@ -1751,7 +3440,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@43
+					    Parent_View 	@117
 					    location   	(1643, 906)
 					    anchor_loc 	1
 					    nlines     	2
@@ -1763,7 +3452,7 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"4FA2932A0169")
-				    (object UseCaseView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos" @44
+				    (object UseCaseView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN001 RealizacionGestionarContratos" @118
 					location   	(444, 741)
 					font       	(object Font
 					    size       	10
@@ -1775,7 +3464,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@44
+					    Parent_View 	@118
 					    location   	(443, 917)
 					    anchor_loc 	1
 					    nlines     	2
@@ -1789,13 +3478,42 @@
 					quidu      	"4FACA40600FC"
 					width      	306
 					height     	194)
-				    (object DependencyView "" @45
+				    (object DependencyView "" @119
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FACA44003DB"
-					client     	@44
-					supplier   	@43
-					line_style 	0))))))
+					client     	@118
+					supplier   	@117
+					vertices   	(list Points
+					    (594, 737)
+					    (1491, 731))
+					line_style 	0)
+				    (object UseCaseView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::RCUN002 GestionarAdenda" @120
+					location   	(1647, 1225)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@120
+					    location   	(1646, 1401)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	879
+					    justify    	0
+					    label      	"RCUN002 GestionarAdenda")
+					icon       	"Business Use Case Realization"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FB847C700A5"
+					width      	306
+					height     	194))))))
 		logical_presentations 	(list unit_reference_list
 		    (object UseCaseDiagram "Diagrama Clases de Negocio"
 			quid       	"4FAED1DC002C"
@@ -1806,7 +3524,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object Label @46
+			    (object Label @121
 				location   	(343, 12)
 				font       	(object Font
 				    size       	10
@@ -1819,8 +3537,9 @@
 				    default_color 	TRUE)
 				nlines     	1
 				max_width  	1062
+				justify    	1
 				label      	"Diagrama de Análisis del Negocio - Contratos de Clientes")
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN010 InformeProyecto" @47
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN010 InformeProyecto" @122
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1837,7 +3556,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@47
+				    Parent_View 	@122
 				    location   	(901, 2493)
 				    anchor_loc 	1
 				    nlines     	2
@@ -1851,7 +3570,7 @@
 				quidu      	"4FAC230200A5"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN011 ActaConformidad" @48
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN011 ActaConformidad" @123
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1868,7 +3587,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@48
+				    Parent_View 	@123
 				    location   	(911, 1682)
 				    anchor_loc 	1
 				    nlines     	2
@@ -1882,7 +3601,7 @@
 				quidu      	"4FAC23100373"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI" @49
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN004 GerenteTI" @124
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1899,7 +3618,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@49
+				    Parent_View 	@124
 				    location   	(296, 2077)
 				    anchor_loc 	1
 				    nlines     	2
@@ -1915,7 +3634,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$30" @50
+			    (object AssociationViewNew "$UNNAMED$30" @125
 				location   	(609, 2093)
 				font       	(object Font
 				    size       	10
@@ -1930,25 +3649,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFC4803D7"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$31" @51
-					Parent_View 	@50
+				    (object RoleView "$UNNAMED$31" @126
+					Parent_View 	@125
 					location   	(383, 258)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC4B0092"
-					client     	@50
-					supplier   	@47
+					client     	@125
+					supplier   	@122
+					vertices   	(list Points
+					    (609, 2093)
+					    (778, 2225))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$32" @52
-					Parent_View 	@50
+				    (object RoleView "$UNNAMED$32" @127
+					Parent_View 	@125
 					location   	(383, 258)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC4B009B"
-					client     	@50
-					supplier   	@49
+					client     	@125
+					supplier   	@124
+					vertices   	(list Points
+					    (609, 2093)
+					    (440, 1961))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$36" @53
+			    (object AssociationViewNew "$UNNAMED$36" @128
 				location   	(559, 1703)
 				font       	(object Font
 				    size       	10
@@ -1963,25 +3688,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFCA50046"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$37" @54
-					Parent_View 	@53
+				    (object RoleView "$UNNAMED$37" @129
+					Parent_View 	@128
 					location   	(333, -132)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFCA60316"
-					client     	@53
-					supplier   	@48
+					client     	@128
+					supplier   	@123
+					vertices   	(list Points
+					    (559, 1703)
+					    (781, 1576))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$38" @55
-					Parent_View 	@53
+				    (object RoleView "$UNNAMED$38" @130
+					Parent_View 	@128
 					location   	(333, -132)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFCA60320"
-					client     	@53
-					supplier   	@49
+					client     	@128
+					supplier   	@124
+					vertices   	(list Points
+					    (559, 1703)
+					    (440, 1768))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN003 Cliente" @56
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN003 Cliente" @131
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -1998,7 +3729,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@56
+				    Parent_View 	@131
 				    location   	(3420, 1954)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2012,7 +3743,7 @@
 				quidu      	"4FABFD9E01BE"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN005 HojaRequerimiento" @57
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN005 HojaRequerimiento" @132
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2029,7 +3760,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@57
+				    Parent_View 	@132
 				    location   	(2350, 2572)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2043,7 +3774,7 @@
 				quidu      	"4FABFDB90313"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$15" @58
+			    (object AssociationViewNew "$UNNAMED$15" @133
 				location   	(1330, 2124)
 				font       	(object Font
 				    size       	10
@@ -2058,25 +3789,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFB180119"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$16" @59
-					Parent_View 	@58
+				    (object RoleView "$UNNAMED$16" @134
+					Parent_View 	@133
 					location   	(1035, -206)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB19032A"
-					client     	@58
-					supplier   	@57
+					client     	@133
+					supplier   	@132
+					vertices   	(list Points
+					    (1330, 2124)
+					    (2220, 2360))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$17" @60
-					Parent_View 	@58
+				    (object RoleView "$UNNAMED$17" @135
+					Parent_View 	@133
 					location   	(1035, -206)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB190333"
-					client     	@58
-					supplier   	@49
+					client     	@133
+					supplier   	@124
+					vertices   	(list Points
+					    (1330, 2124)
+					    (440, 1887))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN009 BasePublicacion" @61
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN009 BasePublicacion" @136
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2093,7 +3830,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@61
+				    Parent_View 	@136
 				    location   	(2771, 339)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2107,7 +3844,7 @@
 				quidu      	"4FAC9F5C0308"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @62
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN005 Cliente" @137
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2124,7 +3861,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@62
+				    Parent_View 	@137
 				    location   	(362, 985)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2140,7 +3877,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$33" @63
+			    (object AssociationViewNew "$UNNAMED$33" @138
 				location   	(668, 1178)
 				font       	(object Font
 				    size       	10
@@ -2155,25 +3892,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFC9E00B7"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$34" @64
-					Parent_View 	@63
+				    (object RoleView "$UNNAMED$34" @139
+					Parent_View 	@138
 					location   	(476, -117)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC9F0393"
-					client     	@63
-					supplier   	@48
+					client     	@138
+					supplier   	@123
+					vertices   	(list Points
+					    (668, 1178)
+					    (837, 1412))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$35" @65
-					Parent_View 	@63
+				    (object RoleView "$UNNAMED$35" @140
+					Parent_View 	@138
 					location   	(476, -117)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC9F039C"
-					client     	@63
-					supplier   	@62
+					client     	@138
+					supplier   	@137
+					vertices   	(list Points
+					    (668, 1178)
+					    (466, 903))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$12" @66
+			    (object AssociationViewNew "$UNNAMED$12" @141
 				location   	(1370, 1590)
 				font       	(object Font
 				    size       	10
@@ -2188,25 +3931,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFB1201C6"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$13" @67
-					Parent_View 	@66
+				    (object RoleView "$UNNAMED$13" @142
+					Parent_View 	@141
 					location   	(1109, -200)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB140182"
-					client     	@66
-					supplier   	@57
+					client     	@141
+					supplier   	@132
+					vertices   	(list Points
+					    (1370, 1590)
+					    (2234, 2303))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$14" @68
-					Parent_View 	@66
+				    (object RoleView "$UNNAMED$14" @143
+					Parent_View 	@141
 					location   	(1109, -200)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB14018A"
-					client     	@66
-					supplier   	@62
+					client     	@141
+					supplier   	@137
+					vertices   	(list Points
+					    (1370, 1590)
+					    (506, 879))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN006 LineaServicio" @69
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN006 LineaServicio" @144
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2223,7 +3972,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@69
+				    Parent_View 	@144
 				    location   	(1582, 678)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2237,7 +3986,7 @@
 				quidu      	"4FABFDC40370"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @70
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN002  Adenda" @145
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2254,7 +4003,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@70
+				    Parent_View 	@145
 				    location   	(1867, 1568)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2268,7 +4017,7 @@
 				quidu      	"4FABFD9303A3"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN013 PropuestaEconomica" @71
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN013 PropuestaEconomica" @146
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2285,7 +4034,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@71
+				    Parent_View 	@146
 				    location   	(2130, 960)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2299,7 +4048,7 @@
 				quidu      	"4FAC9F6F0084"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN012 PropuestaTecnica" @72
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN012 PropuestaTecnica" @147
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2316,7 +4065,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@72
+				    Parent_View 	@147
 				    location   	(326, 1447)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2330,7 +4079,7 @@
 				quidu      	"4FAC9F030223"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$51" @73
+			    (object AssociationViewNew "$UNNAMED$51" @148
 				location   	(305, 1615)
 				font       	(object Font
 				    size       	10
@@ -2345,25 +4094,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFE0A025B"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$52" @74
-					Parent_View 	@73
+				    (object RoleView "$UNNAMED$52" @149
+					Parent_View 	@148
 					location   	(79, -220)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE0B03AB"
-					client     	@73
-					supplier   	@72
+					client     	@148
+					supplier   	@147
+					vertices   	(list Points
+					    (305, 1615)
+					    (310, 1472))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$53" @75
-					Parent_View 	@73
+				    (object RoleView "$UNNAMED$53" @150
+					Parent_View 	@148
 					location   	(79, -220)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE0B03B5"
-					client     	@73
-					supplier   	@49
+					client     	@148
+					supplier   	@124
+					vertices   	(list Points
+					    (305, 1615)
+					    (300, 1708))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN008 Cotizacion" @76
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN008 Cotizacion" @151
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2380,7 +4135,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@76
+				    Parent_View 	@151
 				    location   	(2091, 2021)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2394,7 +4149,7 @@
 				quidu      	"4FABFE57024B"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$21" @77
+			    (object AssociationViewNew "$UNNAMED$21" @152
 				location   	(1200, 1848)
 				font       	(object Font
 				    size       	10
@@ -2409,25 +4164,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFBF60349"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$22" @78
-					Parent_View 	@77
+				    (object RoleView "$UNNAMED$22" @153
+					Parent_View 	@152
 					location   	(974, 13)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFBF8010A"
-					client     	@77
-					supplier   	@76
+					client     	@152
+					supplier   	@151
+					vertices   	(list Points
+					    (1200, 1848)
+					    (1960, 1847))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$23" @79
-					Parent_View 	@77
+				    (object RoleView "$UNNAMED$23" @154
+					Parent_View 	@152
 					location   	(974, 13)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFBF80113"
-					client     	@77
-					supplier   	@49
+					client     	@152
+					supplier   	@124
+					vertices   	(list Points
+					    (1200, 1848)
+					    (440, 1849))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN014 BuenaPro" @80
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN014 BuenaPro" @155
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2444,7 +4205,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@80
+				    Parent_View 	@155
 				    location   	(1041, 732)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2458,7 +4219,7 @@
 				quidu      	"4FAF03BB00C0"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$72" @81
+			    (object AssociationViewNew "$UNNAMED$72" @156
 				location   	(708, 653)
 				font       	(object Font
 				    size       	10
@@ -2473,25 +4234,31 @@
 				line_color 	3342489
 				quidu      	"4FAF043E007D"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$73" @82
-					Parent_View 	@81
+				    (object RoleView "$UNNAMED$73" @157
+					Parent_View 	@156
 					location   	(471, -313)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF043F02BE"
-					client     	@81
-					supplier   	@80
+					client     	@156
+					supplier   	@155
+					vertices   	(list Points
+					    (708, 653)
+					    (911, 593))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$74" @83
-					Parent_View 	@81
+				    (object RoleView "$UNNAMED$74" @158
+					Parent_View 	@156
 					location   	(471, -313)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF043F02CA"
-					client     	@81
-					supplier   	@62
+					client     	@156
+					supplier   	@137
+					vertices   	(list Points
+					    (708, 653)
+					    (506, 714))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN006 JefeProyecto" @84
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN006 JefeProyecto" @159
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2508,7 +4275,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@84
+				    Parent_View 	@159
 				    location   	(1570, 2750)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2524,7 +4291,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial" @85
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN001 JefeComercial" @160
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2541,7 +4308,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@85
+				    Parent_View 	@160
 				    location   	(3438, 1294)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2557,7 +4324,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$9" @86
+			    (object AssociationViewNew "$UNNAMED$9" @161
 				location   	(3424, 1527)
 				font       	(object Font
 				    size       	10
@@ -2572,25 +4339,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFAE001E8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$10" @87
-					Parent_View 	@86
+				    (object RoleView "$UNNAMED$10" @162
+					Parent_View 	@161
 					location   	(1950, 1143)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFAE200E4"
-					client     	@86
-					supplier   	@85
+					client     	@161
+					supplier   	@160
+					vertices   	(list Points
+					    (3424, 1527)
+					    (3429, 1319))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$11" @88
-					Parent_View 	@86
+				    (object RoleView "$UNNAMED$11" @163
+					Parent_View 	@161
 					location   	(1950, 1143)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFAE200EB"
-					client     	@86
-					supplier   	@56
+					client     	@161
+					supplier   	@131
+					vertices   	(list Points
+					    (3424, 1527)
+					    (3420, 1685))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$27" @89
+			    (object AssociationViewNew "$UNNAMED$27" @164
 				location   	(3141, 669)
 				font       	(object Font
 				    size       	10
@@ -2605,25 +4378,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFC3802F9"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$28" @90
-					Parent_View 	@89
+				    (object RoleView "$UNNAMED$28" @165
+					Parent_View 	@164
 					location   	(1292, -1608)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC3B002B"
-					client     	@89
-					supplier   	@85
+					client     	@164
+					supplier   	@160
+					vertices   	(list Points
+					    (3141, 669)
+					    (3329, 926))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$29" @91
-					Parent_View 	@89
+				    (object RoleView "$UNNAMED$29" @166
+					Parent_View 	@164
 					location   	(1292, -1608)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC3B0036"
-					client     	@89
-					supplier   	@61
+					client     	@164
+					supplier   	@136
+					vertices   	(list Points
+					    (3141, 669)
+					    (2857, 283))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$18" @92
+			    (object AssociationViewNew "$UNNAMED$18" @167
 				location   	(2810, 1836)
 				font       	(object Font
 				    size       	10
@@ -2638,25 +4417,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFB5A0212"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$19" @93
-					Parent_View 	@92
+				    (object RoleView "$UNNAMED$19" @168
+					Parent_View 	@167
 					location   	(2571, -500)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB5C0157"
-					client     	@92
-					supplier   	@57
+					client     	@167
+					supplier   	@132
+					vertices   	(list Points
+					    (2810, 1836)
+					    (2425, 2304))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$20" @94
-					Parent_View 	@92
+				    (object RoleView "$UNNAMED$20" @169
+					Parent_View 	@167
 					location   	(2571, -500)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFB5C0161"
-					client     	@92
-					supplier   	@85
+					client     	@167
+					supplier   	@160
+					vertices   	(list Points
+					    (2810, 1836)
+					    (3317, 1212))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$54" @95
+			    (object AssociationViewNew "$UNNAMED$54" @170
 				location   	(2776, 923)
 				font       	(object Font
 				    size       	10
@@ -2671,25 +4456,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFE4A02F3"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$55" @96
-					Parent_View 	@95
+				    (object RoleView "$UNNAMED$55" @171
+					Parent_View 	@170
 					location   	(113, 48)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE4B03AD"
-					client     	@95
-					supplier   	@71
+					client     	@170
+					supplier   	@146
+					vertices   	(list Points
+					    (2776, 923)
+					    (2258, 812))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$56" @97
-					Parent_View 	@95
+				    (object RoleView "$UNNAMED$56" @172
+					Parent_View 	@170
 					location   	(113, 48)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE4B03B7"
-					client     	@95
-					supplier   	@85
+					client     	@170
+					supplier   	@160
+					vertices   	(list Points
+					    (2776, 923)
+					    (3294, 1035))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$24" @98
+			    (object AssociationViewNew "$UNNAMED$24" @173
 				location   	(2756, 1459)
 				font       	(object Font
 				    size       	10
@@ -2704,25 +4495,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFC170012"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$25" @99
-					Parent_View 	@98
+				    (object RoleView "$UNNAMED$25" @174
+					Parent_View 	@173
 					location   	(2517, -877)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC18020C"
-					client     	@98
-					supplier   	@76
+					client     	@173
+					supplier   	@151
+					vertices   	(list Points
+					    (2756, 1459)
+					    (2219, 1769))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$26" @100
-					Parent_View 	@98
+				    (object RoleView "$UNNAMED$26" @175
+					Parent_View 	@173
 					location   	(2517, -877)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFC180215"
-					client     	@98
-					supplier   	@85
+					client     	@173
+					supplier   	@160
+					vertices   	(list Points
+					    (2756, 1459)
+					    (3292, 1149))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN002 OSCE" @101
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN002 OSCE" @176
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2739,7 +4536,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@101
+				    Parent_View 	@176
 				    location   	(282, 476)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2755,7 +4552,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$48" @102
+			    (object AssociationViewNew "$UNNAMED$48" @177
 				location   	(1533, 205)
 				font       	(object Font
 				    size       	10
@@ -2770,25 +4567,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFDB5020C"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$49" @103
-					Parent_View 	@102
+				    (object RoleView "$UNNAMED$49" @178
+					Parent_View 	@177
 					location   	(1333, -69)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFDB603C6"
-					client     	@102
-					supplier   	@61
+					client     	@177
+					supplier   	@136
+					vertices   	(list Points
+					    (1533, 205)
+					    (2641, 168))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$50" @104
-					Parent_View 	@102
+				    (object RoleView "$UNNAMED$50" @179
+					Parent_View 	@177
 					location   	(1333, -69)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFDB603D1"
-					client     	@102
-					supplier   	@101
+					client     	@177
+					supplier   	@176
+					vertices   	(list Points
+					    (1533, 205)
+					    (426, 244))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$69" @105
+			    (object AssociationViewNew "$UNNAMED$69" @180
 				location   	(668, 404)
 				font       	(object Font
 				    size       	10
@@ -2803,25 +4606,31 @@
 				line_color 	3342489
 				quidu      	"4FAF04350399"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$70" @106
-					Parent_View 	@105
+				    (object RoleView "$UNNAMED$70" @181
+					Parent_View 	@180
 					location   	(385, 152)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF043700EC"
-					client     	@105
-					supplier   	@80
+					client     	@180
+					supplier   	@155
+					vertices   	(list Points
+					    (668, 404)
+					    (911, 501))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$71" @107
-					Parent_View 	@105
+				    (object RoleView "$UNNAMED$71" @182
+					Parent_View 	@180
 					location   	(385, 152)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF043700F6"
-					client     	@105
-					supplier   	@101
+					client     	@180
+					supplier   	@176
+					vertices   	(list Points
+					    (668, 404)
+					    (426, 307))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @108
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN001 Contrato" @183
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -2838,7 +4647,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@108
+				    Parent_View 	@183
 				    location   	(1288, 1258)
 				    anchor_loc 	1
 				    nlines     	2
@@ -2852,7 +4661,7 @@
 				quidu      	"4FABFD8503E3"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$3" @109
+			    (object AssociationViewNew "$UNNAMED$3" @184
 				location   	(832, 922)
 				font       	(object Font
 				    size       	10
@@ -2867,25 +4676,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFA9500A8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$4" @110
-					Parent_View 	@109
+				    (object RoleView "$UNNAMED$4" @185
+					Parent_View 	@184
 					location   	(571, -868)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFA97004A"
-					client     	@109
-					supplier   	@108
+					client     	@184
+					supplier   	@183
+					vertices   	(list Points
+					    (832, 922)
+					    (1156, 1035))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$5" @111
-					Parent_View 	@109
+				    (object RoleView "$UNNAMED$5" @186
+					Parent_View 	@184
 					location   	(571, -868)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFA970051"
-					client     	@109
-					supplier   	@62
+					client     	@184
+					supplier   	@137
+					vertices   	(list Points
+					    (832, 922)
+					    (506, 808))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$42" @112
+			    (object AssociationViewNew "$UNNAMED$42" @187
 				location   	(1392, 871)
 				font       	(object Font
 				    size       	10
@@ -2900,25 +4715,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFD5A01BD"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$43" @113
-					Parent_View 	@112
+				    (object RoleView "$UNNAMED$43" @188
+					Parent_View 	@187
 					location   	(-1292, 585)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFD5C0115"
-					client     	@112
-					supplier   	@108
+					client     	@187
+					supplier   	@183
+					vertices   	(list Points
+					    (1392, 871)
+					    (1331, 990))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$44" @114
-					Parent_View 	@112
+				    (object RoleView "$UNNAMED$44" @189
+					Parent_View 	@187
 					location   	(-1292, 585)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFD5C0121"
-					client     	@112
-					supplier   	@69
+					client     	@187
+					supplier   	@144
+					vertices   	(list Points
+					    (1392, 871)
+					    (1492, 669))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$45" @115
+			    (object AssociationViewNew "$UNNAMED$45" @190
 				location   	(1576, 1236)
 				font       	(object Font
 				    size       	10
@@ -2933,25 +4754,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFD620247"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$46" @116
-					Parent_View 	@115
+				    (object RoleView "$UNNAMED$46" @191
+					Parent_View 	@190
 					location   	(368, 535)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFD6400EF"
-					client     	@115
-					supplier   	@70
+					client     	@190
+					supplier   	@145
+					vertices   	(list Points
+					    (1576, 1236)
+					    (1737, 1322))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$47" @117
-					Parent_View 	@115
+				    (object RoleView "$UNNAMED$47" @192
+					Parent_View 	@190
 					location   	(368, 535)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFD6400FA"
-					client     	@115
-					supplier   	@108
+					client     	@190
+					supplier   	@183
+					vertices   	(list Points
+					    (1576, 1236)
+					    (1416, 1150))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$57" @118
+			    (object AssociationViewNew "$UNNAMED$57" @193
 				location   	(1638, 957)
 				font       	(object Font
 				    size       	10
@@ -2966,25 +4793,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFE6E000C"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$58" @119
-					Parent_View 	@118
+				    (object RoleView "$UNNAMED$58" @194
+					Parent_View 	@193
 					location   	(-331, 417)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE6F01F8"
-					client     	@118
-					supplier   	@108
+					client     	@193
+					supplier   	@183
+					vertices   	(list Points
+					    (1638, 957)
+					    (1416, 1035))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$59" @120
-					Parent_View 	@118
+				    (object RoleView "$UNNAMED$59" @195
+					Parent_View 	@193
 					location   	(-331, 417)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE6F0206"
-					client     	@118
-					supplier   	@71
+					client     	@193
+					supplier   	@146
+					vertices   	(list Points
+					    (1638, 957)
+					    (1998, 828))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$60" @121
+			    (object AssociationViewNew "$UNNAMED$60" @196
 				location   	(805, 1175)
 				font       	(object Font
 				    size       	10
@@ -2999,25 +4832,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFE89037C"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$61" @122
-					Parent_View 	@121
+				    (object RoleView "$UNNAMED$61" @197
+					Parent_View 	@196
 					location   	(-3, -473)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE8B025A"
-					client     	@121
-					supplier   	@108
+					client     	@196
+					supplier   	@183
+					vertices   	(list Points
+					    (805, 1175)
+					    (1158, 1105))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$62" @123
-					Parent_View 	@121
+				    (object RoleView "$UNNAMED$62" @198
+					Parent_View 	@196
 					location   	(-3, -473)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFE8B026B"
-					client     	@121
-					supplier   	@72
+					client     	@196
+					supplier   	@147
+					vertices   	(list Points
+					    (805, 1175)
+					    (454, 1242))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$63" @124
+			    (object AssociationViewNew "$UNNAMED$63" @199
 				location   	(1715, 1490)
 				font       	(object Font
 				    size       	10
@@ -3032,25 +4871,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFEC4001E"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$64" @125
-					Parent_View 	@124
+				    (object RoleView "$UNNAMED$64" @200
+					Parent_View 	@199
 					location   	(237, 53)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFEC501D9"
-					client     	@124
-					supplier   	@108
+					client     	@199
+					supplier   	@183
+					vertices   	(list Points
+					    (1715, 1490)
+					    (1385, 1176))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$65" @126
-					Parent_View 	@124
+				    (object RoleView "$UNNAMED$65" @201
+					Parent_View 	@199
 					location   	(237, 53)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFEC501EA"
-					client     	@124
-					supplier   	@76
+					client     	@199
+					supplier   	@151
+					vertices   	(list Points
+					    (1715, 1490)
+					    (1992, 1753))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$75" @127
+			    (object AssociationViewNew "$UNNAMED$75" @202
 				location   	(1199, 898)
 				font       	(object Font
 				    size       	10
@@ -3065,25 +4910,31 @@
 				line_color 	3342489
 				quidu      	"4FAF0446017A"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$76" @128
-					Parent_View 	@127
+				    (object RoleView "$UNNAMED$76" @203
+					Parent_View 	@202
 					location   	(158, 340)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF044702EA"
-					client     	@127
-					supplier   	@108
+					client     	@202
+					supplier   	@183
+					vertices   	(list Points
+					    (1199, 898)
+					    (1239, 988))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$77" @129
-					Parent_View 	@127
+				    (object RoleView "$UNNAMED$77" @204
+					Parent_View 	@202
 					location   	(158, 340)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF044702FC"
-					client     	@127
-					supplier   	@80
+					client     	@202
+					supplier   	@155
+					vertices   	(list Points
+					    (1199, 898)
+					    (1127, 747))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$78" @130
+			    (object AssociationViewNew "$UNNAMED$78" @205
 				location   	(1437, 1857)
 				font       	(object Font
 				    size       	10
@@ -3098,25 +4949,31 @@
 				line_color 	3342489
 				quidu      	"4FAFDF400336"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$79" @131
-					Parent_View 	@130
+				    (object RoleView "$UNNAMED$79" @206
+					Parent_View 	@205
 					location   	(-134, -669)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAFDF420031"
-					client     	@130
-					supplier   	@108
+					client     	@205
+					supplier   	@183
+					vertices   	(list Points
+					    (1437, 1857)
+					    (1324, 1283))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$80" @132
-					Parent_View 	@130
+				    (object RoleView "$UNNAMED$80" @207
+					Parent_View 	@205
 					location   	(-134, -669)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAFDF420038"
-					client     	@130
-					supplier   	@84
+					client     	@205
+					supplier   	@159
+					vertices   	(list Points
+					    (1437, 1857)
+					    (1539, 2381))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN007 CartaFianza" @133
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN007 CartaFianza" @208
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -3133,7 +4990,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@133
+				    Parent_View 	@208
 				    location   	(2232, 549)
 				    anchor_loc 	1
 				    nlines     	2
@@ -3147,7 +5004,7 @@
 				quidu      	"4FABFE04008D"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$39" @134
+			    (object AssociationViewNew "$UNNAMED$39" @209
 				location   	(2854, 730)
 				font       	(object Font
 				    size       	10
@@ -3162,25 +5019,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFD2801A0"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$40" @135
-					Parent_View 	@134
+				    (object RoleView "$UNNAMED$40" @210
+					Parent_View 	@209
 					location   	(2615, -1606)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFD2A011B"
-					client     	@134
-					supplier   	@133
+					client     	@209
+					supplier   	@208
+					vertices   	(list Points
+					    (2854, 730)
+					    (2360, 447))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$41" @136
-					Parent_View 	@134
+				    (object RoleView "$UNNAMED$41" @211
+					Parent_View 	@209
 					location   	(2615, -1606)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFD2A0124"
-					client     	@134
-					supplier   	@85
+					client     	@209
+					supplier   	@160
+					vertices   	(list Points
+					    (2854, 730)
+					    (3294, 983))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$66" @137
+			    (object AssociationViewNew "$UNNAMED$66" @212
 				location   	(1264, 310)
 				font       	(object Font
 				    size       	10
@@ -3195,25 +5058,31 @@
 				line_color 	3342489
 				quidu      	"4FAF03830087"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$67" @138
-					Parent_View 	@137
+				    (object RoleView "$UNNAMED$67" @213
+					Parent_View 	@212
 					location   	(981, 58)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF03850194"
-					client     	@137
-					supplier   	@133
+					client     	@212
+					supplier   	@208
+					vertices   	(list Points
+					    (1264, 310)
+					    (2100, 362))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$68" @139
-					Parent_View 	@137
+				    (object RoleView "$UNNAMED$68" @214
+					Parent_View 	@212
 					location   	(981, 58)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAF038501A0"
-					client     	@137
-					supplier   	@101
+					client     	@212
+					supplier   	@176
+					vertices   	(list Points
+					    (1264, 310)
+					    (426, 257))
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal" @140
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::TN003 JefeLegal" @215
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -3230,7 +5099,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@140
+				    Parent_View 	@215
 				    location   	(2420, 1408)
 				    anchor_loc 	1
 				    nlines     	2
@@ -3246,7 +5115,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$6" @141
+			    (object AssociationViewNew "$UNNAMED$6" @216
 				location   	(1846, 1130)
 				font       	(object Font
 				    size       	10
@@ -3261,25 +5130,31 @@
 				line_color 	3342489
 				quidu      	"4FAEFA9B03A8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$7" @142
-					Parent_View 	@141
+				    (object RoleView "$UNNAMED$7" @217
+					Parent_View 	@216
 					location   	(1587, -142)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFA9D0347"
-					client     	@141
-					supplier   	@108
+					client     	@216
+					supplier   	@183
+					vertices   	(list Points
+					    (1846, 1130)
+					    (1416, 1092))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$8" @143
-					Parent_View 	@141
+				    (object RoleView "$UNNAMED$8" @218
+					Parent_View 	@216
 					location   	(1587, -142)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFA9D034F"
-					client     	@141
-					supplier   	@140
+					client     	@216
+					supplier   	@215
+					vertices   	(list Points
+					    (1846, 1130)
+					    (2276, 1165))
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$81" @144
+			    (object AssociationViewNew "$UNNAMED$81" @219
 				location   	(2336, 832)
 				font       	(object Font
 				    size       	10
@@ -3294,24 +5169,61 @@
 				line_color 	3342489
 				quidu      	"4FAFE21D0245"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$82" @145
-					Parent_View 	@144
+				    (object RoleView "$UNNAMED$82" @220
+					Parent_View 	@219
 					location   	(-85, -352)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAFE21F028B"
-					client     	@144
-					supplier   	@133
+					client     	@219
+					supplier   	@208
+					vertices   	(list Points
+					    (2336, 832)
+					    (2275, 574))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$83" @146
-					Parent_View 	@144
+				    (object RoleView "$UNNAMED$83" @221
+					Parent_View 	@219
 					location   	(-85, -352)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAFE21F028F"
-					client     	@144
-					supplier   	@140
-					line_style 	0))))))))
+					client     	@219
+					supplier   	@215
+					vertices   	(list Points
+					    (2336, 832)
+					    (2383, 1040))
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::EN015 Solicitud Cambio" @222
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(3065, 2189)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@222
+				    location   	(3065, 2363)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	776
+				    justify    	0
+				    label      	"EN015 Solicitud Cambio")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FB84D7201FC"
+				annotation 	8
+				autoResize 	TRUE))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"4FA291F30006"
@@ -3322,13 +5234,13 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @147
+		    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Actores del Negocio::AN001 GerenteComercial" @223
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(450, 778)
+			location   	(437, 372)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3339,8 +5251,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@147
-			    location   	(449, 986)
+			    Parent_View 	@223
+			    location   	(436, 580)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	568
@@ -3363,7 +5275,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object Label @148
+		    (object Label @224
 			location   	(191, 84)
 			font       	(object Font
 			    size       	10
@@ -3376,8 +5288,9 @@
 			    default_color 	TRUE)
 			nlines     	1
 			max_width  	1875
+			justify    	1
 			label      	"Modelo de Analisis del Negocio - Gestión de Contratos de Clientes - DIAG-MCUN-02")
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @149
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @225
 			location   	(1028, 278)
 			font       	(object Font
 			    size       	10
@@ -3389,7 +5302,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@149
+			    Parent_View 	@225
 			    location   	(1028, 510)
 			    anchor_loc 	1
 			    nlines     	2
@@ -3403,7 +5316,7 @@
 			quidu      	"4FABEF4402F8"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @150
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio" @226
 			location   	(1044, 863)
 			font       	(object Font
 			    size       	10
@@ -3415,7 +5328,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@150
+			    Parent_View 	@226
 			    location   	(1044, 1095)
 			    anchor_loc 	1
 			    nlines     	2
@@ -3429,7 +5342,7 @@
 			quidu      	"4FABEF4F034A"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @151
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @227
 			location   	(1013, 1513)
 			font       	(object Font
 			    size       	10
@@ -3441,7 +5354,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@151
+			    Parent_View 	@227
 			    location   	(1013, 1745)
 			    anchor_loc 	1
 			    nlines     	2
@@ -3464,7 +5377,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @152
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio" @228
 			location   	(1605, 1184)
 			font       	(object Font
 			    size       	10
@@ -3476,7 +5389,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@152
+			    Parent_View 	@228
 			    location   	(1605, 1416)
 			    anchor_loc 	1
 			    nlines     	2
@@ -3490,7 +5403,7 @@
 			quidu      	"4FABEF4402F8"
 			width      	324
 			height     	314)
-		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @153
+		    (object CategoryView "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio" @229
 			location   	(662, 1159)
 			font       	(object Font
 			    size       	10
@@ -3502,7 +5415,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@153
+			    Parent_View 	@229
 			    location   	(662, 1391)
 			    anchor_loc 	1
 			    nlines     	2
@@ -3516,7 +5429,7 @@
 			quidu      	"4FABEF3A0248"
 			width      	324
 			height     	314)
-		    (object Label @154
+		    (object Label @230
 			location   	(284, 528)
 			font       	(object Font
 			    size       	10
@@ -3529,6 +5442,7 @@
 			    default_color 	TRUE)
 			nlines     	3
 			max_width  	1694
+			justify    	1
 			label      	"Modelo de Clases del Análisis")))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"4FA291F20278"
@@ -3814,6 +5728,30 @@
 			    (object Attribute
 				tool       	"Cplusplus"
 				name       	"Never synchronize"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleProperty"
+			value      	("CommentStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C++ Comment"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C Comment"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"XML Comment"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"JavaDoc Comment"
 				value      	4)))))
 	    (object Attribute
 		tool       	"Cplusplus"
@@ -4042,6 +5980,30 @@
 			    (object Attribute
 				tool       	"Cplusplus"
 				name       	"Never synchronize"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleProperty"
+			value      	("CommentStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C++ Comment"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C Comment"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"XML Comment"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"JavaDoc Comment"
 				value      	4)))))
 	    (object Attribute
 		tool       	"Cplusplus"
@@ -6168,7 +8130,39 @@
 		    (object Attribute
 			tool       	"CORBA"
 			name       	"PathSeparator"
-			value      	"")))
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"FundamentalTypes"
+			value      	"short; long; long long; unsigned short; unsigned long; unsigned long long; float; double; long double; char; boolean; wchar; octet; any;string; wstring; sequence; fixed; Object")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"GenerateRoseID"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"NotShowRoseIDDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"GenerateComments"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"UseTabs"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"UseSpaces"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"SpacingItems"
+			value      	4)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"BraceOnNewLine"
+			value      	FALSE)))
 	    (object Attribute
 		tool       	"CORBA"
 		name       	"default__Class"
@@ -6184,7 +8178,11 @@
 		    (object Attribute
 			tool       	"CORBA"
 			name       	"ImplementationType"
-			value      	"")))
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"IsLocal"
+			value      	FALSE)))
 	    (object Attribute
 		tool       	"CORBA"
 		name       	"default__Module-Spec"
@@ -6620,6 +8618,14 @@
 		    (object Attribute
 			tool       	"Data Modeler"
 			name       	"IsPackage"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsPackageWrapped"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsPackageBodyWrapped"
 			value      	FALSE)))
 	    (object Attribute
 		tool       	"Data Modeler"
@@ -6908,7 +8914,11 @@
 		    (object Attribute
 			tool       	"Data Modeler"
 			name       	"DefaultValueType"
-			value      	"")))
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsWrapped"
+			value      	FALSE)))
 	    (object Attribute
 		tool       	"Data Modeler"
 		name       	"default__Parameter"
@@ -7056,7 +9066,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	"C:\\Archivos de programa\\Java\\jdk1.6.0_26\\LIB;D:\\LINGO10\\Lingo10_0.jar")
+			value      	".;F:\\LINGO11\\Lingo11.jar;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip")
 		    (object Attribute
 			tool       	"Java"
 			name       	"ReferenceClasspath"
@@ -7236,7 +9246,11 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"FundamentalType"
-			value      	"boolean; char; byte; short; int; long; float; double; Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; java.util.AbstractCollection; java.util.AbstractList;java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap")))
+			value      	"boolean; char; byte; short; int; long; float; double; Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; java.util.AbstractCollection; java.util.AbstractList;java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocExceptionTag"
+			value      	"@throws")))
 	    (object Attribute
 		tool       	"Java"
 		name       	"default__Class"
@@ -8979,7 +10993,23 @@
 		    (object Attribute
 			tool       	"VC++"
 			name       	"DefaultBody"
-			value      	(value Text ""))))
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"VC++"
+			name       	"GenerateSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"VC++"
+				name       	"DoNotGenerate"
+				value      	400)
+			    (object Attribute
+				tool       	"VC++"
+				name       	"DeclareAndDefine"
+				value      	401)
+			    (object Attribute
+				tool       	"VC++"
+				name       	"DeclareOnly"
+				value      	402)))))
 	    (object Attribute
 		tool       	"VC++"
 		name       	"HiddenTool"
