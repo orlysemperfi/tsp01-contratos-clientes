@@ -734,11 +734,11 @@
 			    (object UseCaseDiagram "Diagrama de Reglas del Negocio"
 				quid       	"4FA2988301F5"
 				title      	"Diagrama de Reglas del Negocio"
-				zoom       	85
+				zoom       	80
 				max_height 	28350
 				max_width  	21600
 				origin_x   	309
-				origin_y   	4775
+				origin_y   	4777
 				items      	(list diagram_item_list
 				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN001_Lineas de Servicio" @24
 					ShowCompartmentStereotypes 	TRUE
@@ -746,7 +746,7 @@
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(1172, 915)
+					location   	(507, 415)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -758,10 +758,10 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@24
-					    location   	(1172, 1119)
+					    location   	(507, 619)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	832
+					    max_width  	823
 					    justify    	0
 					    label      	"CC_RN001_Lineas de Servicio")
 					icon       	"Business Goal"
@@ -771,13 +771,13 @@
 					quidu      	"4FA294B20134"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN003_Tipos de Servicio" @25
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN002_Tipos de Cliente" @25
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(1153, 1884)
+					location   	(522, 860)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -789,26 +789,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@25
-					    location   	(1153, 2088)
+					    location   	(522, 1064)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	837
+					    max_width  	826
 					    justify    	0
-					    label      	"CC_RN003_Tipos de Servicio")
+					    label      	"CC_RN002_Tipos de Cliente")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FA6CFB70165"
+					quidu      	"4FABE6760140"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN004_Frecuencia de Seguimiento de Contrato" @26
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN003_Tipos de Servicio" @26
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(1147, 3316)
+					location   	(507, 1301)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -820,26 +820,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@26
-					    location   	(1147, 3520)
+					    location   	(507, 1505)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	1074
+					    max_width  	829
 					    justify    	0
-					    label      	"CC_RN004_Frecuencia de Seguimiento de Contrato")
+					    label      	"CC_RN003_Tipos de Servicio")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FA6D0390097"
+					quidu      	"4FA6CFB70165"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN005_Generacion de Contrato" @27
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN004_Frecuencia de Seguimiento de Contrato" @27
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(1153, 3760)
+					location   	(522, 1735)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -851,26 +851,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@27
-					    location   	(1153, 3964)
+					    location   	(522, 1939)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	848
+					    max_width  	832
 					    justify    	0
-					    label      	"CC_RN005_Generacion de Contrato")
+					    label      	"CC_RN004_Frecuencia de Seguimiento de Contrato")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FA6D05D00DD"
+					quidu      	"4FA6D0390097"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN006_Generacion de Adenda" @28
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN005_Generacion de Contrato" @28
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2439, 424)
+					location   	(526, 2190)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -882,26 +882,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@28
-					    location   	(2439, 628)
+					    location   	(526, 2394)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	850
+					    max_width  	892
 					    justify    	0
-					    label      	"CC_RN006_Generacion de Adenda")
+					    label      	"CC_RN005_Generacion de Contrato")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FA6D0730291"
+					quidu      	"4FA6D05D00DD"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN007_Polemica de Contrato" @29
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN006_Generacion de Adenda" @29
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2427, 1876)
+					location   	(474, 2606)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -913,26 +913,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@29
-					    location   	(2427, 2080)
+					    location   	(474, 2810)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	861
+					    max_width  	895
 					    justify    	0
-					    label      	"CC_RN007_Polemica de Contrato")
+					    label      	"CC_RN006_Generacion de Adenda")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FA6D2220268"
+					quidu      	"4FA6D0730291"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN013_Pruebas_de_Concepto" @30
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN007_Polemica de Contrato" @30
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2399, 2308)
+					location   	(1913, 359)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -944,17 +944,17 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@30
-					    location   	(2399, 2512)
+					    location   	(1913, 563)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	864
+					    max_width  	898
 					    justify    	0
-					    label      	"CC_RN013_Pruebas_de_Concepto")
+					    label      	"CC_RN007_Polemica de Contrato")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FA6D24E034D"
+					quidu      	"4FA6D2220268"
 					annotation 	8
 					autoResize 	TRUE)
 				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN008_Tipos de Contrato" @31
@@ -963,7 +963,7 @@
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2424, 2846)
+					location   	(1878, 793)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -975,10 +975,10 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@31
-					    location   	(2424, 3050)
+					    location   	(1878, 997)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	866
+					    max_width  	900
 					    justify    	0
 					    label      	"CC_RN008_Tipos de Contrato")
 					icon       	"Business Goal"
@@ -994,7 +994,7 @@
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2403, 3276)
+					location   	(1845, 1258)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1006,10 +1006,10 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@32
-					    location   	(2403, 3480)
+					    location   	(1845, 1462)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	868
+					    max_width  	903
 					    justify    	0
 					    label      	"CC_RN009_Tipos de Penalidad")
 					icon       	"Business Goal"
@@ -1019,8 +1019,13 @@
 					quidu      	"4FA6D27D0223"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object Label @33
-					location   	(262, 102)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN010_Numero de Adendas por Contrato" @33
+					ShowCompartmentStereotypes 	TRUE
+					SuppressAttribute 	TRUE
+					SuppressOperation 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1837, 1681)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1030,16 +1035,28 @@
 					    strike     	FALSE
 					    color      	0
 					    default_color 	TRUE)
-					nlines     	2
-					max_width  	1328
-					label      	"Reglas del Negocio - Gestión de Contratos de Cliente SLA")
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN002_Tipos de Cliente" @34
+					label      	(object ItemLabel
+					    Parent_View 	@33
+					    location   	(1837, 1885)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	906
+					    justify    	0
+					    label      	"CC_RN010_Numero de Adendas por Contrato")
+					icon       	"Business Goal"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"4FB07EA402E0"
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN011_Origen de Contrato" @34
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(1155, 349)
+					location   	(1798, 2190)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1051,26 +1068,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@34
-					    location   	(1155, 553)
+					    location   	(1798, 2394)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	823
+					    max_width  	908
 					    justify    	0
-					    label      	"CC_RN002_Tipos de Cliente")
+					    label      	"CC_RN011_Origen de Contrato")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FABE6760140"
+					quidu      	"4FB07EC1013D"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN010_Numero de Adendas por Contrato" @35
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN012_Revision_de_Clausualas" @35
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2410, 3756)
+					location   	(1834, 2577)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1082,26 +1099,26 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@35
-					    location   	(2410, 3960)
+					    location   	(1834, 2781)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	924
+					    max_width  	910
 					    justify    	0
-					    label      	"CC_RN010_Numero de Adendas por Contrato")
+					    label      	"CC_RN012_Revision_de_Clausualas")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FB07EA402E0"
+					quidu      	"4FCCBDDE02DF"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN011_Origen de Contrato" @36
+				    (object ClassView "Class" "Use Case View::Modelo de Casos de Uso del Negocio::Reglas del Negocio::CC_RN013_Pruebas_de_Concepto" @36
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(2377, 4195)
+					location   	(1812, 3047)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1113,17 +1130,17 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@36
-					    location   	(2377, 4399)
+					    location   	(1812, 3251)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	874
+					    max_width  	913
 					    justify    	0
-					    label      	"CC_RN011_Origen de Contrato")
+					    label      	"CC_RN013_Pruebas_de_Concepto")
 					icon       	"Business Goal"
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
-					quidu      	"4FB07EC1013D"
+					quidu      	"4FA6D24E034D"
 					annotation 	8
 					autoResize 	TRUE))))))
 		logical_presentations 	(list unit_reference_list)))
@@ -2349,7 +2366,7 @@
 						quid       	"4FCA661602E8"))
 					(object State_Transition
 					    quid       	"4FCA670500D2"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Cambio factible con las Cláusulas de modificaciones?"
+					    supplier   	""
 					    supplier_quidu 	"4FCA66210081"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Revisar Cambios con las Cláusulas de modificaciones de Requisitos"
 					    client_quidu 	"4FCA65E10044"
@@ -2376,7 +2393,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Generar documento de disconformidad"
 					    supplier_quidu 	"4FCA674601BA"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Cambio factible con las Cláusulas de modificaciones?"
+					    client     	""
 					    client_quidu 	"4FCA66210081"
 					    Event      	(object Event "NO"
 						quid       	"4FCA694B02A4")
@@ -2387,7 +2404,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Modificar Alcances/Cláusulas del Contrato"
 					    supplier_quidu 	"4FCA69AE031A"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Cambio factible con las Cláusulas de modificaciones?"
+					    client     	""
 					    client_quidu 	"4FCA66210081"
 					    Event      	(object Event "SI"
 						quid       	"4FCA69BF0156")
@@ -2406,7 +2423,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Modificar Alcances/Cláusulas del Contrato"
 					    supplier_quidu 	"4FCA69AE031A"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Deacuerdo con las modificaciones?"
+					    client     	""
 					    client_quidu 	"4FCA6B9C010B"
 					    Event      	(object Event "NO"
 						quid       	"4FCA6BAD02D0")
@@ -2417,7 +2434,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Solicitar Firma de la Modificación"
 					    supplier_quidu 	"4FCA6BE1012D"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Deacuerdo con las modificaciones?"
+					    client     	""
 					    client_quidu 	"4FCA6B9C010B"
 					    Event      	(object Event "SI"
 						quid       	"4FCA6BFC01B2")
@@ -2425,7 +2442,7 @@
 						quid       	"4FCA6BFC01B4"))
 					(object State_Transition
 					    quid       	"4FCA6C1B031A"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Deacuerdo con las modificaciones?"
+					    supplier   	""
 					    supplier_quidu 	"4FCA6B9C010B"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Revisar Modificaciones Alcances/Cláusulas"
 					    client_quidu 	"4FCA6B5A0284"
@@ -2433,7 +2450,7 @@
 						quid       	"4FCA6C1B031D"))
 					(object State_Transition
 					    quid       	"4FCA6DE900C5"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Conforme con las modificaciones?"
+					    supplier   	""
 					    supplier_quidu 	"4FCA6D9E0321"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Revisar Contrato modificado"
 					    client_quidu 	"4FCA6C65016A"
@@ -2444,7 +2461,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Firmar Contrato modificado"
 					    supplier_quidu 	"4FCA6D95008C"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Conforme con las modificaciones?"
+					    client     	""
 					    client_quidu 	"4FCA6D9E0321"
 					    Event      	(object Event "SI"
 						quid       	"4FCA6DED016E")
@@ -2455,7 +2472,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Remitir observaciones"
 					    supplier_quidu 	"4FCA6E2903B5"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::¿Conforme con las modificaciones?"
+					    client     	""
 					    client_quidu 	"4FCA6D9E0321"
 					    Event      	(object Event "NO"
 						quid       	"4FCA6E3A019A")
@@ -2613,7 +2630,7 @@
 						quid       	"4FCA8B57015E"))
 					(object State_Transition
 					    quid       	"4FCA8EC50278"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::De Requerimiento?"
+					    supplier   	""
 					    supplier_quidu 	"4FCA8E1201F9"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Consultar Tipo Solicitud"
 					    client_quidu 	"4FCA8B400042"
@@ -2624,7 +2641,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Recepcionar Solicitud Requerimiento"
 					    supplier_quidu 	"4FCA8FDC0151"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::De Requerimiento?"
+					    client     	""
 					    client_quidu 	"4FCA8E1201F9"
 					    Event      	(object Event "SI"
 						quid       	"4FCA8FF50361")
@@ -2635,7 +2652,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Recepcionar Solicitud Cambio"
 					    supplier_quidu 	"4FCA901601C6"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::De Requerimiento?"
+					    client     	""
 					    client_quidu 	"4FCA8E1201F9"
 					    Event      	(object Event "NO"
 						quid       	"4FCA9038036E")
@@ -2659,7 +2676,7 @@
 						quid       	"4FCA91BB033B"))
 					(object State_Transition
 					    quid       	"4FCA91F4007D"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Todo correcto?"
+					    supplier   	""
 					    supplier_quidu 	"4FCA91D501FC"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Revisar Solicitud Cambio"
 					    client_quidu 	"4FCA918402E8"
@@ -2670,7 +2687,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Registrar Error Solicitud Requerimiento"
 					    supplier_quidu 	"4FCA92050054"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Todo correcto?"
+					    client     	""
 					    client_quidu 	"4FCA91D501FC"
 					    Event      	(object Event "NO"
 						quid       	"4FCA92240087")
@@ -2686,7 +2703,7 @@
 						quid       	"4FCA92380337"))
 					(object State_Transition
 					    quid       	"4FCA92B10038"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Todo correcto?"
+					    supplier   	""
 					    supplier_quidu 	"4FCA91D501FC"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Revisar Solicitud Requerimiento"
 					    client_quidu 	"4FCA913E02B4"
@@ -2696,7 +2713,7 @@
 					    quid       	"4FCA92D900AF"
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Registrar Erro Solicitud Cambio"
 					    supplier_quidu 	"4FCA92B70072"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN001 Realización_Gestionar_Contratos::Gestionar Contrato::Todo correcto?"
+					    client     	""
 					    client_quidu 	"4FCA91D501FC"
 					    sendEvent  	(object sendEvent
 						quid       	"4FCA92D900B2"))
@@ -5925,7 +5942,7 @@
 							location   	(383, 863)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -5935,7 +5952,7 @@
 						    quidu      	"4FB843C801D6"
 						    compartment 	(object Compartment
 							Parent_View 	@177
-							location   	(-306, 828)
+							location   	(-309, 828)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -5948,7 +5965,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -5983,7 +6000,7 @@
 							location   	(994, 855)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -5993,7 +6010,7 @@
 						    quidu      	"4FCA8EDD028D"
 						    compartment 	(object Compartment
 							Parent_View 	@179
-							location   	(305, 820)
+							location   	(302, 820)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6006,7 +6023,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -6041,7 +6058,7 @@
 							location   	(1756, 1142)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6051,7 +6068,7 @@
 						    quidu      	"4FCA9B7F0305"
 						    compartment 	(object Compartment
 							Parent_View 	@181
-							location   	(1067, 1107)
+							location   	(1064, 1107)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6064,7 +6081,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Faltante]"))
@@ -6099,7 +6116,7 @@
 							location   	(2328, 1006)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6109,7 +6126,7 @@
 						    quidu      	"4FCA9BA801B6"
 						    compartment 	(object Compartment
 							Parent_View 	@183
-							location   	(1639, 971)
+							location   	(1636, 971)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6122,7 +6139,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Faltante]"))
@@ -6157,7 +6174,7 @@
 							location   	(1742, 2416)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6167,7 +6184,7 @@
 						    quidu      	"4FCAA2EA0383"
 						    compartment 	(object Compartment
 							Parent_View 	@185
-							location   	(1053, 2381)
+							location   	(1050, 2381)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6180,7 +6197,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Rechazado]"))
@@ -6215,7 +6232,7 @@
 							location   	(3250, 1671)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6225,7 +6242,7 @@
 						    quidu      	"4FB8BC7C021A"
 						    compartment 	(object Compartment
 							Parent_View 	@187
-							location   	(2561, 1636)
+							location   	(2558, 1636)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6238,7 +6255,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Aprobada]"))
@@ -6273,7 +6290,7 @@
 							location   	(2947, 2406)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6283,7 +6300,7 @@
 						    quidu      	"4FCA9FD40110"
 						    compartment 	(object Compartment
 							Parent_View 	@189
-							location   	(2258, 2371)
+							location   	(2255, 2371)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6296,7 +6313,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Iniciado]"))
@@ -6331,7 +6348,7 @@
 							location   	(4397, 5045)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1365
+							max_width  	1372
 							justify    	0
 							label      	"     ")
 						    icon       	"Business Entity"
@@ -6341,7 +6358,7 @@
 						    quidu      	"4FCC73020351"
 						    compartment 	(object Compartment
 							Parent_View 	@191
-							location   	(3713, 5086)
+							location   	(3710, 5086)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6354,7 +6371,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1365
+							max_width  	1372
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Aprobado]"))
@@ -6389,7 +6406,7 @@
 							location   	(4374, 6513)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1336
+							max_width  	1343
 							justify    	0
 							label      	"   ")
 						    icon       	"Business Entity"
@@ -6399,7 +6416,7 @@
 						    quidu      	"4FCC76320156"
 						    compartment 	(object Compartment
 							Parent_View 	@193
-							location   	(3705, 6554)
+							location   	(3701, 6554)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6412,7 +6429,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1336
+							max_width  	1343
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Rechazado]"))
@@ -6447,7 +6464,7 @@
 							location   	(4272, 7398)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1372
+							max_width  	1378
 							justify    	0
 							label      	"     ")
 						    icon       	"Business Entity"
@@ -6457,7 +6474,7 @@
 						    quidu      	"4FCC73020351"
 						    compartment 	(object Compartment
 							Parent_View 	@195
-							location   	(3585, 7439)
+							location   	(3582, 7439)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6470,7 +6487,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1372
+							max_width  	1378
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Aprobado]"))
@@ -6498,7 +6515,7 @@
 							location   	(5179, 2262)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6508,7 +6525,7 @@
 						    quidu      	"4FCAA90E0237"
 						    compartment 	(object Compartment
 							Parent_View 	@196
-							location   	(4490, 2227)
+							location   	(4487, 2227)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6521,7 +6538,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -6556,7 +6573,7 @@
 							location   	(5554, 2079)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6566,7 +6583,7 @@
 						    quidu      	"4FCAA92D0197"
 						    compartment 	(object Compartment
 							Parent_View 	@198
-							location   	(4865, 2044)
+							location   	(4862, 2044)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6579,7 +6596,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -6614,7 +6631,7 @@
 							location   	(6040, 2103)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	757
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6624,7 +6641,7 @@
 						    quidu      	"4FCADB950127"
 						    compartment 	(object Compartment
 							Parent_View 	@200
-							location   	(5351, 2068)
+							location   	(5660, 2068)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6637,13 +6654,13 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	757
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
 						    annotation 	4
 						    autoResize 	TRUE
-						    subobjects 	0
+						    subobjects 	1
 						    x_offset   	0.000000
 						    y_offset   	0.000000
 						    State      	"Registrada"
@@ -6657,7 +6674,7 @@
 						    line_style 	0)
 						(object ObjectView "$UNNAMED$103" @202
 						    Parent_View 	@109
-						    location   	(6455, 2136)
+						    location   	(6040, 1929)
 						    font       	(object Font
 							size       	10
 							face       	"Arial"
@@ -6669,10 +6686,10 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@202
-							location   	(6455, 2310)
+							location   	(6040, 2103)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6682,7 +6699,7 @@
 						    quidu      	"4FCAA7FD02F8"
 						    compartment 	(object Compartment
 							Parent_View 	@202
-							location   	(5766, 2275)
+							location   	(5348, 2068)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6695,7 +6712,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -6737,7 +6754,7 @@
 							location   	(5591, 3367)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6747,7 +6764,7 @@
 						    quidu      	"4FCAB11A00C7"
 						    compartment 	(object Compartment
 							Parent_View 	@205
-							location   	(4902, 3332)
+							location   	(4899, 3332)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6760,7 +6777,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -6795,7 +6812,7 @@
 							location   	(6226, 3362)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -6805,7 +6822,7 @@
 						    quidu      	"4FCAB1310380"
 						    compartment 	(object Compartment
 							Parent_View 	@207
-							location   	(5537, 3327)
+							location   	(5534, 3327)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6818,7 +6835,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -6853,7 +6870,7 @@
 							location   	(6581, 6182)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1288
+							max_width  	1294
 							justify    	0
 							label      	"     ")
 						    icon       	"Business Entity"
@@ -6863,7 +6880,7 @@
 						    quidu      	"4FCC73020351"
 						    compartment 	(object Compartment
 							Parent_View 	@209
-							location   	(5936, 6223)
+							location   	(5933, 6223)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6876,7 +6893,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1288
+							max_width  	1294
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Modificado]"))
@@ -6918,7 +6935,7 @@
 							location   	(6485, 5605)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1339
+							max_width  	1346
 							justify    	0
 							label      	" ")
 						    icon       	"Business Entity"
@@ -6928,7 +6945,7 @@
 						    quidu      	"4FCC73AA01CD"
 						    compartment 	(object Compartment
 							Parent_View 	@212
-							location   	(5814, 5646)
+							location   	(5811, 5646)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6941,7 +6958,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1339
+							max_width  	1346
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -6976,7 +6993,7 @@
 							location   	(5582, 6792)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1355
+							max_width  	1362
 							justify    	0
 							label      	"  ")
 						    icon       	"Business Entity"
@@ -6986,7 +7003,7 @@
 						    quidu      	"4FCC766C005D"
 						    compartment 	(object Compartment
 							Parent_View 	@214
-							location   	(4903, 6833)
+							location   	(4900, 6833)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -6999,7 +7016,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1355
+							max_width  	1362
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Aprobado]"))
@@ -7034,7 +7051,7 @@
 							location   	(8370, 5014)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1359
+							max_width  	1365
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -7044,7 +7061,7 @@
 						    quidu      	"4FCAAEBE01C5"
 						    compartment 	(object Compartment
 							Parent_View 	@216
-							location   	(7689, 4979)
+							location   	(7686, 4979)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7057,7 +7074,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1359
+							max_width  	1365
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Firmado]"))
@@ -7092,7 +7109,7 @@
 							location   	(8433, 5444)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1359
+							max_width  	1365
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -7102,7 +7119,7 @@
 						    quidu      	"4FCAAEE70135"
 						    compartment 	(object Compartment
 							Parent_View 	@218
-							location   	(7752, 5409)
+							location   	(7749, 5409)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7115,7 +7132,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1359
+							max_width  	1365
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Firmado]"))
@@ -7150,7 +7167,7 @@
 							location   	(7243, 3415)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -7160,7 +7177,7 @@
 						    quidu      	"4FCAAB770191"
 						    compartment 	(object Compartment
 							Parent_View 	@220
-							location   	(6554, 3380)
+							location   	(6551, 3380)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7173,7 +7190,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Observada]"))
@@ -7215,7 +7232,7 @@
 							location   	(8301, 3922)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1195
+							max_width  	1201
 							justify    	0
 							label      	"  ")
 						    icon       	"Business Entity"
@@ -7225,7 +7242,7 @@
 						    quidu      	"4FCC67870044"
 						    compartment 	(object Compartment
 							Parent_View 	@223
-							location   	(7702, 3963)
+							location   	(7699, 3963)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7238,7 +7255,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1195
+							max_width  	1201
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -7273,7 +7290,7 @@
 							location   	(8320, 4333)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1211
+							max_width  	1217
 							justify    	0
 							label      	" ")
 						    icon       	"Business Entity"
@@ -7283,7 +7300,7 @@
 						    quidu      	"4FCC67A802C8"
 						    compartment 	(object Compartment
 							Parent_View 	@225
-							location   	(7713, 4374)
+							location   	(7710, 4374)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7296,7 +7313,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1211
+							max_width  	1217
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Registrada]"))
@@ -7331,7 +7348,7 @@
 							location   	(7197, 4322)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -7341,7 +7358,7 @@
 						    quidu      	"4FCAAF5601E0"
 						    compartment 	(object Compartment
 							Parent_View 	@227
-							location   	(6508, 4287)
+							location   	(6505, 4287)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7354,7 +7371,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Observada]"))
@@ -7396,7 +7413,7 @@
 							location   	(7207, 5059)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -7406,7 +7423,7 @@
 						    quidu      	"4FCAAF720231"
 						    compartment 	(object Compartment
 							Parent_View 	@230
-							location   	(6518, 5024)
+							location   	(6515, 5024)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7419,7 +7436,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1375
+							max_width  	1381
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Observada]"))
@@ -7461,7 +7478,7 @@
 							location   	(8296, 7081)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1314
+							max_width  	1320
 							justify    	0
 							label      	"   ")
 						    icon       	"Business Entity"
@@ -7471,7 +7488,7 @@
 						    quidu      	"4FCC757D032B"
 						    compartment 	(object Compartment
 							Parent_View 	@233
-							location   	(7638, 7122)
+							location   	(7635, 7122)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -7484,7 +7501,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1314
+							max_width  	1320
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Firmado]"))
@@ -7800,7 +7817,7 @@
 						quid       	"4FB84BDD01F7"))
 					(object State_Transition
 					    quid       	"4FB84BE1021D"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Aprobó Solicitud de Cambio?"
+					    supplier   	""
 					    supplier_quidu 	"4FB874BC02A9"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Revisar Solicitud Cambio"
 					    client_quidu 	"4FB8483C031F"
@@ -7816,7 +7833,7 @@
 						quid       	"4FB84BE50093"))
 					(object State_Transition
 					    quid       	"4FB84BE902CB"
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Procede  Cláusula?"
+					    supplier   	""
 					    supplier_quidu 	"4FB849B1034B"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Revisar Cláusulas"
 					    client_quidu 	"4FB848710309"
@@ -7825,9 +7842,9 @@
 					(object State_Transition
 					    quid       	"4FB84BF003D9"
 					    label      	""
-					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Desea replantear cláusulas?"
+					    supplier   	""
 					    supplier_quidu 	"4FB84BC401BE"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Procede  Cláusula?"
+					    client     	""
 					    client_quidu 	"4FB849B1034B"
 					    Event      	(object Event "NO"
 						quid       	"4FB84BF003DA")
@@ -7838,7 +7855,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Establecer Cláusulas"
 					    supplier_quidu 	"4FB8485E00A8"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Desea replantear cláusulas?"
+					    client     	""
 					    client_quidu 	"4FB84BC401BE"
 					    Event      	(object Event "SI"
 						quid       	"4FB84BF50114")
@@ -7849,7 +7866,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Generar Adenda"
 					    supplier_quidu 	"4FB849EA033E"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Procede  Cláusula?"
+					    client     	""
 					    client_quidu 	"4FB849B1034B"
 					    Event      	(object Event "SI"
 						quid       	"4FB84BF90062")
@@ -7860,7 +7877,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Informar a Control de Cambios"
 					    supplier_quidu 	"4FB84A16029A"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Desea replantear cláusulas?"
+					    client     	""
 					    client_quidu 	"4FB84BC401BE"
 					    Event      	(object Event "NO"
 						quid       	"4FB84C010361")
@@ -7903,7 +7920,7 @@
 					    label      	""
 					    supplier   	"$UNNAMED$116"
 					    supplier_quidu 	"4FB8756702E0"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Aprobó Solicitud de Cambio?"
+					    client     	""
 					    client_quidu 	"4FB874BC02A9"
 					    Event      	(object Event "NO"
 						quid       	"4FB8756F0006")
@@ -7914,7 +7931,7 @@
 					    label      	""
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Remitir Solicitud de Adenda"
 					    supplier_quidu 	"4FB87499033F"
-					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN002_Realización Realizar_Incumplimineto_Contrato::Gestionar Incumplimiento Contrato::Aprobó Solicitud de Cambio?"
+					    client     	""
 					    client_quidu 	"4FB874BC02A9"
 					    Event      	(object Event "SI"
 						quid       	"4FB8757603D2")
@@ -10035,7 +10052,7 @@
 							location   	(439, 714)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10045,7 +10062,7 @@
 						    quidu      	"4FCB93E80017"
 						    compartment 	(object Compartment
 							Parent_View 	@323
-							location   	(-279, 679)
+							location   	(-282, 679)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10058,7 +10075,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -10093,7 +10110,7 @@
 							location   	(2857, 572)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10103,7 +10120,7 @@
 						    quidu      	"4FCB947E0189"
 						    compartment 	(object Compartment
 							Parent_View 	@325
-							location   	(2139, 537)
+							location   	(2136, 537)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10116,7 +10133,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Revisado]"))
@@ -10162,7 +10179,7 @@
 							location   	(1461, 867)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10172,7 +10189,7 @@
 						    quidu      	"4FCB96C20246"
 						    compartment 	(object Compartment
 							Parent_View 	@328
-							location   	(743, 832)
+							location   	(740, 832)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10185,7 +10202,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Cerrado]"))
@@ -10220,7 +10237,7 @@
 							location   	(3006, 999)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10230,7 +10247,7 @@
 						    quidu      	"4FCB988A0191"
 						    compartment 	(object Compartment
 							Parent_View 	@330
-							location   	(2288, 964)
+							location   	(2285, 964)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10243,7 +10260,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Revisado]"))
@@ -10278,7 +10295,7 @@
 							location   	(2806, 1412)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10288,7 +10305,7 @@
 						    quidu      	"4FCB99F200DD"
 						    compartment 	(object Compartment
 							Parent_View 	@332
-							location   	(2088, 1377)
+							location   	(2085, 1377)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10301,7 +10318,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -10336,7 +10353,7 @@
 							location   	(2788, 2079)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10346,7 +10363,7 @@
 						    quidu      	"4FCB9B51002E"
 						    compartment 	(object Compartment
 							Parent_View 	@334
-							location   	(2070, 2044)
+							location   	(2067, 2044)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10359,7 +10376,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Aprobado]"))
@@ -10394,7 +10411,7 @@
 							location   	(4142, 2199)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10404,7 +10421,7 @@
 						    quidu      	"4FCB9A840061"
 						    compartment 	(object Compartment
 							Parent_View 	@336
-							location   	(3424, 2164)
+							location   	(3421, 2164)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10417,7 +10434,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -10452,7 +10469,7 @@
 							location   	(3912, 3935)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10462,7 +10479,7 @@
 						    quidu      	"4FCC7AE60133"
 						    compartment 	(object Compartment
 							Parent_View 	@338
-							location   	(3194, 3900)
+							location   	(3191, 3900)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10475,7 +10492,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -10514,7 +10531,7 @@
 							location   	(275, 4014)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -10524,7 +10541,7 @@
 						    quidu      	"4FCB9BE6028E"
 						    compartment 	(object Compartment
 							Parent_View 	@341
-							location   	(-443, 3979)
+							location   	(-446, 3979)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10537,7 +10554,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Anulada]"))
@@ -10565,7 +10582,7 @@
 							location   	(590, 3119)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1429
+							max_width  	1436
 							justify    	0
 							label      	" ")
 						    icon       	"Business Entity"
@@ -10573,6 +10590,25 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"4FCC7B2E025F"
+						    compartment 	(object Compartment
+							Parent_View 	@342
+							location   	(-129, 3160)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							icon_style 	"Icon"
+							anchor     	2
+							nlines     	1
+							max_width  	1436
+							justify    	0
+							compartmentItems 	(list Compartment
+							    "[Aprobado]"))
 						    width      	264
 						    height     	192
 						    annotation 	4
@@ -10606,7 +10642,7 @@
 							location   	(769, 4014)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1394
+							max_width  	1401
 							justify    	0
 							label      	"  ")
 						    icon       	"Business Entity"
@@ -10616,7 +10652,7 @@
 						    quidu      	"4FCC7955000A"
 						    compartment 	(object Compartment
 							Parent_View 	@344
-							location   	(71, 4055)
+							location   	(67, 4055)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -10629,7 +10665,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1394
+							max_width  	1401
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Anulada]"))
@@ -10848,7 +10884,6 @@
 					(object State_Transition
 					    quid       	"4FCB9D47006A"
 					    label      	""
-					    supplier   	"$UNNAMED$166"
 					    supplier_quidu 	"4FCB9D470056"
 					    client     	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN003_Realización_Gestionar_Seguimiento_Contrato::Gestionar Seguimiento Contrato::¿Contrato Vigente?"
 					    client_quidu 	"4FCB9D470042"
@@ -10973,7 +11008,7 @@
 					    quid       	"4FCB9D4700A2"
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN003_Realización_Gestionar_Seguimiento_Contrato::Gestionar Seguimiento Contrato::Determinar Incumplientos del Cliente"
 					    supplier_quidu 	"4FCB9D470044"
-					    client     	"$UNNAMED$166"
+					    client     	""
 					    client_quidu 	"4FCB9D470056"
 					    sendEvent  	(object sendEvent
 						quid       	"4FCB9D4700A5"))
@@ -10981,7 +11016,7 @@
 					    quid       	"4FCB9D4700A6"
 					    supplier   	"Logical View::Modelo de Analisis del Negocio::Realizacion de Casos de Uso del Negocio::CC_RCUN003_Realización_Gestionar_Seguimiento_Contrato::Gestionar Seguimiento Contrato::Evaluar si es rentable seguir con el contrato"
 					    supplier_quidu 	"4FCB9D47004C"
-					    client     	"$UNNAMED$166"
+					    client     	""
 					    client_quidu 	"4FCB9D470056"
 					    sendEvent  	(object sendEvent
 						quid       	"4FCB9D4700A9"))
@@ -12113,7 +12148,7 @@
 							location   	(535, 788)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -12123,7 +12158,7 @@
 						    quidu      	"4FCB9EF602C0"
 						    compartment 	(object Compartment
 							Parent_View 	@398
-							location   	(-183, 753)
+							location   	(-186, 753)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -12136,7 +12171,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Seguimiento]"))
@@ -12171,7 +12206,7 @@
 							location   	(2030, 1831)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -12181,7 +12216,7 @@
 						    quidu      	"4FCBAAB801E2"
 						    compartment 	(object Compartment
 							Parent_View 	@400
-							location   	(1312, 1796)
+							location   	(1309, 1796)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -12194,7 +12229,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Revisado]"))
@@ -12229,7 +12264,7 @@
 							location   	(1777, 3186)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -12239,7 +12274,7 @@
 						    quidu      	"4FCBB37B024B"
 						    compartment 	(object Compartment
 							Parent_View 	@402
-							location   	(1059, 3151)
+							location   	(1056, 3151)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -12252,7 +12287,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Generado]"))
@@ -12287,7 +12322,7 @@
 							location   	(4829, 2486)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -12297,7 +12332,7 @@
 						    quidu      	"4FCBB34600E5"
 						    compartment 	(object Compartment
 							Parent_View 	@404
-							location   	(4111, 2451)
+							location   	(4108, 2451)
 							font       	(object Font
 							    size       	10
 							    face       	"Arial"
@@ -12310,7 +12345,7 @@
 							icon_style 	"Icon"
 							anchor     	2
 							nlines     	1
-							max_width  	1433
+							max_width  	1439
 							justify    	0
 							compartmentItems 	(list Compartment
 							    "[Revisado]"))
@@ -12679,102 +12714,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN005_Linea_Servicio" @428
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1582, 504)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@428
-				    location   	(1582, 678)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	763
-				    justify    	0
-				    label      	"CC_EN005_Linea_Servicio")
-				icon       	"Business Entity"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FABFDC40370"
-				annotation 	8
-				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN009_BuenaPro" @429
-				ShowCompartmentStereotypes 	TRUE
-				SuppressAttribute 	TRUE
-				SuppressOperation 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1041, 558)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@429
-				    location   	(1041, 732)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	751
-				    justify    	0
-				    label      	"CC_EN009_BuenaPro")
-				icon       	"Business Entity"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"4FAF03BB00C0"
-				annotation 	8
-				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$27" @430
-				location   	(764, 625)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4FAF043E007D"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$28" @431
-					Parent_View 	@430
-					location   	(527, -341)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAF043F02BE"
-					client     	@430
-					supplier   	@429
-					line_style 	0)
-				    (object RoleView "$UNNAMED$29" @432
-					Parent_View 	@430
-					location   	(527, -341)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"4FAF043F02CA"
-					client     	@430
-					supplier   	@427
-					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN003_Cliente" @433
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN003_Cliente" @428
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12791,7 +12731,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@433
+				    Parent_View 	@428
 				    location   	(2142, 1621)
 				    anchor_loc 	1
 				    nlines     	2
@@ -12805,7 +12745,7 @@
 				quidu      	"4FABFD9E01BE"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN008_InformeCierre" @434
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN008_InformeCierre" @429
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12822,7 +12762,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@434
+				    Parent_View 	@429
 				    location   	(310, 2357)
 				    anchor_loc 	1
 				    nlines     	1
@@ -12836,7 +12776,7 @@
 				quidu      	"4FAC230200A5"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN011_Solicitud_Adenda" @435
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN011_Solicitud_Adenda" @430
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12853,7 +12793,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@435
+				    Parent_View 	@430
 				    location   	(755, 2741)
 				    anchor_loc 	1
 				    nlines     	1
@@ -12867,7 +12807,7 @@
 				quidu      	"4FB877FA0299"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN012_Servicio" @436
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN012_Servicio" @431
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12884,7 +12824,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@436
+				    Parent_View 	@431
 				    location   	(1224, 2702)
 				    anchor_loc 	1
 				    nlines     	2
@@ -12898,7 +12838,7 @@
 				quidu      	"4FB9C286011A"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN004_SLA" @437
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN004_SLA" @432
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12915,7 +12855,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@437
+				    Parent_View 	@432
 				    location   	(1720, 2738)
 				    anchor_loc 	1
 				    nlines     	2
@@ -12929,7 +12869,7 @@
 				quidu      	"4FABFDAF019D"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN006_Solicitud_Requerimiento" @438
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN006_Solicitud_Requerimiento" @433
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12946,7 +12886,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@438
+				    Parent_View 	@433
 				    location   	(2323, 2059)
 				    anchor_loc 	1
 				    nlines     	2
@@ -12960,7 +12900,7 @@
 				quidu      	"4FB88963014F"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::CC_TN001_Jefe_Comercial" @439
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Trabajadores del Negocio::CC_TN001_Jefe_Comercial" @434
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -12977,7 +12917,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@439
+				    Parent_View 	@434
 				    location   	(505, 1507)
 				    anchor_loc 	1
 				    nlines     	2
@@ -12993,7 +12933,7 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$18" @440
+			    (object AssociationViewNew "$UNNAMED$18" @435
 				location   	(1330, 1362)
 				font       	(object Font
 				    size       	10
@@ -13008,25 +12948,25 @@
 				line_color 	3342489
 				quidu      	"4FAEFAE001E8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$19" @441
-					Parent_View 	@440
+				    (object RoleView "$UNNAMED$19" @436
+					Parent_View 	@435
 					location   	(-144, 978)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFAE200E4"
-					client     	@440
-					supplier   	@439
+					client     	@435
+					supplier   	@434
 					line_style 	0)
-				    (object RoleView "$UNNAMED$20" @442
-					Parent_View 	@440
+				    (object RoleView "$UNNAMED$20" @437
+					Parent_View 	@435
 					location   	(-144, 978)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FAEFAE200EB"
-					client     	@440
-					supplier   	@433
+					client     	@435
+					supplier   	@428
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$33" @443
+			    (object AssociationViewNew "$UNNAMED$33" @438
 				location   	(388, 1810)
 				font       	(object Font
 				    size       	10
@@ -13041,25 +12981,25 @@
 				line_color 	3342489
 				quidu      	"4FB9A7840140"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$34" @444
-					Parent_View 	@443
+				    (object RoleView "$UNNAMED$34" @439
+					Parent_View 	@438
 					location   	(118, 438)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FB9A7840303"
-					client     	@443
-					supplier   	@434
+					client     	@438
+					supplier   	@429
 					line_style 	0)
-				    (object RoleView "$UNNAMED$35" @445
-					Parent_View 	@443
+				    (object RoleView "$UNNAMED$35" @440
+					Parent_View 	@438
 					location   	(118, 438)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FB9A784030B"
-					client     	@443
-					supplier   	@439
+					client     	@438
+					supplier   	@434
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$42" @446
+			    (object AssociationViewNew "$UNNAMED$42" @441
 				location   	(643, 2002)
 				font       	(object Font
 				    size       	10
@@ -13074,25 +13014,25 @@
 				line_color 	3342489
 				quidu      	"4FB9A8CD0017"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$43" @447
-					Parent_View 	@446
+				    (object RoleView "$UNNAMED$43" @442
+					Parent_View 	@441
 					location   	(137, 719)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FB9A8CD02CE"
-					client     	@446
-					supplier   	@435
+					client     	@441
+					supplier   	@430
 					line_style 	0)
-				    (object RoleView "$UNNAMED$44" @448
-					Parent_View 	@446
+				    (object RoleView "$UNNAMED$44" @443
+					Parent_View 	@441
 					location   	(137, 719)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FB9A8CD02D5"
-					client     	@446
-					supplier   	@439
+					client     	@441
+					supplier   	@434
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$54" @449
+			    (object AssociationViewNew "$UNNAMED$54" @444
 				location   	(878, 1932)
 				font       	(object Font
 				    size       	10
@@ -13107,25 +13047,25 @@
 				line_color 	3342489
 				quidu      	"4FBA4871035D"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$55" @450
-					Parent_View 	@449
+				    (object RoleView "$UNNAMED$55" @445
+					Parent_View 	@444
 					location   	(-293, -156)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FBA48720282"
-					client     	@449
-					supplier   	@439
+					client     	@444
+					supplier   	@434
 					line_style 	0)
-				    (object RoleView "$UNNAMED$56" @451
-					Parent_View 	@449
+				    (object RoleView "$UNNAMED$56" @446
+					Parent_View 	@444
 					location   	(-293, -156)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FBA48720284"
-					client     	@449
-					supplier   	@436
+					client     	@444
+					supplier   	@431
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$57" @452
+			    (object AssociationViewNew "$UNNAMED$57" @447
 				location   	(1135, 1947)
 				font       	(object Font
 				    size       	10
@@ -13140,25 +13080,25 @@
 				line_color 	3342489
 				quidu      	"4FBA48A201ED"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$58" @453
-					Parent_View 	@452
+				    (object RoleView "$UNNAMED$58" @448
+					Parent_View 	@447
 					location   	(-840, 107)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FBA48A30161"
-					client     	@452
-					supplier   	@439
+					client     	@447
+					supplier   	@434
 					line_style 	0)
-				    (object RoleView "$UNNAMED$59" @454
-					Parent_View 	@452
+				    (object RoleView "$UNNAMED$59" @449
+					Parent_View 	@447
 					location   	(-840, 107)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FBA48A30163"
-					client     	@452
-					supplier   	@437
+					client     	@447
+					supplier   	@432
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$60" @455
+			    (object AssociationViewNew "$UNNAMED$60" @450
 				location   	(1421, 1583)
 				font       	(object Font
 				    size       	10
@@ -13173,25 +13113,25 @@
 				line_color 	3342489
 				quidu      	"4FBA49060183"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$61" @456
-					Parent_View 	@455
+				    (object RoleView "$UNNAMED$61" @451
+					Parent_View 	@450
 					location   	(-762, -198)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FBA49070154"
-					client     	@455
-					supplier   	@439
+					client     	@450
+					supplier   	@434
 					line_style 	0)
-				    (object RoleView "$UNNAMED$62" @457
-					Parent_View 	@455
+				    (object RoleView "$UNNAMED$62" @452
+					Parent_View 	@450
 					location   	(-762, -198)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FBA49070156"
-					client     	@455
-					supplier   	@438
+					client     	@450
+					supplier   	@433
 					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN010_Solicitud_Cambio" @458
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN010_Solicitud_Cambio" @453
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -13208,7 +13148,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@458
+				    Parent_View 	@453
 				    location   	(1653, 2244)
 				    anchor_loc 	1
 				    nlines     	1
@@ -13222,7 +13162,7 @@
 				quidu      	"4FB84D7201FC"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$45" @459
+			    (object AssociationViewNew "$UNNAMED$45" @454
 				location   	(1086, 1680)
 				font       	(object Font
 				    size       	10
@@ -13237,23 +13177,118 @@
 				line_color 	3342489
 				quidu      	"4FB9A8F20134"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$46" @460
-					Parent_View 	@459
+				    (object RoleView "$UNNAMED$46" @455
+					Parent_View 	@454
 					location   	(-415, -194)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FB9A8F30063"
-					client     	@459
-					supplier   	@439
+					client     	@454
+					supplier   	@434
 					line_style 	0)
-				    (object RoleView "$UNNAMED$47" @461
-					Parent_View 	@459
+				    (object RoleView "$UNNAMED$47" @456
+					Parent_View 	@454
 					location   	(-415, -194)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"4FB9A8F3006A"
+					client     	@454
+					supplier   	@453
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN005_Linea_Servicio" @457
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1582, 504)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@457
+				    location   	(1582, 678)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	763
+				    justify    	0
+				    label      	"CC_EN005_Linea_Servicio")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FABFDC40370"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN009_BuenaPro" @458
+				ShowCompartmentStereotypes 	TRUE
+				SuppressAttribute 	TRUE
+				SuppressOperation 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1041, 558)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@458
+				    location   	(1041, 732)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	751
+				    justify    	0
+				    label      	"CC_EN009_BuenaPro")
+				icon       	"Business Entity"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"4FAF03BB00C0"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$27" @459
+				location   	(764, 625)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4FAF043E007D"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$28" @460
+					Parent_View 	@459
+					location   	(527, -341)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAF043F02BE"
 					client     	@459
 					supplier   	@458
+					line_style 	0)
+				    (object RoleView "$UNNAMED$29" @461
+					Parent_View 	@459
+					location   	(527, -341)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"4FAF043F02CA"
+					client     	@459
+					supplier   	@427
 					line_style 	0)))
 			    (object ClassView "Class" "Logical View::Modelo de Analisis del Negocio::Entidades del Negocio::CC_EN002_Adenda" @462
 				ShowCompartmentStereotypes 	TRUE
@@ -13348,7 +13383,7 @@
 					line_color 	3342489
 					quidu      	"4FAEFD5C0121"
 					client     	@464
-					supplier   	@428
+					supplier   	@457
 					line_style 	0)))
 			    (object AssociationViewNew "$UNNAMED$30" @467
 				location   	(1348, 885)
@@ -13381,7 +13416,7 @@
 					line_color 	3342489
 					quidu      	"4FAF044702FC"
 					client     	@467
-					supplier   	@429
+					supplier   	@458
 					line_style 	0)))
 			    (object UsesView "" @470
 				stereotype 	TRUE
